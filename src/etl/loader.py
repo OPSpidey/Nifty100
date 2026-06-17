@@ -48,6 +48,7 @@ if __name__ == "__main__":
 audit = []
 
 for file in data_dir.rglob("*.xlsx"):
+
     df = load_excel(file)
 
     audit.append({
@@ -56,9 +57,17 @@ for file in data_dir.rglob("*.xlsx"):
         "columns": len(df.columns)
     })
 
+    print(
+        f"{file.name}: "
+        f"{len(df)} rows "
+        f"{len(df.columns)} columns"
+    )
+
 audit_df = pd.DataFrame(audit)
 
 audit_df.to_csv(
     "output/load_audit.csv",
     index=False
 )
+
+print("\nAudit file created.")
