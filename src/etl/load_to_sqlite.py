@@ -12,6 +12,8 @@ files = {
     "documents": ("data/raw/documents.xlsx", 1),
     "prosandcons": ("data/raw/prosandcons.xlsx", 1),
     "financial_ratios": ("data/supporting/financial_ratios.xlsx", 0),
+    "market_cap": ("data/supporting/market_cap.xlsx", 0),
+    "peer_groups": ("data/supporting/peer_groups.xlsx", 0),
     "sectors": ("data/supporting/sectors.xlsx", 0),
     "stock_prices": ("data/supporting/stock_prices.xlsx", 0),
 }
@@ -28,7 +30,7 @@ for table, (file_path, header_row) in files.items():
         df.to_sql(
             table,
             conn,
-            if_exists="append",
+            if_exists="replace",
             index=False
         )
 
@@ -36,7 +38,7 @@ for table, (file_path, header_row) in files.items():
 
     except Exception as e:
         print(f"FAILED: {table}")
-        print(e)
-        break
+        print("ERROR:", e)
+        raise
 
 conn.close()
