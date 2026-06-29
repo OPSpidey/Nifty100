@@ -98,7 +98,6 @@ def high_leverage_flag(debt_to_equity_ratio, broad_sector):
 
     return debt_to_equity_ratio > 5 and broad_sector != "Financials"
 
-
 def interest_coverage_ratio(operating_profit, other_income, interest):
     """
     Interest Coverage Ratio

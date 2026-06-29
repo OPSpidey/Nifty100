@@ -1,0 +1,1093 @@
+DAY 13 - RATIO EDGE CASES
+============================================================
+ABB Dec 2012 ROE Difference = 12.49 (Source=34.9, Engine=22.41) | Category: Source data issue
+ABB Dec 2012 ROCE Difference = 14.78 (Source=46.0, Engine=31.22) | Category: Source data issue
+ABB Mar 2014 ROE Difference = 9.77 (Source=34.9, Engine=25.13) | Category: Source data issue
+ABB Mar 2014 ROCE Difference = 12.12 (Source=46.0, Engine=33.88) | Category: Source data issue
+ABB Mar 2015 ROE Difference = 10.46 (Source=34.9, Engine=24.44) | Category: Source data issue
+ABB Mar 2015 ROCE Difference = 12.70 (Source=46.0, Engine=33.30) | Category: Source data issue
+ABB Mar 2016 ROE Difference = 13.56 (Source=34.9, Engine=21.34) | Category: Source data issue
+ABB Mar 2016 ROCE Difference = 15.46 (Source=46.0, Engine=30.54) | Category: Source data issue
+ABB Mar 2017 ROE Difference = 14.93 (Source=34.9, Engine=19.97) | Category: Source data issue
+ABB Mar 2017 ROCE Difference = 17.30 (Source=46.0, Engine=28.70) | Category: Source data issue
+ABB Mar 2018 ROE Difference = 11.21 (Source=34.9, Engine=23.69) | Category: Source data issue
+ABB Mar 2018 ROCE Difference = 14.99 (Source=46.0, Engine=31.01) | Category: Source data issue
+ABB Mar 2019 ROE Difference = 12.49 (Source=34.9, Engine=22.41) | Category: Source data issue
+ABB Mar 2019 ROCE Difference = 15.87 (Source=46.0, Engine=30.13) | Category: Source data issue
+ABB Mar 2020 ROE Difference = 10.51 (Source=34.9, Engine=24.39) | Category: Source data issue
+ABB Mar 2020 ROCE Difference = 16.95 (Source=46.0, Engine=29.05) | Category: Source data issue
+ABB Mar 2021 ROE Difference = 8.34 (Source=34.9, Engine=26.56) | Category: Source data issue
+ABB Mar 2021 ROCE Difference = 12.53 (Source=46.0, Engine=33.47) | Category: Source data issue
+ABB Mar 2022 ROE Difference = 6.57 (Source=34.9, Engine=28.33) | Category: Source data issue
+ABB Mar 2022 ROCE Difference = 9.59 (Source=46.0, Engine=36.41) | Category: Source data issue
+ABB Mar 2023 ROE Difference = 5.13 (Source=34.9, Engine=29.77) | Category: Source data issue
+ABB Mar 2023 ROCE Difference = 9.47 (Source=46.0, Engine=36.53) | Category: Source data issue
+ABB Mar 2024 ROCE Difference = 7.58 (Source=46.0, Engine=38.42) | Category: Source data issue
+ADANIENSOL Mar 2015 ROE Difference = 9.24 (Source=8.59, Engine=-0.65) | Category: Source data issue
+ADANIENSOL Mar 2015 ROCE Difference = 8.06 (Source=9.0, Engine=0.94) | Category: Source data issue
+ADANIENSOL Mar 2016 ROE Difference = 5.18 (Source=8.59, Engine=13.77) | Category: Source data issue
+ADANIENSOL Mar 2016 ROCE Difference = 8.12 (Source=9.0, Engine=17.12) | Category: Source data issue
+ADANIENSOL Mar 2017 ROE Difference = 5.53 (Source=8.59, Engine=14.12) | Category: Source data issue
+ADANIENSOL Mar 2017 ROCE Difference = 7.63 (Source=9.0, Engine=16.63) | Category: Source data issue
+ADANIENSOL Mar 2018 ROE Difference = 10.28 (Source=8.59, Engine=18.87) | Category: Source data issue
+ADANIENSOL Mar 2018 ROCE Difference = 8.14 (Source=9.0, Engine=17.14) | Category: Source data issue
+ADANIENSOL Mar 2021 ROE Difference = 5.87 (Source=8.59, Engine=14.46) | Category: Source data issue
+ADANIENT Mar 2013 ROE Difference = 7.95 (Source=13.64, Engine=5.69) | Category: Source data issue
+ADANIENT Mar 2016 ROE Difference = 6.17 (Source=13.64, Engine=7.47) | Category: Source data issue
+ADANIENT Mar 2016 ROCE Difference = 6.43 (Source=11.6, Engine=5.17) | Category: Source data issue
+ADANIENT Mar 2017 ROE Difference = 7.10 (Source=13.64, Engine=6.54) | Category: Source data issue
+ADANIENT Mar 2017 ROCE Difference = 6.16 (Source=11.6, Engine=5.44) | Category: Source data issue
+ADANIENT Mar 2018 ROE Difference = 9.70 (Source=13.64, Engine=3.94) | Category: Source data issue
+ADANIENT Mar 2018 ROCE Difference = 5.37 (Source=11.6, Engine=6.23) | Category: Source data issue
+ADANIENT Mar 2019 ROE Difference = 10.21 (Source=13.64, Engine=3.43) | Category: Source data issue
+ADANIENT Mar 2020 ROE Difference = 7.50 (Source=13.64, Engine=6.14) | Category: Source data issue
+ADANIENT Mar 2021 ROE Difference = 7.54 (Source=13.64, Engine=6.10) | Category: Source data issue
+ADANIENT Mar 2022 ROE Difference = 10.10 (Source=13.64, Engine=3.54) | Category: Source data issue
+ADANIENT Mar 2022 ROCE Difference = 5.78 (Source=11.6, Engine=5.82) | Category: Source data issue
+ADANIENT Mar 2023 ROE Difference = 6.31 (Source=13.64, Engine=7.33) | Category: Source data issue
+ADANIENT Mar 2024 ROE Difference = 5.11 (Source=13.64, Engine=8.53) | Category: Source data issue
+ADANIGREEN Mar 2017 ROE Difference = 18.61 (Source=14.7, Engine=-3.91) | Category: Source data issue
+ADANIGREEN Mar 2017 ROCE Difference = 89.24 (Source=96.5, Engine=7.26) | Category: Source data issue
+ADANIGREEN Mar 2018 ROE Difference = 24.99 (Source=14.7, Engine=-10.29) | Category: Source data issue
+ADANIGREEN Mar 2018 ROCE Difference = 88.98 (Source=96.5, Engine=7.52) | Category: Source data issue
+ADANIGREEN Mar 2019 ROE Difference = 39.27 (Source=14.7, Engine=-24.57) | Category: Source data issue
+ADANIGREEN Mar 2019 ROCE Difference = 84.83 (Source=96.5, Engine=11.67) | Category: Source data issue
+ADANIGREEN Mar 2020 ROE Difference = 17.59 (Source=14.7, Engine=-2.89) | Category: Source data issue
+ADANIGREEN Mar 2020 ROCE Difference = 88.08 (Source=96.5, Engine=8.42) | Category: Source data issue
+ADANIGREEN Mar 2021 ROE Difference = 6.43 (Source=14.7, Engine=8.27) | Category: Source data issue
+ADANIGREEN Mar 2021 ROCE Difference = 88.01 (Source=96.5, Engine=8.49) | Category: Source data issue
+ADANIGREEN Mar 2022 ROCE Difference = 90.17 (Source=96.5, Engine=6.33) | Category: Source data issue
+ADANIGREEN Mar 2023 ROCE Difference = 88.42 (Source=96.5, Engine=8.08) | Category: Source data issue
+ADANIGREEN Mar 2024 ROCE Difference = 86.70 (Source=96.5, Engine=9.80) | Category: Source data issue
+ADANIPORTS Mar 2013 ROE Difference = 7.53 (Source=18.1, Engine=25.63) | Category: Source data issue
+ADANIPORTS Mar 2022 ROE Difference = 6.26 (Source=18.1, Engine=11.84) | Category: Source data issue
+ADANIPORTS Mar 2023 ROE Difference = 6.22 (Source=18.1, Engine=11.88) | Category: Source data issue
+ADANIPOWER Mar 2013 ROE Difference = 110.56 (Source=57.1, Engine=-53.46) | Category: Formula discrepancy
+ADANIPOWER Mar 2013 ROCE Difference = 30.12 (Source=32.2, Engine=2.08) | Category: Source data issue
+ADANIPOWER Mar 2014 ROE Difference = 61.55 (Source=57.1, Engine=-4.45) | Category: Source data issue
+ADANIPOWER Mar 2014 ROCE Difference = 23.14 (Source=32.2, Engine=9.06) | Category: Source data issue
+ADANIPOWER Mar 2015 ROE Difference = 71.35 (Source=57.1, Engine=-14.25) | Category: Source data issue
+ADANIPOWER Mar 2015 ROCE Difference = 22.93 (Source=32.2, Engine=9.27) | Category: Source data issue
+ADANIPOWER Mar 2016 ROE Difference = 49.72 (Source=57.1, Engine=7.38) | Category: Source data issue
+ADANIPOWER Mar 2016 ROCE Difference = 17.58 (Source=32.2, Engine=14.62) | Category: Source data issue
+ADANIPOWER Mar 2017 ROE Difference = 262.90 (Source=57.1, Engine=-205.80) | Category: Formula discrepancy
+ADANIPOWER Mar 2017 ROCE Difference = 21.42 (Source=32.2, Engine=10.78) | Category: Source data issue
+ADANIPOWER Mar 2018 ROE Difference = 293.66 (Source=57.1, Engine=-236.56) | Category: Formula discrepancy
+ADANIPOWER Mar 2018 ROCE Difference = 22.08 (Source=32.2, Engine=10.12) | Category: Source data issue
+ADANIPOWER Mar 2019 ROE Difference = 69.86 (Source=57.1, Engine=-12.76) | Category: Source data issue
+ADANIPOWER Mar 2019 ROCE Difference = 23.09 (Source=32.2, Engine=9.11) | Category: Source data issue
+ADANIPOWER Mar 2020 ROE Difference = 92.20 (Source=57.1, Engine=-35.10) | Category: Source data issue
+ADANIPOWER Mar 2020 ROCE Difference = 22.90 (Source=32.2, Engine=9.30) | Category: Source data issue
+ADANIPOWER Mar 2021 ROE Difference = 47.41 (Source=57.1, Engine=9.69) | Category: Source data issue
+ADANIPOWER Mar 2021 ROCE Difference = 18.96 (Source=32.2, Engine=13.24) | Category: Source data issue
+ADANIPOWER Mar 2022 ROE Difference = 30.49 (Source=57.1, Engine=26.61) | Category: Source data issue
+ADANIPOWER Mar 2022 ROCE Difference = 17.58 (Source=32.2, Engine=14.62) | Category: Source data issue
+ADANIPOWER Mar 2023 ROE Difference = 21.19 (Source=57.1, Engine=35.91) | Category: Source data issue
+ADANIPOWER Mar 2023 ROCE Difference = 18.22 (Source=32.2, Engine=13.98) | Category: Source data issue
+ADANIPOWER Mar 2024 ROE Difference = 8.82 (Source=57.1, Engine=48.28) | Category: Source data issue
+ADANIPOWER Mar 2024 ROCE Difference = 8.76 (Source=32.2, Engine=23.44) | Category: Source data issue
+AMBUJACEM Dec 2012 ROE Difference = 5.45 (Source=9.24, Engine=14.69) | Category: Source data issue
+AMBUJACEM Dec 2012 ROCE Difference = 15.12 (Source=12.8, Engine=27.92) | Category: Source data issue
+AMBUJACEM Dec 2014 ROE Difference = 5.53 (Source=9.24, Engine=14.77) | Category: Source data issue
+AMBUJACEM Dec 2014 ROCE Difference = 6.34 (Source=12.8, Engine=19.14) | Category: Source data issue
+AMBUJACEM Dec 2017 ROCE Difference = 5.84 (Source=12.8, Engine=18.64) | Category: Source data issue
+AMBUJACEM Dec 2018 ROCE Difference = 5.10 (Source=12.8, Engine=17.90) | Category: Source data issue
+AMBUJACEM Dec 2019 ROCE Difference = 6.26 (Source=12.8, Engine=19.06) | Category: Source data issue
+AMBUJACEM Dec 2020 ROCE Difference = 8.75 (Source=12.8, Engine=21.55) | Category: Source data issue
+AMBUJACEM Dec 2021 ROE Difference = 5.40 (Source=9.24, Engine=14.64) | Category: Source data issue
+AMBUJACEM Dec 2021 ROCE Difference = 11.24 (Source=12.8, Engine=24.04) | Category: Source data issue
+APOLLOHOSP Mar 2016 ROE Difference = 6.76 (Source=13.81, Engine=7.05) | Category: Source data issue
+APOLLOHOSP Mar 2016 ROCE Difference = 6.11 (Source=17.2, Engine=11.09) | Category: Source data issue
+APOLLOHOSP Mar 2017 ROE Difference = 9.86 (Source=13.81, Engine=3.95) | Category: Source data issue
+APOLLOHOSP Mar 2017 ROCE Difference = 5.80 (Source=17.2, Engine=11.40) | Category: Source data issue
+APOLLOHOSP Mar 2018 ROE Difference = 11.96 (Source=13.81, Engine=1.85) | Category: Source data issue
+APOLLOHOSP Mar 2018 ROCE Difference = 5.21 (Source=17.2, Engine=11.99) | Category: Source data issue
+APOLLOHOSP Mar 2019 ROE Difference = 7.81 (Source=13.81, Engine=6.00) | Category: Source data issue
+APOLLOHOSP Mar 2020 ROCE Difference = 5.74 (Source=17.2, Engine=22.94) | Category: Source data issue
+APOLLOHOSP Mar 2021 ROE Difference = 10.83 (Source=13.81, Engine=2.98) | Category: Source data issue
+APOLLOHOSP Mar 2022 ROE Difference = 5.89 (Source=13.81, Engine=19.70) | Category: Source data issue
+APOLLOHOSP Mar 2022 ROCE Difference = 5.39 (Source=17.2, Engine=22.59) | Category: Source data issue
+ASIANPAINT Mar 2013 ROCE Difference = 6.04 (Source=41.75, Engine=47.79) | Category: Source data issue
+ASIANPAINT Mar 2017 ROCE Difference = 5.08 (Source=41.75, Engine=36.67) | Category: Source data issue
+ASIANPAINT Mar 2018 ROE Difference = 6.50 (Source=31.45, Engine=24.95) | Category: Source data issue
+ASIANPAINT Mar 2018 ROCE Difference = 5.92 (Source=41.75, Engine=35.83) | Category: Source data issue
+ASIANPAINT Mar 2019 ROE Difference = 8.14 (Source=31.45, Engine=23.31) | Category: Source data issue
+ASIANPAINT Mar 2019 ROCE Difference = 6.86 (Source=41.75, Engine=34.89) | Category: Source data issue
+ASIANPAINT Mar 2021 ROE Difference = 6.41 (Source=31.45, Engine=25.04) | Category: Source data issue
+ASIANPAINT Mar 2021 ROCE Difference = 6.81 (Source=41.75, Engine=34.94) | Category: Source data issue
+ASIANPAINT Mar 2022 ROE Difference = 9.11 (Source=31.45, Engine=22.34) | Category: Source data issue
+ASIANPAINT Mar 2022 ROCE Difference = 10.55 (Source=41.75, Engine=31.20) | Category: Source data issue
+ASIANPAINT Mar 2023 ROE Difference = 5.22 (Source=31.45, Engine=26.23) | Category: Source data issue
+ASIANPAINT Mar 2023 ROCE Difference = 6.83 (Source=41.75, Engine=34.92) | Category: Source data issue
+ASIANPAINT Mar 2024 ROCE Difference = 5.98 (Source=41.75, Engine=35.77) | Category: Source data issue
+BAJAJ-AUTO Mar 2013 ROE Difference = 12.35 (Source=26.5, Engine=38.85) | Category: Source data issue
+BAJAJ-AUTO Mar 2013 ROCE Difference = 11.19 (Source=33.5, Engine=44.69) | Category: Source data issue
+BAJAJ-AUTO Mar 2014 ROE Difference = 6.74 (Source=26.5, Engine=33.24) | Category: Source data issue
+BAJAJ-AUTO Mar 2014 ROCE Difference = 7.21 (Source=33.5, Engine=40.71) | Category: Source data issue
+BAJAJ-AUTO Mar 2017 ROCE Difference = 8.86 (Source=33.5, Engine=24.64) | Category: Source data issue
+BAJAJ-AUTO Mar 2018 ROE Difference = 5.84 (Source=26.5, Engine=20.66) | Category: Source data issue
+BAJAJ-AUTO Mar 2018 ROCE Difference = 9.91 (Source=33.5, Engine=23.59) | Category: Source data issue
+BAJAJ-AUTO Mar 2019 ROE Difference = 5.29 (Source=26.5, Engine=21.21) | Category: Source data issue
+BAJAJ-AUTO Mar 2019 ROCE Difference = 11.25 (Source=33.5, Engine=22.25) | Category: Source data issue
+BAJAJ-AUTO Mar 2020 ROCE Difference = 10.05 (Source=33.5, Engine=23.45) | Category: Source data issue
+BAJAJ-AUTO Mar 2021 ROE Difference = 8.69 (Source=26.5, Engine=17.81) | Category: Source data issue
+BAJAJ-AUTO Mar 2021 ROCE Difference = 15.47 (Source=33.5, Engine=18.03) | Category: Source data issue
+BAJAJ-AUTO Mar 2022 ROE Difference = 5.85 (Source=26.5, Engine=20.65) | Category: Source data issue
+BAJAJ-AUTO Mar 2022 ROCE Difference = 15.96 (Source=33.5, Engine=17.54) | Category: Source data issue
+BAJAJ-AUTO Mar 2023 ROE Difference = 5.86 (Source=26.5, Engine=20.64) | Category: Source data issue
+BAJAJ-AUTO Mar 2023 ROCE Difference = 11.57 (Source=33.5, Engine=21.93) | Category: Source data issue
+BAJAJ-AUTO Mar 2024 ROCE Difference = 5.11 (Source=33.5, Engine=28.39) | Category: Source data issue
+AXISBANK Mar 2017 ROE Difference = 11.87 (Source=18.4, Engine=6.53) | Category: Sector-specific
+AXISBANK Mar 2018 ROE Difference = 17.97 (Source=18.4, Engine=0.43) | Category: Sector-specific
+AXISBANK Mar 2019 ROE Difference = 11.50 (Source=18.4, Engine=6.90) | Category: Sector-specific
+AXISBANK Mar 2020 ROE Difference = 16.52 (Source=18.4, Engine=1.88) | Category: Sector-specific
+AXISBANK Mar 2021 ROE Difference = 12.04 (Source=18.4, Engine=6.36) | Category: Sector-specific
+AXISBANK Mar 2022 ROE Difference = 7.39 (Source=18.4, Engine=11.01) | Category: Sector-specific
+AXISBANK Mar 2023 ROE Difference = 11.02 (Source=18.4, Engine=7.38) | Category: Sector-specific
+BAJAJFINSV Mar 2013 ROE Difference = 16.66 (Source=11.72, Engine=28.38) | Category: Sector-specific
+BAJAJFINSV Mar 2014 ROE Difference = 11.81 (Source=11.72, Engine=23.53) | Category: Sector-specific
+BAJAJFINSV Mar 2014 ROCE Difference = 5.56 (Source=21.14, Engine=15.58) | Category: Sector-specific
+BAJAJFINSV Mar 2015 ROE Difference = 10.00 (Source=11.72, Engine=21.72) | Category: Sector-specific
+BAJAJFINSV Mar 2015 ROCE Difference = 6.41 (Source=21.14, Engine=14.73) | Category: Sector-specific
+BAJAJFINSV Mar 2016 ROE Difference = 8.69 (Source=11.72, Engine=20.41) | Category: Sector-specific
+BAJAJFINSV Mar 2016 ROCE Difference = 7.57 (Source=21.14, Engine=13.57) | Category: Sector-specific
+BAJAJFINSV Mar 2017 ROE Difference = 9.64 (Source=11.72, Engine=21.36) | Category: Sector-specific
+BAJAJFINSV Mar 2017 ROCE Difference = 7.62 (Source=21.14, Engine=13.52) | Category: Sector-specific
+BAJAJFINSV Mar 2018 ROE Difference = 8.67 (Source=11.72, Engine=20.39) | Category: Sector-specific
+BAJAJFINSV Mar 2018 ROCE Difference = 8.62 (Source=21.14, Engine=12.52) | Category: Sector-specific
+BAJAJFINSV Mar 2019 ROE Difference = 10.92 (Source=11.72, Engine=22.64) | Category: Sector-specific
+BAJAJFINSV Mar 2019 ROCE Difference = 8.96 (Source=21.14, Engine=12.18) | Category: Sector-specific
+BAJAJFINSV Mar 2020 ROE Difference = 7.43 (Source=11.72, Engine=19.15) | Category: Sector-specific
+BAJAJFINSV Mar 2020 ROCE Difference = 9.62 (Source=21.14, Engine=11.52) | Category: Sector-specific
+BAJAJFINSV Mar 2021 ROE Difference = 8.84 (Source=11.72, Engine=20.56) | Category: Sector-specific
+BAJAJFINSV Mar 2021 ROCE Difference = 9.18 (Source=21.14, Engine=11.96) | Category: Sector-specific
+BAJAJFINSV Mar 2022 ROE Difference = 8.94 (Source=11.72, Engine=20.66) | Category: Sector-specific
+BAJAJFINSV Mar 2022 ROCE Difference = 10.49 (Source=21.14, Engine=10.65) | Category: Sector-specific
+BAJAJFINSV Mar 2023 ROE Difference = 14.59 (Source=11.72, Engine=26.31) | Category: Sector-specific
+BAJAJFINSV Mar 2023 ROCE Difference = 9.59 (Source=21.14, Engine=11.55) | Category: Sector-specific
+BAJAJFINSV Mar 2024 ROE Difference = 14.13 (Source=11.72, Engine=25.85) | Category: Sector-specific
+BAJAJFINSV Mar 2024 ROCE Difference = 9.43 (Source=21.14, Engine=11.71) | Category: Sector-specific
+BAJAJHLDNG Mar 2013 ROCE Difference = 9.99 (Source=13.1, Engine=3.11) | Category: Sector-specific
+BAJAJHLDNG Mar 2014 ROCE Difference = 9.77 (Source=13.1, Engine=3.33) | Category: Sector-specific
+BAJAJHLDNG Mar 2015 ROCE Difference = 9.49 (Source=13.1, Engine=3.61) | Category: Sector-specific
+BAJAJHLDNG Mar 2016 ROCE Difference = 10.29 (Source=13.1, Engine=2.81) | Category: Sector-specific
+BAJAJHLDNG Mar 2017 ROCE Difference = 9.58 (Source=13.1, Engine=3.52) | Category: Sector-specific
+BAJAJHLDNG Mar 2018 ROCE Difference = 11.69 (Source=13.1, Engine=1.41) | Category: Sector-specific
+BAJAJHLDNG Mar 2019 ROCE Difference = 11.81 (Source=13.1, Engine=1.29) | Category: Sector-specific
+BAJAJHLDNG Mar 2020 ROCE Difference = 12.02 (Source=13.1, Engine=1.08) | Category: Sector-specific
+BAJAJHLDNG Mar 2021 ROCE Difference = 12.16 (Source=13.1, Engine=0.94) | Category: Sector-specific
+BAJAJHLDNG Mar 2022 ROE Difference = 5.17 (Source=14.8, Engine=9.63) | Category: Sector-specific
+BAJAJHLDNG Mar 2022 ROCE Difference = 12.25 (Source=13.1, Engine=0.85) | Category: Sector-specific
+BAJAJHLDNG Mar 2023 ROCE Difference = 12.24 (Source=13.1, Engine=0.86) | Category: Sector-specific
+BAJAJHLDNG Mar 2024 ROCE Difference = 10.22 (Source=13.1, Engine=2.88) | Category: Sector-specific
+BAJFINANCE Mar 2015 ROCE Difference = 6.33 (Source=11.9, Engine=5.57) | Category: Sector-specific
+BAJFINANCE Mar 2016 ROCE Difference = 6.60 (Source=11.9, Engine=5.30) | Category: Sector-specific
+BAJFINANCE Mar 2017 ROCE Difference = 6.38 (Source=11.9, Engine=5.52) | Category: Sector-specific
+BAJFINANCE Mar 2018 ROE Difference = 6.35 (Source=22.1, Engine=15.75) | Category: Sector-specific
+BAJFINANCE Mar 2018 ROCE Difference = 6.91 (Source=11.9, Engine=4.99) | Category: Sector-specific
+BAJFINANCE Mar 2019 ROCE Difference = 7.40 (Source=11.9, Engine=4.50) | Category: Sector-specific
+BAJFINANCE Mar 2020 ROE Difference = 5.82 (Source=22.1, Engine=16.28) | Category: Sector-specific
+BAJFINANCE Mar 2020 ROCE Difference = 6.25 (Source=11.9, Engine=5.65) | Category: Sector-specific
+BAJFINANCE Mar 2021 ROE Difference = 10.13 (Source=22.1, Engine=11.97) | Category: Sector-specific
+BAJFINANCE Mar 2021 ROCE Difference = 5.47 (Source=11.9, Engine=6.43) | Category: Sector-specific
+BAJFINANCE Mar 2022 ROE Difference = 6.02 (Source=22.1, Engine=16.08) | Category: Sector-specific
+BAJFINANCE Mar 2022 ROCE Difference = 6.21 (Source=11.9, Engine=5.69) | Category: Sector-specific
+BAJFINANCE Mar 2023 ROCE Difference = 7.22 (Source=11.9, Engine=4.68) | Category: Sector-specific
+BAJFINANCE Mar 2024 ROCE Difference = 7.55 (Source=11.9, Engine=4.35) | Category: Sector-specific
+BANKBARODA Mar 2015 ROE Difference = 7.30 (Source=16.7, Engine=9.40) | Category: Sector-specific
+BANKBARODA Mar 2016 ROE Difference = 28.54 (Source=16.7, Engine=-11.84) | Category: Sector-specific
+BANKBARODA Mar 2017 ROE Difference = 12.39 (Source=16.7, Engine=4.31) | Category: Sector-specific
+BANKBARODA Mar 2018 ROE Difference = 20.64 (Source=16.7, Engine=-3.94) | Category: Sector-specific
+BANKBARODA Mar 2019 ROE Difference = 14.58 (Source=16.7, Engine=2.12) | Category: Sector-specific
+BANKBARODA Mar 2020 ROE Difference = 15.41 (Source=16.7, Engine=1.29) | Category: Sector-specific
+BANKBARODA Mar 2021 ROE Difference = 14.73 (Source=16.7, Engine=1.97) | Category: Sector-specific
+BANKBARODA Mar 2022 ROE Difference = 8.06 (Source=16.7, Engine=8.64) | Category: Sector-specific
+BHARTIARTL Mar 2013 ROE Difference = 10.40 (Source=14.9, Engine=4.50) | Category: Source data issue
+BHARTIARTL Mar 2013 ROCE Difference = 6.51 (Source=13.1, Engine=19.61) | Category: Source data issue
+BHARTIARTL Mar 2014 ROE Difference = 9.85 (Source=14.9, Engine=5.05) | Category: Source data issue
+BHARTIARTL Mar 2014 ROCE Difference = 6.44 (Source=13.1, Engine=19.54) | Category: Source data issue
+BHARTIARTL Mar 2015 ROCE Difference = 14.18 (Source=13.1, Engine=27.28) | Category: Source data issue
+BHARTIARTL Mar 2016 ROCE Difference = 7.20 (Source=13.1, Engine=20.30) | Category: Source data issue
+BHARTIARTL Mar 2017 ROE Difference = 8.61 (Source=14.9, Engine=6.29) | Category: Source data issue
+BHARTIARTL Mar 2017 ROCE Difference = 7.12 (Source=13.1, Engine=20.22) | Category: Source data issue
+BHARTIARTL Mar 2018 ROE Difference = 11.76 (Source=14.9, Engine=3.14) | Category: Source data issue
+BHARTIARTL Mar 2019 ROE Difference = 12.54 (Source=14.9, Engine=2.36) | Category: Source data issue
+BHARTIARTL Mar 2020 ROE Difference = 54.65 (Source=14.9, Engine=-39.75) | Category: Source data issue
+BHARTIARTL Mar 2021 ROE Difference = 35.87 (Source=14.9, Engine=-20.97) | Category: Source data issue
+BHARTIARTL Mar 2021 ROCE Difference = 7.32 (Source=13.1, Engine=20.42) | Category: Source data issue
+BHARTIARTL Mar 2022 ROCE Difference = 11.25 (Source=13.1, Engine=24.35) | Category: Source data issue
+BHARTIARTL Mar 2023 ROCE Difference = 10.38 (Source=13.1, Engine=23.48) | Category: Source data issue
+BHARTIARTL Mar 2024 ROCE Difference = 13.15 (Source=13.1, Engine=26.25) | Category: Source data issue
+BEL Mar 2013 ROE Difference = 15157.03 (Source=26.3, Engine=15183.33) | Category: Formula discrepancy
+BEL Mar 2013 ROCE Difference = 2195.40 (Source=34.6, Engine=2230.00) | Category: Formula discrepancy
+BEL Mar 2014 ROE Difference = 13573.70 (Source=26.3, Engine=13600.00) | Category: Formula discrepancy
+BEL Mar 2014 ROCE Difference = 3268.97 (Source=34.6, Engine=3303.57) | Category: Formula discrepancy
+BEL Mar 2015 ROE Difference = 17073.70 (Source=26.3, Engine=17100.00) | Category: Formula discrepancy
+BEL Mar 2015 ROCE Difference = 3538.13 (Source=34.6, Engine=3572.73) | Category: Formula discrepancy
+BEL Mar 2016 ROE Difference = 11115.37 (Source=26.3, Engine=11141.67) | Category: Formula discrepancy
+BEL Mar 2016 ROCE Difference = 3730.26 (Source=34.6, Engine=3764.86) | Category: Formula discrepancy
+BEL Mar 2017 ROE Difference = 10127.03 (Source=26.3, Engine=10153.33) | Category: Formula discrepancy
+BEL Mar 2017 ROCE Difference = 4038.13 (Source=34.6, Engine=4072.73) | Category: Formula discrepancy
+BEL Mar 2018 ROE Difference = 4589.83 (Source=26.3, Engine=4616.13) | Category: Formula discrepancy
+BEL Mar 2018 ROCE Difference = 2546.41 (Source=34.6, Engine=2581.01) | Category: Formula discrepancy
+BEL Mar 2019 ROE Difference = 3824.72 (Source=26.3, Engine=3851.02) | Category: Formula discrepancy
+BEL Mar 2019 ROCE Difference = 2995.61 (Source=34.6, Engine=3030.21) | Category: Formula discrepancy
+BEL Mar 2020 ROE Difference = 3291.88 (Source=26.3, Engine=3318.18) | Category: Formula discrepancy
+BEL Mar 2020 ROCE Difference = 2752.27 (Source=34.6, Engine=2786.87) | Category: Formula discrepancy
+BEL Mar 2021 ROE Difference = 3533.02 (Source=26.3, Engine=3559.32) | Category: Formula discrepancy
+BEL Mar 2021 ROCE Difference = 2941.33 (Source=34.6, Engine=2975.93) | Category: Formula discrepancy
+BEL Mar 2022 ROE Difference = 3451.96 (Source=26.3, Engine=3478.26) | Category: Formula discrepancy
+BEL Mar 2022 ROCE Difference = 2598.47 (Source=34.6, Engine=2633.07) | Category: Formula discrepancy
+BEL Mar 2023 ROE Difference = 3955.03 (Source=26.3, Engine=3981.33) | Category: Formula discrepancy
+BEL Mar 2023 ROCE Difference = 3553.12 (Source=34.6, Engine=3587.72) | Category: Formula discrepancy
+BEL Mar 2024 ROE Difference = 4717.75 (Source=26.3, Engine=4744.05) | Category: Formula discrepancy
+BEL Mar 2024 ROCE Difference = 3942.57 (Source=34.6, Engine=3977.17) | Category: Formula discrepancy
+BHEL Mar 2013 ROE Difference = 20.86 (Source=1.05, Engine=21.91) | Category: Source data issue
+BHEL Mar 2013 ROCE Difference = 25.24 (Source=3.28, Engine=28.52) | Category: Source data issue
+BHEL Mar 2014 ROE Difference = 9.51 (Source=1.05, Engine=10.56) | Category: Source data issue
+BHEL Mar 2014 ROCE Difference = 8.81 (Source=3.28, Engine=12.09) | Category: Source data issue
+BHEL Mar 2016 ROCE Difference = 7.45 (Source=3.28, Engine=-4.17) | Category: Source data issue
+BHEL Mar 2020 ROE Difference = 6.17 (Source=1.05, Engine=-5.12) | Category: Source data issue
+BHEL Mar 2021 ROE Difference = 11.44 (Source=1.05, Engine=-10.39) | Category: Source data issue
+BHEL Mar 2021 ROCE Difference = 13.14 (Source=3.28, Engine=-9.86) | Category: Source data issue
+BOSCHLTD Mar 2015 ROCE Difference = 5.96 (Source=20.6, Engine=26.56) | Category: Source data issue
+BOSCHLTD Mar 2020 ROE Difference = 8.99 (Source=16.0, Engine=7.01) | Category: Source data issue
+BOSCHLTD Mar 2021 ROE Difference = 11.09 (Source=16.0, Engine=4.91) | Category: Source data issue
+BOSCHLTD Mar 2021 ROCE Difference = 8.83 (Source=20.6, Engine=11.77) | Category: Source data issue
+BOSCHLTD Mar 2022 ROCE Difference = 7.01 (Source=20.6, Engine=13.59) | Category: Source data issue
+BPCL Mar 2013 ROE Difference = 30.36 (Source=41.9, Engine=11.54) | Category: Source data issue
+BPCL Mar 2013 ROCE Difference = 18.66 (Source=32.1, Engine=13.44) | Category: Source data issue
+BPCL Mar 2014 ROE Difference = 21.05 (Source=41.9, Engine=20.85) | Category: Source data issue
+BPCL Mar 2014 ROCE Difference = 14.20 (Source=32.1, Engine=17.90) | Category: Source data issue
+BPCL Mar 2015 ROE Difference = 19.38 (Source=41.9, Engine=22.52) | Category: Source data issue
+BPCL Mar 2015 ROCE Difference = 11.75 (Source=32.1, Engine=20.35) | Category: Source data issue
+BPCL Mar 2016 ROE Difference = 12.80 (Source=41.9, Engine=29.10) | Category: Source data issue
+BPCL Mar 2016 ROCE Difference = 6.76 (Source=32.1, Engine=25.34) | Category: Source data issue
+BPCL Mar 2017 ROE Difference = 11.05 (Source=41.9, Engine=30.85) | Category: Source data issue
+BPCL Mar 2017 ROCE Difference = 11.39 (Source=32.1, Engine=20.71) | Category: Source data issue
+BPCL Mar 2018 ROE Difference = 15.16 (Source=41.9, Engine=26.74) | Category: Source data issue
+BPCL Mar 2018 ROCE Difference = 11.48 (Source=32.1, Engine=20.62) | Category: Source data issue
+BPCL Mar 2019 ROE Difference = 19.90 (Source=41.9, Engine=22.00) | Category: Source data issue
+BPCL Mar 2019 ROCE Difference = 14.02 (Source=32.1, Engine=18.08) | Category: Source data issue
+BPCL Mar 2020 ROE Difference = 31.86 (Source=41.9, Engine=10.04) | Category: Source data issue
+BPCL Mar 2020 ROCE Difference = 23.30 (Source=32.1, Engine=8.80) | Category: Source data issue
+BPCL Mar 2021 ROE Difference = 9.56 (Source=41.9, Engine=32.34) | Category: Source data issue
+BPCL Mar 2021 ROCE Difference = 12.67 (Source=32.1, Engine=19.43) | Category: Source data issue
+BPCL Mar 2022 ROE Difference = 19.39 (Source=41.9, Engine=22.51) | Category: Source data issue
+BPCL Mar 2022 ROCE Difference = 15.66 (Source=32.1, Engine=16.44) | Category: Source data issue
+BPCL Mar 2023 ROE Difference = 37.92 (Source=41.9, Engine=3.98) | Category: Source data issue
+BPCL Mar 2023 ROCE Difference = 23.23 (Source=32.1, Engine=8.87) | Category: Source data issue
+BPCL Mar 2024 ROE Difference = 6.39 (Source=41.9, Engine=35.51) | Category: Source data issue
+BRITANNIA Mar 2013 ROE Difference = 10.51 (Source=57.1, Engine=46.59) | Category: Source data issue
+BRITANNIA Mar 2014 ROE Difference = 7.60 (Source=57.1, Engine=49.50) | Category: Source data issue
+BRITANNIA Mar 2014 ROCE Difference = 17.24 (Source=48.9, Engine=66.14) | Category: Source data issue
+BRITANNIA Mar 2015 ROCE Difference = 13.69 (Source=48.9, Engine=62.59) | Category: Source data issue
+BRITANNIA Mar 2016 ROE Difference = 17.66 (Source=57.1, Engine=39.44) | Category: Source data issue
+BRITANNIA Mar 2016 ROCE Difference = 6.16 (Source=48.9, Engine=55.06) | Category: Source data issue
+BRITANNIA Mar 2017 ROE Difference = 24.27 (Source=57.1, Engine=32.83) | Category: Source data issue
+BRITANNIA Mar 2018 ROE Difference = 27.62 (Source=57.1, Engine=29.48) | Category: Source data issue
+BRITANNIA Mar 2018 ROCE Difference = 7.29 (Source=48.9, Engine=41.61) | Category: Source data issue
+BRITANNIA Mar 2019 ROE Difference = 29.94 (Source=57.1, Engine=27.16) | Category: Source data issue
+BRITANNIA Mar 2019 ROCE Difference = 9.62 (Source=48.9, Engine=39.28) | Category: Source data issue
+BRITANNIA Mar 2020 ROE Difference = 25.44 (Source=57.1, Engine=31.66) | Category: Source data issue
+BRITANNIA Mar 2020 ROCE Difference = 17.88 (Source=48.9, Engine=31.02) | Category: Source data issue
+BRITANNIA Mar 2022 ROCE Difference = 5.22 (Source=48.9, Engine=43.68) | Category: Source data issue
+BRITANNIA Mar 2023 ROE Difference = 8.43 (Source=57.1, Engine=65.53) | Category: Source data issue
+BRITANNIA Mar 2023 ROCE Difference = 5.55 (Source=48.9, Engine=43.35) | Category: Source data issue
+CANBK Mar 2013 ROE Difference = 6.00 (Source=17.9, Engine=11.90) | Category: Sector-specific
+CANBK Mar 2014 ROE Difference = 9.05 (Source=17.9, Engine=8.85) | Category: Sector-specific
+CANBK Mar 2015 ROE Difference = 8.88 (Source=17.9, Engine=9.02) | Category: Sector-specific
+CANBK Mar 2016 ROE Difference = 25.72 (Source=17.9, Engine=-7.82) | Category: Sector-specific
+CANBK Mar 2017 ROE Difference = 13.83 (Source=17.9, Engine=4.07) | Category: Sector-specific
+CANBK Mar 2018 ROE Difference = 28.40 (Source=17.9, Engine=-10.50) | Category: Sector-specific
+CANBK Mar 2019 ROE Difference = 16.05 (Source=17.9, Engine=1.85) | Category: Sector-specific
+CANBK Mar 2020 ROE Difference = 22.56 (Source=17.9, Engine=-4.66) | Category: Sector-specific
+CANBK Mar 2021 ROE Difference = 13.16 (Source=17.9, Engine=4.74) | Category: Sector-specific
+CANBK Mar 2022 ROE Difference = 9.10 (Source=17.9, Engine=8.80) | Category: Sector-specific
+CHOLAFIN Mar 2013 ROCE Difference = 6.40 (Source=10.4, Engine=4.00) | Category: Sector-specific
+CHOLAFIN Mar 2014 ROCE Difference = 5.82 (Source=10.4, Engine=4.58) | Category: Sector-specific
+CHOLAFIN Mar 2015 ROCE Difference = 5.71 (Source=10.4, Engine=4.69) | Category: Sector-specific
+CHOLAFIN Mar 2016 ROCE Difference = 5.57 (Source=10.4, Engine=4.83) | Category: Sector-specific
+CHOLAFIN Mar 2017 ROCE Difference = 5.74 (Source=10.4, Engine=4.66) | Category: Sector-specific
+CHOLAFIN Mar 2018 ROCE Difference = 7.06 (Source=10.4, Engine=3.34) | Category: Sector-specific
+CHOLAFIN Mar 2019 ROCE Difference = 7.53 (Source=10.4, Engine=2.87) | Category: Sector-specific
+CHOLAFIN Mar 2020 ROE Difference = 7.35 (Source=20.2, Engine=12.85) | Category: Sector-specific
+CHOLAFIN Mar 2020 ROCE Difference = 6.57 (Source=10.4, Engine=3.83) | Category: Sector-specific
+CHOLAFIN Mar 2021 ROCE Difference = 6.43 (Source=10.4, Engine=3.97) | Category: Sector-specific
+CHOLAFIN Mar 2022 ROCE Difference = 6.79 (Source=10.4, Engine=3.61) | Category: Sector-specific
+CHOLAFIN Mar 2023 ROCE Difference = 7.16 (Source=10.4, Engine=3.24) | Category: Sector-specific
+CHOLAFIN Mar 2024 ROCE Difference = 6.90 (Source=10.4, Engine=3.50) | Category: Sector-specific
+CIPLA Mar 2013 ROCE Difference = 37.94 (Source=22.8, Engine=60.74) | Category: Source data issue
+CIPLA Mar 2014 ROCE Difference = 48.23 (Source=22.8, Engine=71.03) | Category: Source data issue
+CIPLA Mar 2015 ROE Difference = 5.42 (Source=16.8, Engine=11.38) | Category: Source data issue
+CIPLA Mar 2015 ROCE Difference = 50.63 (Source=22.8, Engine=73.43) | Category: Source data issue
+CIPLA Mar 2016 ROCE Difference = 44.85 (Source=22.8, Engine=67.65) | Category: Source data issue
+CIPLA Mar 2017 ROE Difference = 8.55 (Source=16.8, Engine=8.25) | Category: Source data issue
+CIPLA Mar 2017 ROCE Difference = 48.63 (Source=22.8, Engine=71.43) | Category: Source data issue
+CIPLA Mar 2018 ROE Difference = 6.84 (Source=16.8, Engine=9.96) | Category: Source data issue
+CIPLA Mar 2018 ROCE Difference = 44.47 (Source=22.8, Engine=67.27) | Category: Source data issue
+CIPLA Mar 2019 ROE Difference = 6.86 (Source=16.8, Engine=9.94) | Category: Source data issue
+CIPLA Mar 2019 ROCE Difference = 45.83 (Source=22.8, Engine=68.63) | Category: Source data issue
+CIPLA Mar 2020 ROE Difference = 7.28 (Source=16.8, Engine=9.52) | Category: Source data issue
+CIPLA Mar 2020 ROCE Difference = 52.16 (Source=22.8, Engine=74.96) | Category: Source data issue
+CIPLA Mar 2021 ROCE Difference = 50.49 (Source=22.8, Engine=73.29) | Category: Source data issue
+CIPLA Mar 2022 ROCE Difference = 55.80 (Source=22.8, Engine=78.60) | Category: Source data issue
+CIPLA Mar 2023 ROCE Difference = 50.42 (Source=22.8, Engine=73.22) | Category: Source data issue
+CIPLA Mar 2024 ROCE Difference = 48.66 (Source=22.8, Engine=71.46) | Category: Source data issue
+COALINDIA Mar 2013 ROE Difference = 16.19 (Source=52.0, Engine=35.81) | Category: Source data issue
+COALINDIA Mar 2013 ROCE Difference = 37.28 (Source=63.6, Engine=100.88) | Category: Source data issue
+COALINDIA Mar 2014 ROE Difference = 16.36 (Source=52.0, Engine=35.64) | Category: Source data issue
+COALINDIA Mar 2014 ROCE Difference = 60.49 (Source=63.6, Engine=124.09) | Category: Source data issue
+COALINDIA Mar 2015 ROE Difference = 17.98 (Source=52.0, Engine=34.02) | Category: Source data issue
+COALINDIA Mar 2015 ROCE Difference = 75.69 (Source=63.6, Engine=139.29) | Category: Source data issue
+COALINDIA Mar 2016 ROE Difference = 11.04 (Source=52.0, Engine=40.96) | Category: Source data issue
+COALINDIA Mar 2016 ROCE Difference = 100.55 (Source=63.6, Engine=164.15) | Category: Formula discrepancy
+COALINDIA Mar 2017 ROE Difference = 14.15 (Source=52.0, Engine=37.85) | Category: Source data issue
+COALINDIA Mar 2017 ROCE Difference = 175.09 (Source=63.6, Engine=238.69) | Category: Formula discrepancy
+COALINDIA Mar 2018 ROE Difference = 17.12 (Source=52.0, Engine=34.88) | Category: Source data issue
+COALINDIA Mar 2018 ROCE Difference = 286.17 (Source=63.6, Engine=349.77) | Category: Formula discrepancy
+COALINDIA Mar 2019 ROE Difference = 14.01 (Source=52.0, Engine=66.01) | Category: Source data issue
+COALINDIA Mar 2019 ROCE Difference = 196.57 (Source=63.6, Engine=260.17) | Category: Formula discrepancy
+COALINDIA Mar 2020 ROCE Difference = 129.45 (Source=63.6, Engine=193.05) | Category: Formula discrepancy
+COALINDIA Mar 2021 ROE Difference = 17.22 (Source=52.0, Engine=34.78) | Category: Source data issue
+COALINDIA Mar 2021 ROCE Difference = 104.78 (Source=63.6, Engine=168.38) | Category: Formula discrepancy
+COALINDIA Mar 2022 ROE Difference = 11.72 (Source=52.0, Engine=40.28) | Category: Source data issue
+COALINDIA Mar 2022 ROCE Difference = 118.57 (Source=63.6, Engine=182.17) | Category: Formula discrepancy
+COALINDIA Mar 2023 ROCE Difference = 80.66 (Source=63.6, Engine=144.26) | Category: Source data issue
+COALINDIA Mar 2024 ROE Difference = 6.83 (Source=52.0, Engine=45.17) | Category: Source data issue
+COALINDIA Mar 2024 ROCE Difference = 42.11 (Source=63.6, Engine=105.71) | Category: Source data issue
+DABUR Mar 2013 ROE Difference = 17.36 (Source=19.2, Engine=36.56) | Category: Source data issue
+DABUR Mar 2013 ROCE Difference = 8.26 (Source=22.3, Engine=30.56) | Category: Source data issue
+DABUR Mar 2014 ROE Difference = 15.29 (Source=19.2, Engine=34.49) | Category: Source data issue
+DABUR Mar 2014 ROCE Difference = 12.24 (Source=22.3, Engine=34.54) | Category: Source data issue
+DABUR Mar 2015 ROE Difference = 12.64 (Source=19.2, Engine=31.84) | Category: Source data issue
+DABUR Mar 2015 ROCE Difference = 9.99 (Source=22.3, Engine=32.29) | Category: Source data issue
+DABUR Mar 2016 ROE Difference = 10.86 (Source=19.2, Engine=30.06) | Category: Source data issue
+DABUR Mar 2016 ROCE Difference = 8.21 (Source=22.3, Engine=30.51) | Category: Source data issue
+DABUR Mar 2017 ROE Difference = 7.21 (Source=19.2, Engine=26.41) | Category: Source data issue
+DABUR Mar 2019 ROE Difference = 6.47 (Source=19.2, Engine=25.67) | Category: Source data issue
+DABUR Mar 2019 ROCE Difference = 5.18 (Source=22.3, Engine=27.48) | Category: Source data issue
+DIVISLAB Mar 2013 ROE Difference = 11.87 (Source=12.2, Engine=24.07) | Category: Source data issue
+DIVISLAB Mar 2013 ROCE Difference = 15.70 (Source=16.5, Engine=32.20) | Category: Source data issue
+DIVISLAB Mar 2014 ROE Difference = 13.88 (Source=12.2, Engine=26.08) | Category: Source data issue
+DIVISLAB Mar 2014 ROCE Difference = 17.64 (Source=16.5, Engine=34.14) | Category: Source data issue
+DIVISLAB Mar 2015 ROE Difference = 12.17 (Source=12.2, Engine=24.37) | Category: Source data issue
+DIVISLAB Mar 2015 ROCE Difference = 16.80 (Source=16.5, Engine=33.30) | Category: Source data issue
+DIVISLAB Mar 2016 ROE Difference = 14.03 (Source=12.2, Engine=26.23) | Category: Source data issue
+DIVISLAB Mar 2016 ROCE Difference = 16.33 (Source=16.5, Engine=32.83) | Category: Source data issue
+DIVISLAB Mar 2017 ROE Difference = 7.59 (Source=12.2, Engine=19.79) | Category: Source data issue
+DIVISLAB Mar 2017 ROCE Difference = 10.39 (Source=16.5, Engine=26.89) | Category: Source data issue
+DIVISLAB Mar 2019 ROE Difference = 7.25 (Source=12.2, Engine=19.45) | Category: Source data issue
+DIVISLAB Mar 2019 ROCE Difference = 10.03 (Source=16.5, Engine=26.53) | Category: Source data issue
+DIVISLAB Mar 2020 ROE Difference = 6.64 (Source=12.2, Engine=18.84) | Category: Source data issue
+DIVISLAB Mar 2020 ROCE Difference = 8.35 (Source=16.5, Engine=24.85) | Category: Source data issue
+DIVISLAB Mar 2021 ROE Difference = 9.14 (Source=12.2, Engine=21.34) | Category: Source data issue
+DIVISLAB Mar 2021 ROCE Difference = 14.33 (Source=16.5, Engine=30.83) | Category: Source data issue
+DIVISLAB Mar 2022 ROE Difference = 13.04 (Source=12.2, Engine=25.24) | Category: Source data issue
+DIVISLAB Mar 2022 ROCE Difference = 16.61 (Source=16.5, Engine=33.11) | Category: Source data issue
+DLF Mar 2015 ROE Difference = 5.10 (Source=6.95, Engine=1.85) | Category: Source data issue
+DLF Mar 2016 ROE Difference = 5.68 (Source=6.95, Engine=1.27) | Category: Source data issue
+DLF Mar 2018 ROE Difference = 5.73 (Source=6.95, Engine=12.68) | Category: Source data issue
+DLF Mar 2020 ROE Difference = 8.66 (Source=6.95, Engine=-1.71) | Category: Source data issue
+DMART Mar 2016 ROE Difference = 6.54 (Source=14.5, Engine=21.04) | Category: Source data issue
+DMART Mar 2016 ROCE Difference = 5.07 (Source=19.4, Engine=24.47) | Category: Source data issue
+DMART Mar 2018 ROCE Difference = 7.09 (Source=19.4, Engine=26.49) | Category: Source data issue
+DMART Mar 2019 ROCE Difference = 6.57 (Source=19.4, Engine=25.97) | Category: Source data issue
+DMART Mar 2021 ROE Difference = 5.48 (Source=14.5, Engine=9.02) | Category: Source data issue
+DMART Mar 2021 ROCE Difference = 5.53 (Source=19.4, Engine=13.87) | Category: Source data issue
+DRREDDY Mar 2017 ROE Difference = 10.86 (Source=21.4, Engine=10.54) | Category: Source data issue
+DRREDDY Mar 2017 ROCE Difference = 12.11 (Source=26.5, Engine=14.39) | Category: Source data issue
+DRREDDY Mar 2018 ROE Difference = 13.87 (Source=21.4, Engine=7.53) | Category: Source data issue
+DRREDDY Mar 2018 ROCE Difference = 13.17 (Source=26.5, Engine=13.33) | Category: Source data issue
+DRREDDY Mar 2019 ROE Difference = 7.50 (Source=21.4, Engine=13.90) | Category: Source data issue
+DRREDDY Mar 2019 ROCE Difference = 8.71 (Source=26.5, Engine=17.79) | Category: Source data issue
+DRREDDY Mar 2020 ROE Difference = 8.41 (Source=21.4, Engine=12.99) | Category: Source data issue
+DRREDDY Mar 2020 ROCE Difference = 12.59 (Source=26.5, Engine=13.91) | Category: Source data issue
+DRREDDY Mar 2021 ROE Difference = 10.33 (Source=21.4, Engine=11.07) | Category: Source data issue
+DRREDDY Mar 2021 ROCE Difference = 7.76 (Source=26.5, Engine=18.74) | Category: Source data issue
+DRREDDY Mar 2022 ROE Difference = 10.04 (Source=21.4, Engine=11.36) | Category: Source data issue
+DRREDDY Mar 2022 ROCE Difference = 9.82 (Source=26.5, Engine=16.68) | Category: Source data issue
+EICHERMOT Dec 2014 ROCE Difference = 12.33 (Source=31.1, Engine=43.43) | Category: Source data issue
+EICHERMOT Mar 2016 ROE Difference = 12.43 (Source=24.2, Engine=36.63) | Category: Source data issue
+EICHERMOT Mar 2016 ROCE Difference = 14.87 (Source=31.1, Engine=45.97) | Category: Source data issue
+EICHERMOT Mar 2017 ROE Difference = 6.99 (Source=24.2, Engine=31.19) | Category: Source data issue
+EICHERMOT Mar 2017 ROCE Difference = 8.74 (Source=31.1, Engine=39.84) | Category: Source data issue
+EICHERMOT Mar 2018 ROCE Difference = 8.02 (Source=31.1, Engine=39.12) | Category: Source data issue
+EICHERMOT Mar 2020 ROE Difference = 5.90 (Source=24.2, Engine=18.30) | Category: Source data issue
+EICHERMOT Mar 2020 ROCE Difference = 9.76 (Source=31.1, Engine=21.34) | Category: Source data issue
+EICHERMOT Mar 2021 ROE Difference = 12.42 (Source=24.2, Engine=11.78) | Category: Source data issue
+EICHERMOT Mar 2021 ROCE Difference = 15.80 (Source=31.1, Engine=15.30) | Category: Source data issue
+EICHERMOT Mar 2022 ROE Difference = 10.90 (Source=24.2, Engine=13.30) | Category: Source data issue
+EICHERMOT Mar 2022 ROCE Difference = 13.97 (Source=31.1, Engine=17.13) | Category: Source data issue
+EICHERMOT Mar 2023 ROCE Difference = 8.54 (Source=31.1, Engine=22.56) | Category: Source data issue
+EICHERMOT Mar 2024 ROCE Difference = 7.65 (Source=31.1, Engine=23.45) | Category: Source data issue
+GAIL Mar 2016 ROE Difference = 8.85 (Source=14.0, Engine=5.15) | Category: Source data issue
+GAIL Mar 2017 ROE Difference = 5.42 (Source=14.0, Engine=8.58) | Category: Source data issue
+GAIL Mar 2019 ROCE Difference = 5.91 (Source=14.7, Engine=20.61) | Category: Source data issue
+GAIL Mar 2020 ROE Difference = 5.31 (Source=14.0, Engine=19.31) | Category: Source data issue
+GAIL Mar 2022 ROE Difference = 5.19 (Source=14.0, Engine=19.19) | Category: Source data issue
+GAIL Mar 2022 ROCE Difference = 5.98 (Source=14.7, Engine=20.68) | Category: Source data issue
+GAIL Mar 2023 ROE Difference = 5.38 (Source=14.0, Engine=8.62) | Category: Source data issue
+GAIL Mar 2023 ROCE Difference = 5.64 (Source=14.7, Engine=9.06) | Category: Source data issue
+GODREJCP Mar 2013 ROE Difference = 18.74 (Source=6.77, Engine=25.51) | Category: Source data issue
+GODREJCP Mar 2013 ROCE Difference = 9.24 (Source=26.49, Engine=17.25) | Category: Source data issue
+GODREJCP Mar 2014 ROE Difference = 14.93 (Source=6.77, Engine=21.70) | Category: Source data issue
+GODREJCP Mar 2014 ROCE Difference = 7.48 (Source=26.49, Engine=19.01) | Category: Source data issue
+GODREJCP Mar 2015 ROE Difference = 15.87 (Source=6.77, Engine=22.64) | Category: Source data issue
+GODREJCP Mar 2015 ROCE Difference = 6.87 (Source=26.49, Engine=19.62) | Category: Source data issue
+GODREJCP Mar 2016 ROE Difference = 12.71 (Source=6.77, Engine=19.48) | Category: Source data issue
+GODREJCP Mar 2017 ROE Difference = 17.90 (Source=6.77, Engine=24.67) | Category: Source data issue
+GODREJCP Mar 2017 ROCE Difference = 5.99 (Source=26.49, Engine=20.50) | Category: Source data issue
+GODREJCP Mar 2018 ROE Difference = 19.34 (Source=6.77, Engine=26.11) | Category: Source data issue
+GODREJCP Mar 2018 ROCE Difference = 5.15 (Source=26.49, Engine=21.34) | Category: Source data issue
+GODREJCP Mar 2019 ROE Difference = 25.46 (Source=6.77, Engine=32.23) | Category: Source data issue
+GODREJCP Mar 2019 ROCE Difference = 6.47 (Source=26.49, Engine=20.02) | Category: Source data issue
+GODREJCP Mar 2020 ROE Difference = 12.18 (Source=6.77, Engine=18.95) | Category: Source data issue
+GODREJCP Mar 2020 ROCE Difference = 7.72 (Source=26.49, Engine=18.77) | Category: Source data issue
+GODREJCP Mar 2021 ROE Difference = 11.46 (Source=6.77, Engine=18.23) | Category: Source data issue
+GODREJCP Mar 2021 ROCE Difference = 5.27 (Source=26.49, Engine=21.22) | Category: Source data issue
+GODREJCP Mar 2022 ROE Difference = 8.66 (Source=6.77, Engine=15.43) | Category: Source data issue
+GODREJCP Mar 2022 ROCE Difference = 8.32 (Source=26.49, Engine=18.17) | Category: Source data issue
+GODREJCP Mar 2023 ROE Difference = 5.57 (Source=6.77, Engine=12.34) | Category: Source data issue
+GODREJCP Mar 2023 ROCE Difference = 10.12 (Source=26.49, Engine=16.37) | Category: Source data issue
+GODREJCP Mar 2024 ROE Difference = 11.22 (Source=6.77, Engine=-4.45) | Category: Source data issue
+GODREJCP Mar 2024 ROCE Difference = 7.80 (Source=26.49, Engine=18.69) | Category: Source data issue
+GRASIM Mar 2013 ROE Difference = 12.32 (Source=6.9, Engine=19.22) | Category: Source data issue
+GRASIM Mar 2013 ROCE Difference = 10.98 (Source=9.3, Engine=20.28) | Category: Source data issue
+GRASIM Mar 2014 ROE Difference = 6.77 (Source=6.9, Engine=13.67) | Category: Source data issue
+GRASIM Mar 2014 ROCE Difference = 6.40 (Source=9.3, Engine=15.70) | Category: Source data issue
+GRASIM Mar 2015 ROCE Difference = 5.37 (Source=9.3, Engine=14.67) | Category: Source data issue
+GRASIM Mar 2016 ROE Difference = 5.70 (Source=6.9, Engine=12.60) | Category: Source data issue
+GRASIM Mar 2016 ROCE Difference = 5.50 (Source=9.3, Engine=14.80) | Category: Source data issue
+GRASIM Mar 2017 ROE Difference = 6.63 (Source=6.9, Engine=13.53) | Category: Source data issue
+GRASIM Mar 2017 ROCE Difference = 8.89 (Source=9.3, Engine=18.19) | Category: Source data issue
+GRASIM Mar 2022 ROE Difference = 7.90 (Source=6.9, Engine=14.80) | Category: Source data issue
+GRASIM Mar 2023 ROE Difference = 7.17 (Source=6.9, Engine=14.07) | Category: Source data issue
+HAL Mar 2017 ROE Difference = 1938.02 (Source=28.9, Engine=1966.92) | Category: Formula discrepancy
+HAL Mar 2017 ROCE Difference = 2358.14 (Source=38.9, Engine=2397.04) | Category: Formula discrepancy
+HAL Mar 2018 ROE Difference = 1499.56 (Source=28.9, Engine=1528.46) | Category: Formula discrepancy
+HAL Mar 2018 ROCE Difference = 2562.60 (Source=38.9, Engine=2601.50) | Category: Formula discrepancy
+HAL Mar 2019 ROE Difference = 1735.01 (Source=28.9, Engine=1763.91) | Category: Formula discrepancy
+HAL Mar 2019 ROCE Difference = 3201.53 (Source=38.9, Engine=3240.43) | Category: Formula discrepancy
+HAL Mar 2020 ROE Difference = 2030.52 (Source=28.9, Engine=2059.42) | Category: Formula discrepancy
+HAL Mar 2020 ROCE Difference = 3446.81 (Source=38.9, Engine=3485.71) | Category: Formula discrepancy
+HAL Mar 2021 ROE Difference = 2220.41 (Source=28.9, Engine=2249.31) | Category: Formula discrepancy
+HAL Mar 2021 ROCE Difference = 3521.77 (Source=38.9, Engine=3560.67) | Category: Formula discrepancy
+HAL Mar 2022 ROE Difference = 3295.28 (Source=28.9, Engine=3324.18) | Category: Formula discrepancy
+HAL Mar 2022 ROCE Difference = 3245.95 (Source=38.9, Engine=3284.85) | Category: Formula discrepancy
+HAL Mar 2023 ROE Difference = 3254.15 (Source=28.9, Engine=3283.05) | Category: Formula discrepancy
+HAL Mar 2023 ROCE Difference = 2938.33 (Source=38.9, Engine=2977.23) | Category: Formula discrepancy
+HAL Mar 2024 ROE Difference = 3787.68 (Source=28.9, Engine=3816.58) | Category: Formula discrepancy
+HAL Mar 2024 ROCE Difference = 2988.74 (Source=38.9, Engine=3027.64) | Category: Formula discrepancy
+HAVELLS Mar 2013 ROE Difference = 22.29 (Source=18.0, Engine=40.29) | Category: Source data issue
+HAVELLS Mar 2014 ROE Difference = 8.77 (Source=18.0, Engine=26.77) | Category: Source data issue
+HAVELLS Mar 2015 ROCE Difference = 9.28 (Source=24.4, Engine=33.68) | Category: Source data issue
+HAVELLS Mar 2016 ROE Difference = 24.95 (Source=18.0, Engine=42.95) | Category: Source data issue
+HCLTECH Jun 2013 ROE Difference = 7.39 (Source=23.3, Engine=30.69) | Category: Source data issue
+HCLTECH Jun 2013 ROCE Difference = 10.38 (Source=29.6, Engine=39.98) | Category: Source data issue
+HCLTECH Jun 2014 ROE Difference = 10.09 (Source=23.3, Engine=33.39) | Category: Source data issue
+HCLTECH Jun 2014 ROCE Difference = 9.47 (Source=29.6, Engine=39.07) | Category: Source data issue
+HCLTECH Jun 2015 ROE Difference = 7.01 (Source=23.3, Engine=30.31) | Category: Source data issue
+HDFCBANK Mar 2023 ROCE Difference = 5.07 (Source=7.67, Engine=2.60) | Category: Sector-specific
+HDFCLIFE Mar 2013 ROE Difference = 22.03 (Source=11.4, Engine=33.43) | Category: Sector-specific
+HDFCLIFE Mar 2013 ROCE Difference = 1005.73 (Source=6.61, Engine=1012.34) | Category: Sector-specific
+HDFCLIFE Mar 2014 ROE Difference = 26.20 (Source=11.4, Engine=37.60) | Category: Sector-specific
+HDFCLIFE Mar 2014 ROCE Difference = 852.36 (Source=6.61, Engine=858.97) | Category: Sector-specific
+HDFCLIFE Mar 2015 ROE Difference = 19.53 (Source=11.4, Engine=30.93) | Category: Sector-specific
+HDFCLIFE Mar 2015 ROCE Difference = 1030.03 (Source=6.61, Engine=1036.64) | Category: Sector-specific
+HDFCLIFE Mar 2016 ROE Difference = 14.93 (Source=11.4, Engine=26.33) | Category: Sector-specific
+HDFCLIFE Mar 2016 ROCE Difference = 547.27 (Source=6.61, Engine=553.88) | Category: Sector-specific
+HDFCLIFE Mar 2017 ROE Difference = 11.78 (Source=11.4, Engine=23.18) | Category: Sector-specific
+HDFCLIFE Mar 2017 ROCE Difference = 768.98 (Source=6.61, Engine=775.59) | Category: Sector-specific
+HDFCLIFE Mar 2018 ROE Difference = 12.13 (Source=11.4, Engine=23.53) | Category: Sector-specific
+HDFCLIFE Mar 2018 ROCE Difference = 656.22 (Source=6.61, Engine=662.83) | Category: Sector-specific
+HDFCLIFE Mar 2019 ROE Difference = 11.25 (Source=11.4, Engine=22.65) | Category: Sector-specific
+HDFCLIFE Mar 2019 ROCE Difference = 660.53 (Source=6.61, Engine=667.14) | Category: Sector-specific
+HDFCLIFE Mar 2020 ROE Difference = 7.65 (Source=11.4, Engine=19.05) | Category: Sector-specific
+HDFCLIFE Mar 2020 ROCE Difference = 408.24 (Source=6.61, Engine=414.85) | Category: Sector-specific
+HDFCLIFE Mar 2021 ROCE Difference = 754.15 (Source=6.61, Engine=760.76) | Category: Sector-specific
+HDFCLIFE Mar 2022 ROCE Difference = 402.59 (Source=6.61, Engine=409.20) | Category: Sector-specific
+HDFCLIFE Mar 2023 ROCE Difference = 496.34 (Source=6.61, Engine=502.95) | Category: Sector-specific
+HDFCLIFE Mar 2024 ROCE Difference = 639.85 (Source=6.61, Engine=646.46) | Category: Sector-specific
+HEROMOTOCO Mar 2014 ROE Difference = 15.38 (Source=22.0, Engine=37.38) | Category: Source data issue
+HEROMOTOCO Mar 2014 ROCE Difference = 338.63 (Source=29.1, Engine=367.73) | Category: Formula discrepancy
+HEROMOTOCO Mar 2015 ROE Difference = 14.15 (Source=22.0, Engine=36.15) | Category: Source data issue
+HEROMOTOCO Mar 2015 ROCE Difference = 332.62 (Source=29.1, Engine=361.72) | Category: Formula discrepancy
+HEROMOTOCO Mar 2016 ROE Difference = 13.23 (Source=22.0, Engine=35.23) | Category: Source data issue
+HEROMOTOCO Mar 2016 ROCE Difference = 235.99 (Source=29.1, Engine=265.09) | Category: Formula discrepancy
+HEROMOTOCO Mar 2017 ROE Difference = 12.37 (Source=22.0, Engine=34.37) | Category: Source data issue
+HEROMOTOCO Mar 2017 ROCE Difference = 198.04 (Source=29.1, Engine=227.14) | Category: Formula discrepancy
+HEROMOTOCO Mar 2018 ROE Difference = 9.09 (Source=22.0, Engine=31.09) | Category: Source data issue
+HEROMOTOCO Mar 2018 ROCE Difference = 193.23 (Source=29.1, Engine=222.33) | Category: Formula discrepancy
+HEROMOTOCO Mar 2019 ROCE Difference = 186.40 (Source=29.1, Engine=215.50) | Category: Formula discrepancy
+HEROMOTOCO Mar 2020 ROCE Difference = 140.39 (Source=29.1, Engine=169.49) | Category: Formula discrepancy
+HEROMOTOCO Mar 2021 ROCE Difference = 139.04 (Source=29.1, Engine=168.14) | Category: Formula discrepancy
+HEROMOTOCO Mar 2022 ROE Difference = 7.30 (Source=22.0, Engine=14.70) | Category: Source data issue
+HEROMOTOCO Mar 2022 ROCE Difference = 130.73 (Source=29.1, Engine=159.83) | Category: Formula discrepancy
+HEROMOTOCO Mar 2023 ROE Difference = 5.19 (Source=22.0, Engine=16.81) | Category: Source data issue
+HEROMOTOCO Mar 2023 ROCE Difference = 145.42 (Source=29.1, Engine=174.52) | Category: Formula discrepancy
+HEROMOTOCO Mar 2024 ROCE Difference = 148.74 (Source=29.1, Engine=177.84) | Category: Formula discrepancy
+HINDALCO Mar 2013 ROCE Difference = 67.26 (Source=11.3, Engine=78.56) | Category: Source data issue
+HINDALCO Mar 2014 ROCE Difference = 64.32 (Source=11.3, Engine=75.62) | Category: Source data issue
+HINDALCO Mar 2015 ROE Difference = 9.52 (Source=10.2, Engine=0.68) | Category: Source data issue
+HINDALCO Mar 2015 ROCE Difference = 78.06 (Source=11.3, Engine=89.36) | Category: Source data issue
+HINDALCO Mar 2016 ROE Difference = 11.93 (Source=10.2, Engine=-1.73) | Category: Source data issue
+HINDALCO Mar 2016 ROCE Difference = 72.82 (Source=11.3, Engine=84.12) | Category: Source data issue
+HINDALCO Mar 2017 ROE Difference = 6.11 (Source=10.2, Engine=4.09) | Category: Source data issue
+HINDALCO Mar 2017 ROCE Difference = 68.67 (Source=11.3, Engine=79.97) | Category: Source data issue
+HINDALCO Mar 2018 ROCE Difference = 83.61 (Source=11.3, Engine=94.91) | Category: Source data issue
+HINDALCO Mar 2019 ROCE Difference = 93.35 (Source=11.3, Engine=104.65) | Category: Source data issue
+HINDALCO Mar 2020 ROCE Difference = 70.65 (Source=11.3, Engine=81.95) | Category: Source data issue
+HINDALCO Mar 2021 ROCE Difference = 74.28 (Source=11.3, Engine=85.58) | Category: Source data issue
+HINDALCO Mar 2022 ROE Difference = 7.36 (Source=10.2, Engine=17.56) | Category: Source data issue
+HINDALCO Mar 2022 ROCE Difference = 105.55 (Source=11.3, Engine=116.85) | Category: Formula discrepancy
+HINDALCO Mar 2023 ROCE Difference = 118.00 (Source=11.3, Engine=129.30) | Category: Formula discrepancy
+HINDALCO Mar 2024 ROCE Difference = 106.91 (Source=11.3, Engine=118.21) | Category: Formula discrepancy
+HINDUNILVR Mar 2013 ROE Difference = 113.80 (Source=20.2, Engine=134.00) | Category: Formula discrepancy
+HINDUNILVR Mar 2013 ROCE Difference = 761.17 (Source=27.2, Engine=788.37) | Category: Formula discrepancy
+HINDUNILVR Mar 2014 ROE Difference = 91.65 (Source=20.2, Engine=111.85) | Category: Source data issue
+HINDUNILVR Mar 2014 ROCE Difference = 655.89 (Source=27.2, Engine=683.09) | Category: Formula discrepancy
+HINDUNILVR Mar 2015 ROE Difference = 88.47 (Source=20.2, Engine=108.67) | Category: Source data issue
+HINDUNILVR Mar 2015 ROCE Difference = 625.38 (Source=27.2, Engine=652.58) | Category: Formula discrepancy
+HINDUNILVR Mar 2016 ROE Difference = 42.95 (Source=20.2, Engine=63.15) | Category: Source data issue
+HINDUNILVR Mar 2016 ROCE Difference = 362.07 (Source=27.2, Engine=389.27) | Category: Formula discrepancy
+HINDUNILVR Mar 2017 ROE Difference = 46.38 (Source=20.2, Engine=66.58) | Category: Source data issue
+HINDUNILVR Mar 2017 ROCE Difference = 355.00 (Source=27.2, Engine=382.20) | Category: Formula discrepancy
+HINDUNILVR Mar 2018 ROE Difference = 51.59 (Source=20.2, Engine=71.79) | Category: Source data issue
+HINDUNILVR Mar 2018 ROCE Difference = 357.99 (Source=27.2, Engine=385.19) | Category: Formula discrepancy
+HINDUNILVR Mar 2019 ROE Difference = 56.83 (Source=20.2, Engine=77.03) | Category: Source data issue
+HINDUNILVR Mar 2019 ROCE Difference = 354.80 (Source=27.2, Engine=382.00) | Category: Formula discrepancy
+HINDUNILVR Mar 2020 ROE Difference = 61.90 (Source=20.2, Engine=82.10) | Category: Source data issue
+HINDUNILVR Mar 2020 ROCE Difference = 336.42 (Source=27.2, Engine=363.62) | Category: Formula discrepancy
+HINDUNILVR Mar 2021 ROCE Difference = 47.06 (Source=27.2, Engine=74.26) | Category: Source data issue
+HINDUNILVR Mar 2022 ROCE Difference = 51.81 (Source=27.2, Engine=79.01) | Category: Source data issue
+HINDUNILVR Mar 2023 ROCE Difference = 62.92 (Source=27.2, Engine=90.12) | Category: Source data issue
+HINDUNILVR Mar 2024 ROCE Difference = 62.43 (Source=27.2, Engine=89.63) | Category: Source data issue
+ICICIBANK Mar 2016 ROE Difference = 7.19 (Source=18.8, Engine=11.61) | Category: Sector-specific
+ICICIBANK Mar 2017 ROE Difference = 7.96 (Source=18.8, Engine=10.84) | Category: Sector-specific
+ICICIBANK Mar 2018 ROE Difference = 10.57 (Source=18.8, Engine=8.23) | Category: Sector-specific
+ICICIBANK Mar 2019 ROE Difference = 13.82 (Source=18.8, Engine=4.98) | Category: Sector-specific
+ICICIBANK Mar 2020 ROE Difference = 9.67 (Source=18.8, Engine=9.13) | Category: Sector-specific
+ICICIBANK Mar 2021 ROE Difference = 5.88 (Source=18.8, Engine=12.92) | Category: Sector-specific
+ICICIGI Mar 2013 ROCE Difference = 201.62 (Source=22.5, Engine=224.12) | Category: Sector-specific
+ICICIGI Mar 2014 ROCE Difference = 168.73 (Source=22.5, Engine=191.23) | Category: Sector-specific
+ICICIGI Mar 2015 ROCE Difference = 131.90 (Source=22.5, Engine=154.40) | Category: Sector-specific
+ICICIGI Mar 2016 ROCE Difference = 140.27 (Source=22.5, Engine=162.77) | Category: Sector-specific
+ICICIGI Mar 2017 ROCE Difference = 128.00 (Source=22.5, Engine=150.50) | Category: Sector-specific
+ICICIGI Mar 2018 ROCE Difference = 120.24 (Source=22.5, Engine=142.74) | Category: Sector-specific
+ICICIGI Mar 2019 ROCE Difference = 138.83 (Source=22.5, Engine=161.33) | Category: Sector-specific
+ICICIGI Mar 2020 ROCE Difference = 124.73 (Source=22.5, Engine=147.23) | Category: Sector-specific
+ICICIGI Mar 2021 ROCE Difference = 102.31 (Source=22.5, Engine=124.81) | Category: Sector-specific
+ICICIGI Mar 2022 ROCE Difference = 136.37 (Source=22.5, Engine=158.87) | Category: Sector-specific
+ICICIGI Mar 2023 ROCE Difference = 136.03 (Source=22.5, Engine=158.53) | Category: Sector-specific
+ICICIGI Mar 2024 ROCE Difference = 123.82 (Source=22.5, Engine=146.32) | Category: Sector-specific
+ICICIPRULI Mar 2013 ROE Difference = 30.18 (Source=8.07, Engine=38.25) | Category: Sector-specific
+ICICIPRULI Mar 2013 ROCE Difference = 478.00 (Source=8.75, Engine=486.75) | Category: Sector-specific
+ICICIPRULI Mar 2014 ROE Difference = 27.54 (Source=8.07, Engine=35.61) | Category: Sector-specific
+ICICIPRULI Mar 2014 ROCE Difference = 456.32 (Source=8.75, Engine=465.07) | Category: Sector-specific
+ICICIPRULI Mar 2015 ROE Difference = 23.08 (Source=8.07, Engine=31.15) | Category: Sector-specific
+ICICIPRULI Mar 2015 ROCE Difference = 614.19 (Source=8.75, Engine=622.94) | Category: Sector-specific
+ICICIPRULI Mar 2016 ROE Difference = 22.93 (Source=8.07, Engine=31.00) | Category: Sector-specific
+ICICIPRULI Mar 2016 ROCE Difference = 290.49 (Source=8.75, Engine=299.24) | Category: Sector-specific
+ICICIPRULI Mar 2017 ROE Difference = 18.19 (Source=8.07, Engine=26.26) | Category: Sector-specific
+ICICIPRULI Mar 2017 ROCE Difference = 553.38 (Source=8.75, Engine=562.13) | Category: Sector-specific
+ICICIPRULI Mar 2018 ROE Difference = 16.56 (Source=8.07, Engine=24.63) | Category: Sector-specific
+ICICIPRULI Mar 2018 ROCE Difference = 555.02 (Source=8.75, Engine=563.77) | Category: Sector-specific
+ICICIPRULI Mar 2019 ROE Difference = 8.51 (Source=8.07, Engine=16.58) | Category: Sector-specific
+ICICIPRULI Mar 2019 ROCE Difference = 586.83 (Source=8.75, Engine=595.58) | Category: Sector-specific
+ICICIPRULI Mar 2020 ROE Difference = 6.72 (Source=8.07, Engine=14.79) | Category: Sector-specific
+ICICIPRULI Mar 2020 ROCE Difference = 287.16 (Source=8.75, Engine=295.91) | Category: Sector-specific
+ICICIPRULI Mar 2021 ROCE Difference = 801.92 (Source=8.75, Engine=810.67) | Category: Sector-specific
+ICICIPRULI Mar 2022 ROCE Difference = 625.81 (Source=8.75, Engine=634.56) | Category: Sector-specific
+ICICIPRULI Mar 2023 ROCE Difference = 453.92 (Source=8.75, Engine=462.67) | Category: Sector-specific
+ICICIPRULI Mar 2024 ROCE Difference = 746.15 (Source=8.75, Engine=754.90) | Category: Sector-specific
+INDUSINDBK Mar 2013 ROCE Difference = 5.20 (Source=7.93, Engine=2.73) | Category: Sector-specific
+INDUSINDBK Mar 2021 ROE Difference = 8.66 (Source=15.2, Engine=6.54) | Category: Sector-specific
+INDUSINDBK Mar 2022 ROE Difference = 5.53 (Source=15.2, Engine=9.67) | Category: Sector-specific
+INFY Mar 2013 ROE Difference = 6.98 (Source=31.8, Engine=24.82) | Category: Source data issue
+INFY Mar 2013 ROCE Difference = 9.63 (Source=40.0, Engine=30.37) | Category: Source data issue
+INFY Mar 2014 ROE Difference = 7.87 (Source=31.8, Engine=23.93) | Category: Source data issue
+INFY Mar 2014 ROCE Difference = 9.93 (Source=40.0, Engine=30.07) | Category: Source data issue
+INFY Mar 2015 ROE Difference = 7.41 (Source=31.8, Engine=24.39) | Category: Source data issue
+INFY Mar 2015 ROCE Difference = 10.67 (Source=40.0, Engine=29.33) | Category: Source data issue
+INFY Mar 2016 ROE Difference = 9.95 (Source=31.8, Engine=21.85) | Category: Source data issue
+INFY Mar 2016 ROCE Difference = 12.34 (Source=40.0, Engine=27.66) | Category: Source data issue
+INFY Mar 2017 ROE Difference = 10.99 (Source=31.8, Engine=20.81) | Category: Source data issue
+INFY Mar 2017 ROCE Difference = 13.03 (Source=40.0, Engine=26.97) | Category: Source data issue
+INFY Mar 2018 ROE Difference = 7.11 (Source=31.8, Engine=24.69) | Category: Source data issue
+INFY Mar 2018 ROCE Difference = 11.01 (Source=40.0, Engine=28.99) | Category: Source data issue
+INFY Mar 2019 ROE Difference = 8.07 (Source=31.8, Engine=23.73) | Category: Source data issue
+INFY Mar 2019 ROCE Difference = 8.94 (Source=40.0, Engine=31.06) | Category: Source data issue
+INFY Mar 2020 ROE Difference = 6.38 (Source=31.8, Engine=25.42) | Category: Source data issue
+INFY Mar 2020 ROCE Difference = 8.23 (Source=40.0, Engine=31.77) | Category: Source data issue
+INFY Mar 2021 ROE Difference = 6.36 (Source=31.8, Engine=25.44) | Category: Source data issue
+INFY Mar 2021 ROCE Difference = 5.85 (Source=40.0, Engine=34.15) | Category: Source data issue
+IOC Mar 2013 ROE Difference = 19.69 (Source=25.44, Engine=5.75) | Category: Source data issue
+IOC Mar 2013 ROCE Difference = 12.23 (Source=21.31, Engine=9.08) | Category: Source data issue
+IOC Mar 2014 ROE Difference = 15.18 (Source=25.44, Engine=10.26) | Category: Source data issue
+IOC Mar 2014 ROCE Difference = 10.73 (Source=21.31, Engine=10.58) | Category: Source data issue
+IOC Mar 2015 ROE Difference = 18.36 (Source=25.44, Engine=7.08) | Category: Source data issue
+IOC Mar 2015 ROCE Difference = 13.40 (Source=21.31, Engine=7.91) | Category: Source data issue
+IOC Mar 2016 ROE Difference = 11.64 (Source=25.44, Engine=13.80) | Category: Source data issue
+IOC Mar 2016 ROCE Difference = 6.47 (Source=21.31, Engine=14.84) | Category: Source data issue
+IOC Mar 2017 ROE Difference = 5.47 (Source=25.44, Engine=19.97) | Category: Source data issue
+IOC Mar 2018 ROE Difference = 5.57 (Source=25.44, Engine=19.87) | Category: Source data issue
+IOC Mar 2019 ROE Difference = 10.08 (Source=25.44, Engine=15.36) | Category: Source data issue
+IOC Mar 2020 ROE Difference = 27.41 (Source=25.44, Engine=-1.97) | Category: Source data issue
+IOC Mar 2020 ROCE Difference = 14.18 (Source=21.31, Engine=7.13) | Category: Source data issue
+IOC Mar 2021 ROE Difference = 5.98 (Source=25.44, Engine=19.46) | Category: Source data issue
+IOC Mar 2022 ROE Difference = 6.17 (Source=25.44, Engine=19.27) | Category: Source data issue
+IOC Mar 2023 ROE Difference = 17.06 (Source=25.44, Engine=8.38) | Category: Source data issue
+IOC Mar 2023 ROCE Difference = 10.68 (Source=21.31, Engine=10.63) | Category: Source data issue
+IRCTC Mar 2015 ROE Difference = 10.90 (Source=40.4, Engine=29.50) | Category: Source data issue
+IRCTC Mar 2015 ROCE Difference = 19.57 (Source=53.8, Engine=34.23) | Category: Source data issue
+IRCTC Mar 2016 ROE Difference = 5.53 (Source=40.4, Engine=34.87) | Category: Source data issue
+IRCTC Mar 2016 ROCE Difference = 18.74 (Source=53.8, Engine=35.06) | Category: Source data issue
+IRCTC Mar 2017 ROE Difference = 11.30 (Source=40.4, Engine=29.10) | Category: Source data issue
+IRCTC Mar 2017 ROCE Difference = 13.90 (Source=53.8, Engine=39.90) | Category: Source data issue
+IRCTC Mar 2018 ROE Difference = 17.26 (Source=40.4, Engine=23.14) | Category: Source data issue
+IRCTC Mar 2018 ROCE Difference = 25.11 (Source=53.8, Engine=28.69) | Category: Source data issue
+IRCTC Mar 2019 ROE Difference = 11.55 (Source=40.4, Engine=28.85) | Category: Source data issue
+IRCTC Mar 2019 ROCE Difference = 18.04 (Source=53.8, Engine=35.76) | Category: Source data issue
+IRCTC Mar 2021 ROE Difference = 27.56 (Source=40.4, Engine=12.84) | Category: Source data issue
+IRCTC Mar 2021 ROCE Difference = 41.55 (Source=53.8, Engine=12.25) | Category: Source data issue
+IRCTC Mar 2022 ROE Difference = 5.11 (Source=40.4, Engine=35.29) | Category: Source data issue
+IRCTC Mar 2022 ROCE Difference = 9.55 (Source=53.8, Engine=44.25) | Category: Source data issue
+IRCTC Mar 2024 ROE Difference = 6.00 (Source=40.4, Engine=34.40) | Category: Source data issue
+IRCTC Mar 2024 ROCE Difference = 9.24 (Source=53.8, Engine=44.56) | Category: Source data issue
+IRFC Mar 2016 ROE Difference = 6.33 (Source=13.7, Engine=7.37) | Category: Sector-specific
+IRFC Mar 2017 ROE Difference = 5.92 (Source=13.7, Engine=7.78) | Category: Sector-specific
+ITC Mar 2013 ROCE Difference = 13.48 (Source=34.76, Engine=48.24) | Category: Source data issue
+ITC Mar 2014 ROCE Difference = 12.84 (Source=34.76, Engine=47.60) | Category: Source data issue
+ITC Mar 2015 ROCE Difference = 9.77 (Source=34.76, Engine=44.53) | Category: Source data issue
+ITC Mar 2016 ROE Difference = 7.21 (Source=29.47, Engine=22.26) | Category: Source data issue
+ITC Mar 2017 ROE Difference = 6.90 (Source=29.47, Engine=22.57) | Category: Source data issue
+ITC Mar 2018 ROE Difference = 7.58 (Source=29.47, Engine=21.89) | Category: Source data issue
+ITC Mar 2019 ROE Difference = 7.77 (Source=29.47, Engine=21.70) | Category: Source data issue
+ITC Mar 2020 ROE Difference = 5.58 (Source=29.47, Engine=23.89) | Category: Source data issue
+ITC Mar 2020 ROCE Difference = 5.25 (Source=34.76, Engine=29.51) | Category: Source data issue
+ITC Mar 2021 ROE Difference = 7.29 (Source=29.47, Engine=22.18) | Category: Source data issue
+ITC Mar 2021 ROCE Difference = 6.61 (Source=34.76, Engine=28.15) | Category: Source data issue
+JINDALSTEL Mar 2014 ROE Difference = 5.71 (Source=14.1, Engine=8.39) | Category: Source data issue
+JINDALSTEL Mar 2015 ROE Difference = 21.00 (Source=14.1, Engine=-6.90) | Category: Source data issue
+JINDALSTEL Mar 2016 ROE Difference = 23.62 (Source=14.1, Engine=-9.52) | Category: Source data issue
+JINDALSTEL Mar 2016 ROCE Difference = 8.86 (Source=13.2, Engine=4.34) | Category: Source data issue
+JINDALSTEL Mar 2017 ROE Difference = 22.55 (Source=14.1, Engine=-8.45) | Category: Source data issue
+JINDALSTEL Mar 2017 ROCE Difference = 7.00 (Source=13.2, Engine=6.20) | Category: Source data issue
+JINDALSTEL Mar 2018 ROE Difference = 19.42 (Source=14.1, Engine=-5.32) | Category: Source data issue
+JINDALSTEL Mar 2019 ROE Difference = 21.62 (Source=14.1, Engine=-7.52) | Category: Source data issue
+JINDALSTEL Mar 2020 ROE Difference = 15.34 (Source=14.1, Engine=-1.24) | Category: Source data issue
+JINDALSTEL Mar 2022 ROCE Difference = 18.38 (Source=13.2, Engine=31.58) | Category: Source data issue
+JINDALSTEL Mar 2023 ROCE Difference = 6.01 (Source=13.2, Engine=19.21) | Category: Source data issue
+JSWENERGY Mar 2013 ROE Difference = 6.12 (Source=8.4, Engine=14.52) | Category: Source data issue
+JSWENERGY Mar 2013 ROCE Difference = 8.30 (Source=8.59, Engine=16.89) | Category: Source data issue
+JSWENERGY Mar 2014 ROCE Difference = 10.93 (Source=8.59, Engine=19.52) | Category: Source data issue
+JSWENERGY Mar 2015 ROE Difference = 9.66 (Source=8.4, Engine=18.06) | Category: Source data issue
+JSWENERGY Mar 2015 ROCE Difference = 12.97 (Source=8.59, Engine=21.56) | Category: Source data issue
+JSWENERGY Mar 2016 ROE Difference = 6.65 (Source=8.4, Engine=15.05) | Category: Source data issue
+JSWENERGY Mar 2016 ROCE Difference = 7.81 (Source=8.59, Engine=16.40) | Category: Source data issue
+JSWENERGY Mar 2018 ROE Difference = 7.63 (Source=8.4, Engine=0.77) | Category: Source data issue
+JSWENERGY Mar 2020 ROCE Difference = 5.17 (Source=8.59, Engine=13.76) | Category: Source data issue
+JSWSTEEL Mar 2013 ROE Difference = 6.22 (Source=11.66, Engine=5.44) | Category: Source data issue
+JSWSTEEL Mar 2014 ROE Difference = 9.76 (Source=11.66, Engine=1.90) | Category: Source data issue
+JSWSTEEL Mar 2016 ROE Difference = 14.20 (Source=11.66, Engine=-2.54) | Category: Source data issue
+JSWSTEEL Mar 2017 ROCE Difference = 5.29 (Source=13.36, Engine=18.65) | Category: Source data issue
+JSWSTEEL Mar 2018 ROE Difference = 10.17 (Source=11.66, Engine=21.83) | Category: Source data issue
+JSWSTEEL Mar 2018 ROCE Difference = 8.77 (Source=13.36, Engine=22.13) | Category: Source data issue
+JSWSTEEL Mar 2019 ROE Difference = 9.96 (Source=11.66, Engine=21.62) | Category: Source data issue
+JSWSTEEL Mar 2019 ROCE Difference = 9.67 (Source=13.36, Engine=23.03) | Category: Source data issue
+JSWSTEEL Mar 2021 ROE Difference = 5.18 (Source=11.66, Engine=16.84) | Category: Source data issue
+JSWSTEEL Mar 2021 ROCE Difference = 5.13 (Source=13.36, Engine=18.49) | Category: Source data issue
+JSWSTEEL Mar 2022 ROE Difference = 19.45 (Source=11.66, Engine=31.11) | Category: Source data issue
+JSWSTEEL Mar 2022 ROCE Difference = 14.67 (Source=13.36, Engine=28.03) | Category: Source data issue
+JSWSTEEL Mar 2023 ROE Difference = 5.36 (Source=11.66, Engine=6.30) | Category: Source data issue
+LICI Mar 2019 ROE Difference = 260.71 (Source=63.61, Engine=324.32) | Category: Sector-specific
+LICI Mar 2019 ROCE Difference = 61.60 (Source=63.79, Engine=2.19) | Category: Sector-specific
+LICI Mar 2020 ROE Difference = 206.85 (Source=63.61, Engine=270.46) | Category: Sector-specific
+LICI Mar 2020 ROCE Difference = 66.52 (Source=63.79, Engine=-2.73) | Category: Sector-specific
+LICI Mar 2021 ROE Difference = 20.41 (Source=63.61, Engine=43.20) | Category: Sector-specific
+LICI Mar 2021 ROCE Difference = 67.45 (Source=63.79, Engine=-3.66) | Category: Sector-specific
+LICI Mar 2022 ROE Difference = 27.23 (Source=63.61, Engine=36.38) | Category: Sector-specific
+LICI Mar 2022 ROCE Difference = 34.46 (Source=63.79, Engine=29.33) | Category: Sector-specific
+LICI Mar 2023 ROE Difference = 14.25 (Source=63.61, Engine=77.86) | Category: Sector-specific
+LICI Mar 2023 ROCE Difference = 10.20 (Source=63.79, Engine=73.99) | Category: Sector-specific
+LICI Mar 2024 ROE Difference = 14.16 (Source=63.61, Engine=49.45) | Category: Sector-specific
+LICI Mar 2024 ROCE Difference = 24.18 (Source=63.79, Engine=39.61) | Category: Sector-specific
+LODHA Mar 2016 ROE Difference = 6.99 (Source=10.7, Engine=17.69) | Category: Source data issue
+LODHA Mar 2018 ROCE Difference = 5.04 (Source=11.1, Engine=6.06) | Category: Source data issue
+LODHA Mar 2019 ROE Difference = 32.10 (Source=10.7, Engine=42.80) | Category: Source data issue
+LODHA Mar 2020 ROE Difference = 5.60 (Source=10.7, Engine=16.30) | Category: Source data issue
+LODHA Mar 2021 ROE Difference = 9.66 (Source=10.7, Engine=1.04) | Category: Source data issue
+LODHA Mar 2021 ROCE Difference = 5.03 (Source=11.1, Engine=6.07) | Category: Source data issue
+LODHA Mar 2023 ROE Difference = 6.83 (Source=10.7, Engine=3.87) | Category: Source data issue
+LT Mar 2013 ROE Difference = 384.66 (Source=10.49, Engine=395.15) | Category: Formula discrepancy
+LT Mar 2013 ROCE Difference = 707.17 (Source=17.18, Engine=724.35) | Category: Formula discrepancy
+LT Mar 2014 ROE Difference = 292.93 (Source=10.49, Engine=303.42) | Category: Formula discrepancy
+LT Mar 2014 ROCE Difference = 801.77 (Source=17.18, Engine=818.95) | Category: Formula discrepancy
+LT Mar 2015 ROE Difference = 234.62 (Source=10.49, Engine=245.11) | Category: Formula discrepancy
+LT Mar 2015 ROCE Difference = 681.75 (Source=17.18, Engine=698.93) | Category: Formula discrepancy
+LT Mar 2016 ROE Difference = 205.60 (Source=10.49, Engine=216.09) | Category: Formula discrepancy
+LT Mar 2016 ROCE Difference = 693.19 (Source=17.18, Engine=710.37) | Category: Formula discrepancy
+LT Mar 2017 ROE Difference = 195.81 (Source=10.49, Engine=206.30) | Category: Formula discrepancy
+LT Mar 2017 ROCE Difference = 511.45 (Source=17.18, Engine=528.63) | Category: Formula discrepancy
+LT Mar 2018 ROE Difference = 196.87 (Source=10.49, Engine=207.36) | Category: Formula discrepancy
+LT Mar 2018 ROCE Difference = 503.83 (Source=17.18, Engine=521.01) | Category: Formula discrepancy
+LT Mar 2019 ROE Difference = 198.32 (Source=10.49, Engine=208.81) | Category: Formula discrepancy
+LT Mar 2019 ROCE Difference = 450.14 (Source=17.18, Engine=467.32) | Category: Formula discrepancy
+LT Mar 2020 ROE Difference = 191.10 (Source=10.49, Engine=201.59) | Category: Formula discrepancy
+LT Mar 2020 ROCE Difference = 371.56 (Source=17.18, Engine=388.74) | Category: Formula discrepancy
+LT Mar 2021 ROE Difference = 166.41 (Source=10.49, Engine=176.90) | Category: Formula discrepancy
+LT Mar 2021 ROCE Difference = 272.38 (Source=17.18, Engine=289.56) | Category: Formula discrepancy
+LT Mar 2022 ROE Difference = 62.43 (Source=10.49, Engine=72.92) | Category: Source data issue
+LT Mar 2022 ROCE Difference = 149.97 (Source=17.18, Engine=167.15) | Category: Formula discrepancy
+LT Mar 2023 ROE Difference = 65.03 (Source=10.49, Engine=75.52) | Category: Source data issue
+LT Mar 2023 ROCE Difference = 132.64 (Source=17.18, Engine=149.82) | Category: Formula discrepancy
+LT Mar 2024 ROE Difference = 67.18 (Source=10.49, Engine=77.67) | Category: Source data issue
+LT Mar 2024 ROCE Difference = 118.02 (Source=17.18, Engine=135.20) | Category: Formula discrepancy
+LTIM Mar 2013 ROE Difference = 15.93 (Source=26.04, Engine=41.97) | Category: Source data issue
+LTIM Mar 2013 ROCE Difference = 21.21 (Source=34.1, Engine=55.31) | Category: Source data issue
+LTIM Mar 2014 ROE Difference = 35.82 (Source=26.04, Engine=61.86) | Category: Source data issue
+LTIM Mar 2014 ROCE Difference = 32.59 (Source=34.1, Engine=66.69) | Category: Source data issue
+LTIM Mar 2015 ROE Difference = 11.92 (Source=26.04, Engine=37.96) | Category: Source data issue
+LTIM Mar 2015 ROCE Difference = 10.69 (Source=34.1, Engine=44.79) | Category: Source data issue
+LTIM Mar 2016 ROE Difference = 13.30 (Source=26.04, Engine=39.34) | Category: Source data issue
+LTIM Mar 2016 ROCE Difference = 13.06 (Source=34.1, Engine=47.16) | Category: Source data issue
+LTIM Mar 2017 ROCE Difference = 5.02 (Source=34.1, Engine=39.12) | Category: Source data issue
+LTIM Mar 2024 ROCE Difference = 5.19 (Source=34.1, Engine=28.91) | Category: Source data issue
+M&M Mar 2013 ROCE Difference = 8.25 (Source=26.98, Engine=18.73) | Category: Source data issue
+M&M Mar 2014 ROCE Difference = 9.59 (Source=26.98, Engine=17.39) | Category: Source data issue
+M&M Mar 2015 ROCE Difference = 13.19 (Source=26.98, Engine=13.79) | Category: Source data issue
+M&M Mar 2016 ROCE Difference = 12.16 (Source=26.98, Engine=14.82) | Category: Source data issue
+M&M Mar 2017 ROCE Difference = 13.31 (Source=26.98, Engine=13.67) | Category: Source data issue
+M&M Mar 2018 ROCE Difference = 12.71 (Source=26.98, Engine=14.27) | Category: Source data issue
+M&M Mar 2019 ROCE Difference = 13.26 (Source=26.98, Engine=13.72) | Category: Source data issue
+M&M Mar 2020 ROE Difference = 18.79 (Source=17.99, Engine=-0.80) | Category: Source data issue
+M&M Mar 2020 ROCE Difference = 18.66 (Source=26.98, Engine=8.32) | Category: Source data issue
+M&M Mar 2021 ROE Difference = 14.35 (Source=17.99, Engine=3.64) | Category: Source data issue
+M&M Mar 2021 ROCE Difference = 17.58 (Source=26.98, Engine=9.40) | Category: Source data issue
+M&M Mar 2022 ROCE Difference = 15.21 (Source=26.98, Engine=11.77) | Category: Source data issue
+M&M Mar 2023 ROCE Difference = 13.33 (Source=26.98, Engine=13.65) | Category: Source data issue
+M&M Mar 2024 ROCE Difference = 12.74 (Source=26.98, Engine=14.24) | Category: Source data issue
+MARUTI Mar 2016 ROCE Difference = 5.58 (Source=23.67, Engine=29.25) | Category: Source data issue
+MARUTI Mar 2020 ROCE Difference = 8.84 (Source=23.67, Engine=14.83) | Category: Source data issue
+MARUTI Mar 2021 ROE Difference = 7.39 (Source=15.75, Engine=8.36) | Category: Source data issue
+MARUTI Mar 2021 ROCE Difference = 13.47 (Source=23.67, Engine=10.20) | Category: Source data issue
+MARUTI Mar 2022 ROE Difference = 8.74 (Source=15.75, Engine=7.01) | Category: Source data issue
+MARUTI Mar 2022 ROCE Difference = 13.35 (Source=23.67, Engine=10.32) | Category: Source data issue
+MARUTI Mar 2023 ROCE Difference = 6.37 (Source=23.67, Engine=17.30) | Category: Source data issue
+MOTHERSON Mar 2013 ROE Difference = 7.95 (Source=11.8, Engine=19.75) | Category: Source data issue
+MOTHERSON Mar 2013 ROCE Difference = 6.88 (Source=13.7, Engine=20.58) | Category: Source data issue
+MOTHERSON Mar 2014 ROE Difference = 25.27 (Source=11.8, Engine=37.07) | Category: Source data issue
+MOTHERSON Mar 2014 ROCE Difference = 17.03 (Source=13.7, Engine=30.73) | Category: Source data issue
+MOTHERSON Mar 2015 ROE Difference = 27.07 (Source=11.8, Engine=38.87) | Category: Source data issue
+MOTHERSON Mar 2015 ROCE Difference = 19.94 (Source=13.7, Engine=33.64) | Category: Source data issue
+MOTHERSON Mar 2016 ROE Difference = 28.55 (Source=11.8, Engine=40.35) | Category: Source data issue
+MOTHERSON Mar 2016 ROCE Difference = 20.20 (Source=13.7, Engine=33.90) | Category: Source data issue
+MOTHERSON Mar 2017 ROE Difference = 14.46 (Source=11.8, Engine=26.26) | Category: Source data issue
+MOTHERSON Mar 2017 ROCE Difference = 8.70 (Source=13.7, Engine=22.40) | Category: Source data issue
+MOTHERSON Mar 2018 ROE Difference = 11.07 (Source=11.8, Engine=22.87) | Category: Source data issue
+MOTHERSON Mar 2018 ROCE Difference = 11.61 (Source=13.7, Engine=25.31) | Category: Source data issue
+MOTHERSON Mar 2019 ROE Difference = 7.34 (Source=11.8, Engine=19.14) | Category: Source data issue
+MOTHERSON Mar 2019 ROCE Difference = 10.07 (Source=13.7, Engine=23.77) | Category: Source data issue
+MOTHERSON Mar 2020 ROCE Difference = 5.38 (Source=13.7, Engine=19.08) | Category: Source data issue
+MOTHERSON Mar 2022 ROE Difference = 6.06 (Source=11.8, Engine=5.74) | Category: Source data issue
+MOTHERSON Mar 2024 ROCE Difference = 6.53 (Source=13.7, Engine=20.23) | Category: Source data issue
+NAUKRI Mar 2013 ROE Difference = 10.06 (Source=2.44, Engine=12.50) | Category: Source data issue
+NAUKRI Mar 2013 ROCE Difference = 16.22 (Source=3.65, Engine=19.87) | Category: Source data issue
+NAUKRI Mar 2014 ROE Difference = 6.49 (Source=2.44, Engine=8.93) | Category: Source data issue
+NAUKRI Mar 2014 ROCE Difference = 10.76 (Source=3.65, Engine=14.41) | Category: Source data issue
+NAUKRI Mar 2016 ROE Difference = 5.21 (Source=2.44, Engine=7.65) | Category: Source data issue
+NAUKRI Mar 2017 ROE Difference = 5.14 (Source=2.44, Engine=-2.70) | Category: Source data issue
+NAUKRI Mar 2018 ROE Difference = 22.06 (Source=2.44, Engine=24.50) | Category: Source data issue
+NAUKRI Mar 2018 ROCE Difference = 7.05 (Source=3.65, Engine=10.70) | Category: Source data issue
+NAUKRI Mar 2019 ROE Difference = 20.84 (Source=2.44, Engine=23.28) | Category: Source data issue
+NAUKRI Mar 2020 ROE Difference = 13.65 (Source=2.44, Engine=-11.21) | Category: Source data issue
+NAUKRI Mar 2020 ROCE Difference = 19.05 (Source=3.65, Engine=-15.40) | Category: Source data issue
+NAUKRI Mar 2021 ROE Difference = 23.84 (Source=2.44, Engine=26.28) | Category: Source data issue
+NAUKRI Mar 2022 ROE Difference = 72.27 (Source=2.44, Engine=74.71) | Category: Source data issue
+NESTLEIND Dec 2013 ROE Difference = 88.44 (Source=135.61, Engine=47.17) | Category: Source data issue
+NESTLEIND Dec 2013 ROCE Difference = 130.66 (Source=185.43, Engine=54.77) | Category: Formula discrepancy
+NESTLEIND Dec 2014 ROE Difference = 93.84 (Source=135.61, Engine=41.77) | Category: Source data issue
+NESTLEIND Dec 2014 ROCE Difference = 114.06 (Source=185.43, Engine=71.37) | Category: Formula discrepancy
+NESTLEIND Dec 2015 ROE Difference = 115.62 (Source=135.61, Engine=19.99) | Category: Formula discrepancy
+NESTLEIND Dec 2015 ROCE Difference = 130.58 (Source=185.43, Engine=54.85) | Category: Formula discrepancy
+NESTLEIND Dec 2016 ROE Difference = 105.11 (Source=135.61, Engine=30.50) | Category: Formula discrepancy
+NESTLEIND Dec 2016 ROCE Difference = 129.62 (Source=185.43, Engine=55.81) | Category: Formula discrepancy
+NESTLEIND Dec 2017 ROE Difference = 99.79 (Source=135.61, Engine=35.82) | Category: Source data issue
+NESTLEIND Dec 2017 ROCE Difference = 124.74 (Source=185.43, Engine=60.69) | Category: Formula discrepancy
+NESTLEIND Dec 2018 ROE Difference = 91.86 (Source=135.61, Engine=43.75) | Category: Source data issue
+NESTLEIND Dec 2018 ROCE Difference = 114.83 (Source=185.43, Engine=70.60) | Category: Formula discrepancy
+NESTLEIND Dec 2019 ROE Difference = 33.00 (Source=135.61, Engine=102.61) | Category: Source data issue
+NESTLEIND Dec 2019 ROCE Difference = 46.56 (Source=185.43, Engine=138.87) | Category: Source data issue
+NESTLEIND Dec 2020 ROE Difference = 32.49 (Source=135.61, Engine=103.12) | Category: Source data issue
+NESTLEIND Dec 2020 ROCE Difference = 37.60 (Source=185.43, Engine=147.83) | Category: Source data issue
+NESTLEIND Dec 2021 ROE Difference = 26.77 (Source=135.61, Engine=108.84) | Category: Source data issue
+NESTLEIND Dec 2021 ROCE Difference = 24.40 (Source=185.43, Engine=161.03) | Category: Source data issue
+NESTLEIND Dec 2022 ROE Difference = 38.38 (Source=135.61, Engine=97.23) | Category: Source data issue
+NESTLEIND Dec 2022 ROCE Difference = 49.68 (Source=185.43, Engine=135.75) | Category: Source data issue
+NESTLEIND Dec 2023 ROE Difference = 13.65 (Source=135.61, Engine=121.96) | Category: Source data issue
+NESTLEIND Dec 2023 ROCE Difference = 21.66 (Source=185.43, Engine=163.77) | Category: Source data issue
+NESTLEIND Mar 2024 ROE Difference = 17.86 (Source=135.61, Engine=117.75) | Category: Source data issue
+NESTLEIND Mar 2024 ROCE Difference = 27.68 (Source=185.43, Engine=157.75) | Category: Source data issue
+ONGC Mar 2013 ROCE Difference = 5.40 (Source=19.71, Engine=25.11) | Category: Source data issue
+ONGC Mar 2016 ROE Difference = 7.70 (Source=14.32, Engine=6.62) | Category: Source data issue
+ONGC Mar 2020 ROE Difference = 8.73 (Source=14.32, Engine=5.59) | Category: Source data issue
+ONGC Mar 2021 ROCE Difference = 5.74 (Source=19.71, Engine=13.97) | Category: Source data issue
+PFC Mar 2013 ROCE Difference = 6.29 (Source=9.96, Engine=3.67) | Category: Sector-specific
+PFC Mar 2014 ROCE Difference = 5.89 (Source=9.96, Engine=4.07) | Category: Sector-specific
+PFC Mar 2015 ROCE Difference = 6.13 (Source=9.96, Engine=3.83) | Category: Sector-specific
+PFC Mar 2016 ROCE Difference = 6.09 (Source=9.96, Engine=3.87) | Category: Sector-specific
+PFC Mar 2017 ROE Difference = 13.42 (Source=19.49, Engine=6.07) | Category: Sector-specific
+PFC Mar 2017 ROCE Difference = 7.76 (Source=9.96, Engine=2.20) | Category: Sector-specific
+PFC Mar 2018 ROCE Difference = 7.52 (Source=9.96, Engine=2.44) | Category: Sector-specific
+PFC Mar 2019 ROE Difference = 7.33 (Source=19.49, Engine=26.82) | Category: Sector-specific
+PFC Mar 2019 ROCE Difference = 6.93 (Source=9.96, Engine=3.03) | Category: Sector-specific
+PFC Mar 2020 ROCE Difference = 7.79 (Source=9.96, Engine=2.17) | Category: Sector-specific
+PFC Mar 2021 ROE Difference = 6.37 (Source=19.49, Engine=25.86) | Category: Sector-specific
+PFC Mar 2021 ROCE Difference = 7.20 (Source=9.96, Engine=2.76) | Category: Sector-specific
+PFC Mar 2022 ROE Difference = 6.69 (Source=19.49, Engine=26.18) | Category: Sector-specific
+PFC Mar 2022 ROCE Difference = 6.77 (Source=9.96, Engine=3.19) | Category: Sector-specific
+PFC Mar 2023 ROE Difference = 5.68 (Source=19.49, Engine=25.17) | Category: Sector-specific
+PFC Mar 2023 ROCE Difference = 6.79 (Source=9.96, Engine=3.17) | Category: Sector-specific
+PFC Mar 2024 ROE Difference = 6.67 (Source=19.49, Engine=26.16) | Category: Sector-specific
+PFC Mar 2024 ROCE Difference = 6.47 (Source=9.96, Engine=3.49) | Category: Sector-specific
+PIDILITIND Mar 2016 ROE Difference = 7.79 (Source=22.8, Engine=30.59) | Category: Source data issue
+PIDILITIND Mar 2016 ROCE Difference = 13.46 (Source=29.7, Engine=43.16) | Category: Source data issue
+PIDILITIND Mar 2017 ROCE Difference = 5.66 (Source=29.7, Engine=35.36) | Category: Source data issue
+PIDILITIND Mar 2018 ROCE Difference = 6.55 (Source=29.7, Engine=36.25) | Category: Source data issue
+PNB Mar 2013 ROE Difference = 803.60 (Source=8.7, Engine=812.30) | Category: Sector-specific
+PNB Mar 2014 ROE Difference = 384.66 (Source=8.7, Engine=393.36) | Category: Sector-specific
+PNB Mar 2015 ROE Difference = 214.54 (Source=8.7, Engine=223.24) | Category: Sector-specific
+PNB Mar 2016 ROE Difference = 172.26 (Source=8.7, Engine=-163.56) | Category: Sector-specific
+PNB Mar 2017 ROE Difference = 13.51 (Source=8.7, Engine=22.21) | Category: Sector-specific
+PNB Mar 2018 ROE Difference = 193.07 (Source=8.7, Engine=-184.37) | Category: Sector-specific
+PNB Mar 2019 ROE Difference = 137.15 (Source=8.7, Engine=-128.45) | Category: Sector-specific
+PNB Mar 2021 ROE Difference = 21.69 (Source=8.7, Engine=30.39) | Category: Sector-specific
+PNB Mar 2022 ROE Difference = 31.17 (Source=8.7, Engine=39.87) | Category: Sector-specific
+PNB Mar 2023 ROE Difference = 21.97 (Source=8.7, Engine=30.67) | Category: Sector-specific
+PNB Mar 2024 ROE Difference = 52.62 (Source=8.7, Engine=61.32) | Category: Sector-specific
+POWERGRID Mar 2014 ROE Difference = 5.89 (Source=19.0, Engine=13.11) | Category: Source data issue
+POWERGRID Mar 2015 ROE Difference = 5.87 (Source=19.0, Engine=13.13) | Category: Source data issue
+POWERGRID Mar 2016 ROE Difference = 5.45 (Source=19.0, Engine=13.55) | Category: Source data issue
+POWERGRID Mar 2023 ROCE Difference = 5.50 (Source=13.2, Engine=18.70) | Category: Source data issue
+POWERGRID Mar 2024 ROCE Difference = 5.71 (Source=13.2, Engine=18.91) | Category: Source data issue
+RECLTD Mar 2018 ROE Difference = 8.54 (Source=22.2, Engine=13.66) | Category: Sector-specific
+RECLTD Mar 2019 ROE Difference = 5.58 (Source=22.2, Engine=16.62) | Category: Sector-specific
+RECLTD Mar 2020 ROE Difference = 8.15 (Source=22.2, Engine=14.05) | Category: Sector-specific
+SBILIFE Mar 2013 ROE Difference = 11.03 (Source=12.0, Engine=23.03) | Category: Sector-specific
+SBILIFE Mar 2014 ROE Difference = 9.69 (Source=12.0, Engine=21.69) | Category: Sector-specific
+SBILIFE Mar 2015 ROE Difference = 8.09 (Source=12.0, Engine=20.09) | Category: Sector-specific
+SBILIFE Mar 2015 ROCE Difference = 6.38 (Source=13.2, Engine=19.58) | Category: Sector-specific
+SBILIFE Mar 2016 ROE Difference = 5.83 (Source=12.0, Engine=17.83) | Category: Sector-specific
+SBILIFE Mar 2016 ROCE Difference = 6.24 (Source=13.2, Engine=19.44) | Category: Sector-specific
+SBILIFE Mar 2017 ROE Difference = 5.20 (Source=12.0, Engine=17.20) | Category: Sector-specific
+SBILIFE Mar 2017 ROCE Difference = 6.04 (Source=13.2, Engine=19.24) | Category: Sector-specific
+SBILIFE Mar 2018 ROE Difference = 5.62 (Source=12.0, Engine=17.62) | Category: Sector-specific
+SBILIFE Mar 2018 ROCE Difference = 7.20 (Source=13.2, Engine=20.40) | Category: Sector-specific
+SBILIFE Mar 2019 ROE Difference = 5.52 (Source=12.0, Engine=17.52) | Category: Sector-specific
+SBILIFE Mar 2019 ROCE Difference = 6.26 (Source=13.2, Engine=19.46) | Category: Sector-specific
+SBILIFE Mar 2022 ROCE Difference = 6.92 (Source=13.2, Engine=6.28) | Category: Sector-specific
+SBILIFE Mar 2023 ROCE Difference = 12.26 (Source=13.2, Engine=0.94) | Category: Sector-specific
+SBILIFE Mar 2024 ROCE Difference = 11.55 (Source=13.2, Engine=1.65) | Category: Sector-specific
+SHREECEM Jun 2013 ROE Difference = 13.92 (Source=12.2, Engine=26.12) | Category: Source data issue
+SHREECEM Jun 2013 ROCE Difference = 15.62 (Source=14.8, Engine=30.42) | Category: Source data issue
+SHREECEM Jun 2014 ROCE Difference = 8.72 (Source=14.8, Engine=23.52) | Category: Source data issue
+SHREECEM Jun 2015 ROCE Difference = 6.90 (Source=14.8, Engine=21.70) | Category: Source data issue
+SHREECEM Mar 2017 ROE Difference = 5.19 (Source=12.2, Engine=17.39) | Category: Source data issue
+SHREECEM Mar 2017 ROCE Difference = 13.15 (Source=14.8, Engine=27.95) | Category: Source data issue
+SHREECEM Mar 2018 ROCE Difference = 5.31 (Source=14.8, Engine=20.11) | Category: Source data issue
+SHREECEM Mar 2019 ROCE Difference = 7.62 (Source=14.8, Engine=22.42) | Category: Source data issue
+SHREECEM Mar 2020 ROCE Difference = 8.31 (Source=14.8, Engine=23.11) | Category: Source data issue
+SHREECEM Mar 2021 ROCE Difference = 8.41 (Source=14.8, Engine=23.21) | Category: Source data issue
+SHREECEM Mar 2024 ROCE Difference = 5.41 (Source=14.8, Engine=20.21) | Category: Source data issue
+SHRIRAMFIN Mar 2013 ROCE Difference = 5.95 (Source=11.3, Engine=5.35) | Category: Sector-specific
+SHRIRAMFIN Mar 2014 ROCE Difference = 7.06 (Source=11.3, Engine=4.24) | Category: Sector-specific
+SHRIRAMFIN Mar 2015 ROCE Difference = 8.28 (Source=11.3, Engine=3.02) | Category: Sector-specific
+SHRIRAMFIN Mar 2016 ROCE Difference = 8.26 (Source=11.3, Engine=3.04) | Category: Sector-specific
+SHRIRAMFIN Mar 2017 ROCE Difference = 8.24 (Source=11.3, Engine=3.06) | Category: Sector-specific
+SHRIRAMFIN Mar 2018 ROCE Difference = 7.33 (Source=11.3, Engine=3.97) | Category: Sector-specific
+SHRIRAMFIN Mar 2019 ROCE Difference = 7.64 (Source=11.3, Engine=3.66) | Category: Sector-specific
+SHRIRAMFIN Mar 2020 ROCE Difference = 8.14 (Source=11.3, Engine=3.16) | Category: Sector-specific
+SHRIRAMFIN Mar 2021 ROCE Difference = 8.65 (Source=11.3, Engine=2.65) | Category: Sector-specific
+SHRIRAMFIN Mar 2022 ROE Difference = 5.47 (Source=15.9, Engine=10.43) | Category: Sector-specific
+SHRIRAMFIN Mar 2022 ROCE Difference = 8.70 (Source=11.3, Engine=2.60) | Category: Sector-specific
+SHRIRAMFIN Mar 2023 ROCE Difference = 7.06 (Source=11.3, Engine=4.24) | Category: Sector-specific
+SHRIRAMFIN Mar 2024 ROCE Difference = 7.00 (Source=11.3, Engine=4.30) | Category: Sector-specific
+SIEMENS Sep 2011 ROCE Difference = 5.09 (Source=25.6, Engine=30.69) | Category: Source data issue
+SIEMENS Sep 2014 ROE Difference = 5.32 (Source=19.1, Engine=13.78) | Category: Source data issue
+SIEMENS Sep 2014 ROCE Difference = 22.88 (Source=25.6, Engine=2.72) | Category: Source data issue
+SIEMENS Sep 2015 ROCE Difference = 6.19 (Source=25.6, Engine=19.41) | Category: Source data issue
+SIEMENS Sep 2016 ROE Difference = 23.73 (Source=19.1, Engine=42.83) | Category: Source data issue
+SIEMENS Sep 2016 ROCE Difference = 10.65 (Source=25.6, Engine=14.95) | Category: Source data issue
+SIEMENS Sep 2017 ROCE Difference = 11.87 (Source=25.6, Engine=13.73) | Category: Source data issue
+SIEMENS Sep 2018 ROE Difference = 8.24 (Source=19.1, Engine=10.86) | Category: Source data issue
+SIEMENS Sep 2018 ROCE Difference = 9.61 (Source=25.6, Engine=15.99) | Category: Source data issue
+SIEMENS Sep 2019 ROE Difference = 6.96 (Source=19.1, Engine=12.14) | Category: Source data issue
+SIEMENS Sep 2019 ROCE Difference = 9.13 (Source=25.6, Engine=16.47) | Category: Source data issue
+SIEMENS Sep 2020 ROE Difference = 11.00 (Source=19.1, Engine=8.10) | Category: Source data issue
+SIEMENS Sep 2020 ROCE Difference = 15.03 (Source=25.6, Engine=10.57) | Category: Source data issue
+SIEMENS Sep 2021 ROE Difference = 8.58 (Source=19.1, Engine=10.52) | Category: Source data issue
+SIEMENS Sep 2021 ROCE Difference = 11.57 (Source=25.6, Engine=14.03) | Category: Source data issue
+SIEMENS Sep 2022 ROE Difference = 5.81 (Source=19.1, Engine=13.29) | Category: Source data issue
+SIEMENS Sep 2022 ROCE Difference = 9.83 (Source=25.6, Engine=15.77) | Category: Source data issue
+SIEMENS Sep 2023 ROCE Difference = 6.85 (Source=25.6, Engine=18.75) | Category: Source data issue
+SIEMENS Sep 2024 ROCE Difference = 5.75 (Source=25.6, Engine=19.85) | Category: Source data issue
+SUNPHARMA Mar 2013 ROE Difference = 6.44 (Source=16.7, Engine=23.14) | Category: Source data issue
+SUNPHARMA Mar 2013 ROCE Difference = 14.07 (Source=17.3, Engine=31.37) | Category: Source data issue
+SUNPHARMA Mar 2014 ROCE Difference = 15.91 (Source=17.3, Engine=33.21) | Category: Source data issue
+SUNPHARMA Mar 2015 ROCE Difference = 5.49 (Source=17.3, Engine=22.79) | Category: Source data issue
+SUNPHARMA Mar 2018 ROE Difference = 10.07 (Source=16.7, Engine=6.63) | Category: Source data issue
+SUNPHARMA Mar 2018 ROCE Difference = 5.74 (Source=17.3, Engine=11.56) | Category: Source data issue
+SUNPHARMA Mar 2019 ROE Difference = 8.95 (Source=16.7, Engine=7.75) | Category: Source data issue
+SUNPHARMA Mar 2019 ROCE Difference = 5.02 (Source=17.3, Engine=12.28) | Category: Source data issue
+SUNPHARMA Mar 2020 ROE Difference = 7.48 (Source=16.7, Engine=9.22) | Category: Source data issue
+SUNPHARMA Mar 2021 ROE Difference = 11.81 (Source=16.7, Engine=4.89) | Category: Source data issue
+SUNPHARMA Mar 2022 ROE Difference = 9.64 (Source=16.7, Engine=7.06) | Category: Source data issue
+TATACONSUM Mar 2016 ROE Difference = 8.91 (Source=8.32, Engine=-0.59) | Category: Source data issue
+TATACONSUM Mar 2016 ROCE Difference = 5.78 (Source=10.6, Engine=4.82) | Category: Source data issue
+TATAMOTORS Mar 2013 ROE Difference = 22.89 (Source=49.4, Engine=26.51) | Category: Source data issue
+TATAMOTORS Mar 2013 ROCE Difference = 6.82 (Source=20.1, Engine=26.92) | Category: Source data issue
+TATAMOTORS Mar 2014 ROE Difference = 27.98 (Source=49.4, Engine=21.42) | Category: Source data issue
+TATAMOTORS Mar 2014 ROCE Difference = 7.51 (Source=20.1, Engine=27.61) | Category: Source data issue
+TATAMOTORS Mar 2015 ROE Difference = 24.39 (Source=49.4, Engine=25.01) | Category: Source data issue
+TATAMOTORS Mar 2015 ROCE Difference = 10.11 (Source=20.1, Engine=30.21) | Category: Source data issue
+TATAMOTORS Mar 2016 ROE Difference = 34.61 (Source=49.4, Engine=14.79) | Category: Source data issue
+TATAMOTORS Mar 2016 ROCE Difference = 5.79 (Source=20.1, Engine=25.89) | Category: Source data issue
+TATAMOTORS Mar 2017 ROE Difference = 36.38 (Source=49.4, Engine=13.02) | Category: Source data issue
+TATAMOTORS Mar 2018 ROE Difference = 39.87 (Source=49.4, Engine=9.53) | Category: Source data issue
+TATAMOTORS Mar 2019 ROE Difference = 97.13 (Source=49.4, Engine=-47.73) | Category: Source data issue
+TATAMOTORS Mar 2019 ROCE Difference = 5.27 (Source=20.1, Engine=14.83) | Category: Source data issue
+TATAMOTORS Mar 2020 ROE Difference = 68.38 (Source=49.4, Engine=-18.98) | Category: Source data issue
+TATAMOTORS Mar 2020 ROCE Difference = 10.53 (Source=20.1, Engine=9.57) | Category: Source data issue
+TATAMOTORS Mar 2021 ROE Difference = 73.65 (Source=49.4, Engine=-24.25) | Category: Source data issue
+TATAMOTORS Mar 2022 ROE Difference = 74.78 (Source=49.4, Engine=-25.38) | Category: Source data issue
+TATAMOTORS Mar 2022 ROCE Difference = 7.16 (Source=20.1, Engine=12.94) | Category: Source data issue
+TATAMOTORS Mar 2023 ROE Difference = 43.46 (Source=49.4, Engine=5.94) | Category: Source data issue
+TATAMOTORS Mar 2024 ROE Difference = 11.94 (Source=49.4, Engine=37.46) | Category: Source data issue
+TATAMOTORS Mar 2024 ROCE Difference = 10.88 (Source=20.1, Engine=30.98) | Category: Source data issue
+TATAPOWER Mar 2013 ROE Difference = 10.30 (Source=11.3, Engine=1.00) | Category: Source data issue
+TATAPOWER Mar 2014 ROE Difference = 11.20 (Source=11.3, Engine=0.10) | Category: Source data issue
+TATAPOWER Mar 2015 ROE Difference = 8.11 (Source=11.3, Engine=3.19) | Category: Source data issue
+TATAPOWER Mar 2016 ROCE Difference = 6.93 (Source=11.1, Engine=4.17) | Category: Source data issue
+TATAPOWER Mar 2018 ROCE Difference = 7.57 (Source=11.1, Engine=3.53) | Category: Source data issue
+TATAPOWER Mar 2019 ROCE Difference = 6.50 (Source=11.1, Engine=4.60) | Category: Source data issue
+TATASTEEL Mar 2013 ROE Difference = 27.83 (Source=6.55, Engine=-21.28) | Category: Source data issue
+TATASTEEL Mar 2014 ROCE Difference = 6.23 (Source=7.02, Engine=13.25) | Category: Source data issue
+TATASTEEL Mar 2015 ROE Difference = 19.11 (Source=6.55, Engine=-12.56) | Category: Source data issue
+TATASTEEL Mar 2016 ROE Difference = 7.69 (Source=6.55, Engine=-1.14) | Category: Source data issue
+TATASTEEL Mar 2016 ROCE Difference = 7.52 (Source=7.02, Engine=-0.50) | Category: Source data issue
+TATASTEEL Mar 2017 ROE Difference = 17.57 (Source=6.55, Engine=-11.02) | Category: Source data issue
+TATASTEEL Mar 2018 ROE Difference = 22.60 (Source=6.55, Engine=29.15) | Category: Source data issue
+TATASTEEL Mar 2018 ROCE Difference = 6.99 (Source=7.02, Engine=14.01) | Category: Source data issue
+TATASTEEL Mar 2019 ROE Difference = 6.68 (Source=6.55, Engine=13.23) | Category: Source data issue
+TATASTEEL Mar 2019 ROCE Difference = 10.25 (Source=7.02, Engine=17.27) | Category: Source data issue
+TATASTEEL Mar 2021 ROCE Difference = 11.72 (Source=7.02, Engine=18.74) | Category: Source data issue
+TATASTEEL Mar 2022 ROE Difference = 29.93 (Source=6.55, Engine=36.48) | Category: Source data issue
+TATASTEEL Mar 2022 ROCE Difference = 26.40 (Source=7.02, Engine=33.42) | Category: Source data issue
+TATASTEEL Mar 2023 ROCE Difference = 10.16 (Source=7.02, Engine=17.18) | Category: Source data issue
+TATASTEEL Mar 2024 ROE Difference = 11.88 (Source=6.55, Engine=-5.33) | Category: Source data issue
+TATASTEEL Mar 2024 ROCE Difference = 5.40 (Source=7.02, Engine=12.42) | Category: Source data issue
+TCS Mar 2013 ROE Difference = 36.00 (Source=0.52, Engine=36.52) | Category: Source data issue
+TCS Mar 2013 ROCE Difference = 17.90 (Source=64.3, Engine=46.40) | Category: Source data issue
+TCS Mar 2014 ROE Difference = 38.78 (Source=0.52, Engine=39.30) | Category: Source data issue
+TCS Mar 2014 ROCE Difference = 13.48 (Source=64.3, Engine=50.82) | Category: Source data issue
+TCS Mar 2015 ROE Difference = 39.10 (Source=0.52, Engine=39.62) | Category: Source data issue
+TCS Mar 2015 ROCE Difference = 16.29 (Source=64.3, Engine=48.01) | Category: Source data issue
+TCS Mar 2016 ROE Difference = 33.72 (Source=0.52, Engine=34.24) | Category: Source data issue
+TCS Mar 2016 ROCE Difference = 21.29 (Source=64.3, Engine=43.01) | Category: Source data issue
+TCS Mar 2017 ROE Difference = 30.05 (Source=0.52, Engine=30.57) | Category: Source data issue
+TCS Mar 2017 ROCE Difference = 26.95 (Source=64.3, Engine=37.35) | Category: Source data issue
+TCS Mar 2018 ROE Difference = 29.88 (Source=0.52, Engine=30.40) | Category: Source data issue
+TCS Mar 2018 ROCE Difference = 26.21 (Source=64.3, Engine=38.09) | Category: Source data issue
+TCS Mar 2019 ROE Difference = 34.77 (Source=0.52, Engine=35.29) | Category: Source data issue
+TCS Mar 2019 ROCE Difference = 20.16 (Source=64.3, Engine=44.14) | Category: Source data issue
+TCS Mar 2020 ROE Difference = 38.05 (Source=0.52, Engine=38.57) | Category: Source data issue
+TCS Mar 2020 ROCE Difference = 18.68 (Source=64.3, Engine=45.62) | Category: Source data issue
+TCS Mar 2021 ROE Difference = 37.15 (Source=0.52, Engine=37.67) | Category: Source data issue
+TCS Mar 2021 ROCE Difference = 14.90 (Source=64.3, Engine=49.40) | Category: Source data issue
+TCS Mar 2022 ROE Difference = 42.61 (Source=0.52, Engine=43.13) | Category: Source data issue
+TCS Mar 2022 ROCE Difference = 9.58 (Source=64.3, Engine=54.72) | Category: Source data issue
+TCS Mar 2023 ROE Difference = 46.26 (Source=0.52, Engine=46.78) | Category: Source data issue
+TCS Mar 2024 ROE Difference = 50.42 (Source=0.52, Engine=50.94) | Category: Source data issue
+TECHM Mar 2013 ROE Difference = 15.46 (Source=8.63, Engine=24.09) | Category: Source data issue
+TECHM Mar 2013 ROCE Difference = 8.99 (Source=11.9, Engine=20.89) | Category: Source data issue
+TECHM Mar 2014 ROE Difference = 24.72 (Source=8.63, Engine=33.35) | Category: Source data issue
+TECHM Mar 2014 ROCE Difference = 31.81 (Source=11.9, Engine=43.71) | Category: Source data issue
+TECHM Mar 2015 ROE Difference = 13.08 (Source=8.63, Engine=21.71) | Category: Source data issue
+TECHM Mar 2015 ROCE Difference = 20.48 (Source=11.9, Engine=32.38) | Category: Source data issue
+TECHM Mar 2016 ROE Difference = 12.12 (Source=8.63, Engine=20.75) | Category: Source data issue
+TECHM Mar 2016 ROCE Difference = 15.26 (Source=11.9, Engine=27.16) | Category: Source data issue
+TECHM Mar 2017 ROE Difference = 8.72 (Source=8.63, Engine=17.35) | Category: Source data issue
+TECHM Mar 2017 ROCE Difference = 11.60 (Source=11.9, Engine=23.50) | Category: Source data issue
+TECHM Mar 2018 ROE Difference = 11.46 (Source=8.63, Engine=20.09) | Category: Source data issue
+TECHM Mar 2018 ROCE Difference = 10.28 (Source=11.9, Engine=22.18) | Category: Source data issue
+TECHM Mar 2019 ROE Difference = 12.51 (Source=8.63, Engine=21.14) | Category: Source data issue
+TECHM Mar 2019 ROCE Difference = 16.25 (Source=11.9, Engine=28.15) | Category: Source data issue
+TECHM Mar 2020 ROE Difference = 9.24 (Source=8.63, Engine=17.87) | Category: Source data issue
+TECHM Mar 2020 ROCE Difference = 9.69 (Source=11.9, Engine=21.59) | Category: Source data issue
+TECHM Mar 2021 ROE Difference = 8.88 (Source=8.63, Engine=17.51) | Category: Source data issue
+TECHM Mar 2021 ROCE Difference = 12.58 (Source=11.9, Engine=24.48) | Category: Source data issue
+TECHM Mar 2022 ROE Difference = 12.31 (Source=8.63, Engine=20.94) | Category: Source data issue
+TECHM Mar 2022 ROCE Difference = 15.28 (Source=11.9, Engine=27.18) | Category: Source data issue
+TECHM Mar 2023 ROE Difference = 8.76 (Source=8.63, Engine=17.39) | Category: Source data issue
+TECHM Mar 2023 ROCE Difference = 13.42 (Source=11.9, Engine=25.32) | Category: Source data issue
+TITAN Mar 2013 ROCE Difference = 28.77 (Source=22.7, Engine=51.47) | Category: Source data issue
+TITAN Mar 2014 ROCE Difference = 8.74 (Source=22.7, Engine=31.44) | Category: Source data issue
+TITAN Mar 2015 ROE Difference = 6.44 (Source=32.9, Engine=26.46) | Category: Source data issue
+TITAN Mar 2015 ROCE Difference = 13.51 (Source=22.7, Engine=36.21) | Category: Source data issue
+TITAN Mar 2016 ROE Difference = 13.65 (Source=32.9, Engine=19.25) | Category: Source data issue
+TITAN Mar 2017 ROE Difference = 16.43 (Source=32.9, Engine=16.47) | Category: Source data issue
+TITAN Mar 2018 ROE Difference = 11.25 (Source=32.9, Engine=21.65) | Category: Source data issue
+TITAN Mar 2019 ROE Difference = 10.02 (Source=32.9, Engine=22.88) | Category: Source data issue
+TITAN Mar 2020 ROE Difference = 10.51 (Source=32.9, Engine=22.39) | Category: Source data issue
+TITAN Mar 2021 ROE Difference = 19.91 (Source=32.9, Engine=12.99) | Category: Source data issue
+TITAN Mar 2021 ROCE Difference = 9.57 (Source=22.7, Engine=13.13) | Category: Source data issue
+TITAN Mar 2022 ROE Difference = 9.27 (Source=32.9, Engine=23.63) | Category: Source data issue
+TITAN Mar 2023 ROE Difference = 5.27 (Source=32.9, Engine=27.63) | Category: Source data issue
+TORNTPHARM Mar 2013 ROE Difference = 6.39 (Source=24.2, Engine=30.59) | Category: Source data issue
+TORNTPHARM Mar 2013 ROCE Difference = 9.76 (Source=23.2, Engine=32.96) | Category: Source data issue
+TORNTPHARM Mar 2014 ROE Difference = 10.69 (Source=24.2, Engine=34.89) | Category: Source data issue
+TORNTPHARM Mar 2014 ROCE Difference = 8.27 (Source=23.2, Engine=31.47) | Category: Source data issue
+TORNTPHARM Mar 2015 ROE Difference = 5.95 (Source=24.2, Engine=30.15) | Category: Source data issue
+TORNTPHARM Mar 2016 ROE Difference = 25.40 (Source=24.2, Engine=49.60) | Category: Source data issue
+TORNTPHARM Mar 2016 ROCE Difference = 23.55 (Source=23.2, Engine=46.75) | Category: Source data issue
+TORNTPHARM Mar 2018 ROE Difference = 9.53 (Source=24.2, Engine=14.67) | Category: Source data issue
+TORNTPHARM Mar 2018 ROCE Difference = 11.03 (Source=23.2, Engine=12.17) | Category: Source data issue
+TORNTPHARM Mar 2019 ROE Difference = 14.97 (Source=24.2, Engine=9.23) | Category: Source data issue
+TORNTPHARM Mar 2022 ROE Difference = 11.15 (Source=24.2, Engine=13.05) | Category: Source data issue
+TORNTPHARM Mar 2024 ROCE Difference = 7.76 (Source=23.2, Engine=30.96) | Category: Source data issue
+TRENT Mar 2013 ROE Difference = 29.39 (Source=27.2, Engine=-2.19) | Category: Source data issue
+TRENT Mar 2013 ROCE Difference = 23.48 (Source=23.8, Engine=0.32) | Category: Source data issue
+TRENT Mar 2014 ROE Difference = 29.12 (Source=27.2, Engine=-1.92) | Category: Source data issue
+TRENT Mar 2014 ROCE Difference = 24.56 (Source=23.8, Engine=-0.76) | Category: Source data issue
+TRENT Mar 2015 ROE Difference = 18.13 (Source=27.2, Engine=9.07) | Category: Source data issue
+TRENT Mar 2015 ROCE Difference = 18.59 (Source=23.8, Engine=5.21) | Category: Source data issue
+TRENT Mar 2016 ROE Difference = 23.44 (Source=27.2, Engine=3.76) | Category: Source data issue
+TRENT Mar 2016 ROCE Difference = 18.97 (Source=23.8, Engine=4.83) | Category: Source data issue
+TRENT Mar 2017 ROE Difference = 21.71 (Source=27.2, Engine=5.49) | Category: Source data issue
+TRENT Mar 2017 ROCE Difference = 16.89 (Source=23.8, Engine=6.91) | Category: Source data issue
+TRENT Mar 2018 ROE Difference = 21.75 (Source=27.2, Engine=5.45) | Category: Source data issue
+TRENT Mar 2018 ROCE Difference = 13.33 (Source=23.8, Engine=10.47) | Category: Source data issue
+TRENT Mar 2019 ROE Difference = 21.43 (Source=27.2, Engine=5.77) | Category: Source data issue
+TRENT Mar 2019 ROCE Difference = 12.54 (Source=23.8, Engine=11.26) | Category: Source data issue
+TRENT Mar 2020 ROE Difference = 22.76 (Source=27.2, Engine=4.44) | Category: Source data issue
+TRENT Mar 2021 ROE Difference = 35.03 (Source=27.2, Engine=-7.83) | Category: Source data issue
+TRENT Mar 2021 ROCE Difference = 19.44 (Source=23.8, Engine=4.36) | Category: Source data issue
+TRENT Mar 2022 ROE Difference = 25.72 (Source=27.2, Engine=1.48) | Category: Source data issue
+TRENT Mar 2022 ROCE Difference = 15.41 (Source=23.8, Engine=8.39) | Category: Source data issue
+TRENT Mar 2023 ROE Difference = 12.02 (Source=27.2, Engine=15.18) | Category: Source data issue
+TRENT Mar 2023 ROCE Difference = 8.02 (Source=23.8, Engine=15.78) | Category: Source data issue
+TRENT Mar 2024 ROE Difference = 9.11 (Source=27.2, Engine=36.31) | Category: Source data issue
+TRENT Mar 2024 ROCE Difference = 10.06 (Source=23.8, Engine=33.86) | Category: Source data issue
+INDIGO Mar 2013 ROCE Difference = 54183.29 (Source=24.5, Engine=54207.79) | Category: Formula discrepancy
+INDIGO Mar 2014 ROCE Difference = 58040.72 (Source=24.5, Engine=58065.22) | Category: Formula discrepancy
+INDIGO Mar 2015 ROCE Difference = 39521.55 (Source=24.5, Engine=39546.05) | Category: Formula discrepancy
+INDIGO Mar 2016 ROCE Difference = 9419.46 (Source=24.5, Engine=9443.96) | Category: Formula discrepancy
+INDIGO Mar 2017 ROCE Difference = 10883.50 (Source=24.5, Engine=10908.00) | Category: Formula discrepancy
+INDIGO Mar 2018 ROCE Difference = 12956.67 (Source=24.5, Engine=12981.17) | Category: Formula discrepancy
+INDIGO Mar 2019 ROCE Difference = 13177.34 (Source=24.5, Engine=13201.84) | Category: Formula discrepancy
+INDIGO Mar 2020 ROCE Difference = 12450.70 (Source=24.5, Engine=12475.20) | Category: Formula discrepancy
+INDIGO Mar 2021 ROCE Difference = 2530.12 (Source=24.5, Engine=2554.62) | Category: Formula discrepancy
+INDIGO Mar 2022 ROCE Difference = 3808.28 (Source=24.5, Engine=3832.78) | Category: Formula discrepancy
+INDIGO Mar 2023 ROCE Difference = 6049.77 (Source=24.5, Engine=6074.27) | Category: Formula discrepancy
+INDIGO Mar 2024 ROCE Difference = 5616.38 (Source=24.5, Engine=5640.88) | Category: Formula discrepancy
