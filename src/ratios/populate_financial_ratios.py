@@ -4,9 +4,12 @@ import pandas as pd
 import sys
 from pathlib import Path
 
+
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 
-from src.ratios.ratios import (
+from src.analytics.capital_allocation import capital_allocation_label
+
+from src.analytics.ratios import (
     net_profit_margin,
     operating_profit_margin,
     return_on_equity,
@@ -17,11 +20,11 @@ from src.ratios.ratios import (
     asset_turnover,
 )
 
-from src.ratios.cashflow import (
+from src.analytics.cashflow_kpis import (
     free_cash_flow,
 )
 
-from src.ratios.cagr import (
+from src.analytics.cagr import (
     revenue_cagr,
     pat_cagr,
     eps_cagr,
@@ -88,13 +91,13 @@ merged = (
     .merge(
         balance,
         on=["company_id", "year"],
-        how="inner",
+        how="left",
         suffixes=("", "_bal")
     )
     .merge(
         cashflow,
         on=["company_id", "year"],
-        how="inner",
+        how="left",
         suffixes=("", "_cf")
     )
     .merge(
@@ -116,6 +119,7 @@ merged = (
         how="left"
     )
 )
+
 merged.drop(columns=["id_x", "id_y"], errors="ignore", inplace=True)
 
 print("\nMerged Shape:", merged.shape)
@@ -189,7 +193,10 @@ for _, row in merged.iterrows():
     )
 
     # ROE validation
-    if pd.notna(row["roe_percentage"]):
+    if (
+    roe is not None
+    and pd.notna(row["roe_percentage"])
+):
 
         diff = abs(roe - row["roe_percentage"])
 
@@ -212,7 +219,10 @@ for _, row in merged.iterrows():
             )
 
     # ROCE validation
-    if pd.notna(row["roce_percentage"]):
+    if (
+        roce is not None
+        and pd.notna(row["roce_percentage"])
+    ):
 
         diff = abs(roce - row["roce_percentage"])
 
@@ -252,6 +262,14 @@ for _, row in merged.iterrows():
 
     capex = abs(row["investing_activity"])
 
+    allocation = capital_allocation_label(
+        roe,
+        de,
+        fcf,
+        capex,
+        row["dividend_payout"],
+    )
+
     if row["equity_capital"] not in (0, None):
         book_value = (
             row["equity_capital"] + row["reserves"]
@@ -279,6 +297,7 @@ for _, row in merged.iterrows():
         "cash_from_operations_cr": row["operating_activity"],
         "source_roe_pct": row["roe_percentage"],
         "source_roce_pct": row["roce_percentage"],
+        "capital_allocation": allocation,
     }
 
     results.append(record)
@@ -290,8 +309,22 @@ ratio_df = pd.DataFrame(results)
 log.close()
 
 print("ratio_edge_cases.log generated.")
+
 print(ratio_df.head())
 print("Rows:", len(ratio_df))
+
+ratio_df[
+    [
+        "company_id",
+        "year",
+        "capital_allocation",
+    ]
+].to_csv(
+    "output/capital_allocation.csv",
+    index=False,
+)
+
+print("capital_allocation.csv generated.")
 
 # Write to SQLite
 ratio_df.to_sql(

@@ -32,6 +32,14 @@ def return_on_equity(net_profit, equity_capital, reserves):
     """
     ROE = Net Profit / (Equity Capital + Reserves) * 100
     """
+
+    if (
+        net_profit is None
+        or equity_capital is None
+        or reserves is None
+    ):
+        return None
+
     capital = equity_capital + reserves
 
     if capital <= 0:
@@ -78,6 +86,14 @@ def debt_to_equity(borrowings, equity_capital, reserves):
     """
     Debt-to-Equity Ratio
     """
+
+    if (
+        borrowings is None
+        or equity_capital is None
+        or reserves is None
+    ):
+        return None
+
     if borrowings == 0:
         return 0
 
@@ -102,6 +118,14 @@ def interest_coverage_ratio(operating_profit, other_income, interest):
     """
     Interest Coverage Ratio
     """
+
+    if (
+        operating_profit is None
+        or other_income is None
+        or interest is None
+    ):
+        return None
+
     if interest == 0:
         return None
 

@@ -23,6 +23,8 @@ ABB Mar 2022 ROCE Difference = 9.59 (Source=46.0, Engine=36.41) | Category: Sour
 ABB Mar 2023 ROE Difference = 5.13 (Source=34.9, Engine=29.77) | Category: Source data issue
 ABB Mar 2023 ROCE Difference = 9.47 (Source=46.0, Engine=36.53) | Category: Source data issue
 ABB Mar 2024 ROCE Difference = 7.58 (Source=46.0, Engine=38.42) | Category: Source data issue
+ADANIENSOL Mar 2014 ROE Difference = 8.59 (Source=8.59, Engine=0.00) | Category: Source data issue
+ADANIENSOL Mar 2014 ROCE Difference = 9.00 (Source=9.0, Engine=0.00) | Category: Source data issue
 ADANIENSOL Mar 2015 ROE Difference = 9.24 (Source=8.59, Engine=-0.65) | Category: Source data issue
 ADANIENSOL Mar 2015 ROCE Difference = 8.06 (Source=9.0, Engine=0.94) | Category: Source data issue
 ADANIENSOL Mar 2016 ROE Difference = 5.18 (Source=8.59, Engine=13.77) | Category: Source data issue
@@ -120,6 +122,11 @@ ASIANPAINT Mar 2022 ROCE Difference = 10.55 (Source=41.75, Engine=31.20) | Categ
 ASIANPAINT Mar 2023 ROE Difference = 5.22 (Source=31.45, Engine=26.23) | Category: Source data issue
 ASIANPAINT Mar 2023 ROCE Difference = 6.83 (Source=41.75, Engine=34.92) | Category: Source data issue
 ASIANPAINT Mar 2024 ROCE Difference = 5.98 (Source=41.75, Engine=35.77) | Category: Source data issue
+ATGL Mar 2018 ROCE Difference = 5.70 (Source=21.2, Engine=15.50) | Category: Source data issue
+ATGL Mar 2019 ROCE Difference = 9.21 (Source=21.2, Engine=30.41) | Category: Source data issue
+ATGL Mar 2020 ROE Difference = 9.14 (Source=20.5, Engine=29.64) | Category: Source data issue
+ATGL Mar 2020 ROCE Difference = 10.13 (Source=21.2, Engine=31.33) | Category: Source data issue
+ATGL Mar 2021 ROCE Difference = 7.38 (Source=21.2, Engine=28.58) | Category: Source data issue
 BAJAJ-AUTO Mar 2013 ROE Difference = 12.35 (Source=26.5, Engine=38.85) | Category: Source data issue
 BAJAJ-AUTO Mar 2013 ROCE Difference = 11.19 (Source=33.5, Engine=44.69) | Category: Source data issue
 BAJAJ-AUTO Mar 2014 ROE Difference = 6.74 (Source=26.5, Engine=33.24) | Category: Source data issue
@@ -463,6 +470,8 @@ GRASIM Mar 2017 ROE Difference = 6.63 (Source=6.9, Engine=13.53) | Category: Sou
 GRASIM Mar 2017 ROCE Difference = 8.89 (Source=9.3, Engine=18.19) | Category: Source data issue
 GRASIM Mar 2022 ROE Difference = 7.90 (Source=6.9, Engine=14.80) | Category: Source data issue
 GRASIM Mar 2023 ROE Difference = 7.17 (Source=6.9, Engine=14.07) | Category: Source data issue
+HAL Mar 2016 ROE Difference = 1636.10 (Source=28.9, Engine=1665.00) | Category: Formula discrepancy
+HAL Mar 2016 ROCE Difference = 1756.75 (Source=38.9, Engine=1795.65) | Category: Formula discrepancy
 HAL Mar 2017 ROE Difference = 1938.02 (Source=28.9, Engine=1966.92) | Category: Formula discrepancy
 HAL Mar 2017 ROCE Difference = 2358.14 (Source=38.9, Engine=2397.04) | Category: Formula discrepancy
 HAL Mar 2018 ROE Difference = 1499.56 (Source=28.9, Engine=1528.46) | Category: Formula discrepancy
@@ -655,6 +664,7 @@ IRCTC Mar 2022 ROE Difference = 5.11 (Source=40.4, Engine=35.29) | Category: Sou
 IRCTC Mar 2022 ROCE Difference = 9.55 (Source=53.8, Engine=44.25) | Category: Source data issue
 IRCTC Mar 2024 ROE Difference = 6.00 (Source=40.4, Engine=34.40) | Category: Source data issue
 IRCTC Mar 2024 ROCE Difference = 9.24 (Source=53.8, Engine=44.56) | Category: Source data issue
+IRFC Mar 2013 ROE Difference = 5.54 (Source=13.7, Engine=8.16) | Category: Sector-specific
 IRFC Mar 2016 ROE Difference = 6.33 (Source=13.7, Engine=7.37) | Category: Sector-specific
 IRFC Mar 2017 ROE Difference = 5.92 (Source=13.7, Engine=7.78) | Category: Sector-specific
 ITC Mar 2013 ROCE Difference = 13.48 (Source=34.76, Engine=48.24) | Category: Source data issue
@@ -713,6 +723,9 @@ LICI Mar 2023 ROE Difference = 14.25 (Source=63.61, Engine=77.86) | Category: Se
 LICI Mar 2023 ROCE Difference = 10.20 (Source=63.79, Engine=73.99) | Category: Sector-specific
 LICI Mar 2024 ROE Difference = 14.16 (Source=63.61, Engine=49.45) | Category: Sector-specific
 LICI Mar 2024 ROCE Difference = 24.18 (Source=63.79, Engine=39.61) | Category: Sector-specific
+LODHA Mar 2011 ROE Difference = 24.78 (Source=10.7, Engine=35.48) | Category: Source data issue
+LODHA Mar 2012 ROE Difference = 23.14 (Source=10.7, Engine=33.84) | Category: Source data issue
+LODHA Mar 2015 ROE Difference = 13.53 (Source=10.7, Engine=24.23) | Category: Source data issue
 LODHA Mar 2016 ROE Difference = 6.99 (Source=10.7, Engine=17.69) | Category: Source data issue
 LODHA Mar 2018 ROCE Difference = 5.04 (Source=11.1, Engine=6.06) | Category: Source data issue
 LODHA Mar 2019 ROE Difference = 32.10 (Source=10.7, Engine=42.80) | Category: Source data issue
