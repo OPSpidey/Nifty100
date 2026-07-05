@@ -32,6 +32,23 @@ for table in tables:
                 & (df["net_cash_flow"] == 0)
             )
         ]
+        df["abs_cfo"] = df["operating_activity"].abs()
+        df = (
+            df.sort_values(
+                by=["company_id", "year", "abs_cfo"],
+                ascending=[True, True, False]
+            )
+            .drop_duplicates(
+                subset=["company_id", "year"],
+                keep="first"
+            )
+            .drop(columns="abs_cfo")
+        )
+    else:
+        df = df.drop_duplicates(
+            subset=["company_id", "year"],
+            keep="first"
+        )
 
     after = len(df)
 

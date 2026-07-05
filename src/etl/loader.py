@@ -2,6 +2,22 @@ import pandas as pd
 from pathlib import Path
 
 
+FILES = {
+    "analysis.xlsx": ("data/raw/analysis.xlsx", 1),
+    "balancesheet.xlsx": ("data/raw/balancesheet.xlsx", 1),
+    "cashflow.xlsx": ("data/raw/cashflow.xlsx", 1),
+    "companies.xlsx": ("data/raw/companies.xlsx", 1),
+    "documents.xlsx": ("data/raw/documents.xlsx", 1),
+    "profitandloss.xlsx": ("data/raw/profitandloss.xlsx", 1),
+    "prosandcons.xlsx": ("data/raw/prosandcons.xlsx", 1),
+    "financial_ratios.xlsx": ("data/supporting/financial_ratios.xlsx", 0),
+    "market_cap.xlsx": ("data/supporting/market_cap.xlsx", 0),
+    "peer_groups.xlsx": ("data/supporting/peer_groups.xlsx", 0),
+    "sectors.xlsx": ("data/supporting/sectors.xlsx", 0),
+    "stock_prices.xlsx": ("data/supporting/stock_prices.xlsx", 0),
+}
+
+
 def load_excel(path):
     """
     Reads Bluestock Excel files.
@@ -23,51 +39,42 @@ def load_excel(path):
     return df
 
 
-if __name__ == "__main__":
-
-    data_dir = Path("data")
-
-    for file in data_dir.rglob("*.xlsx"):
-
-        try:
-            df = load_excel(file)
-
-            print(
-                f"{file.name}: "
-                f"{df.shape[0]} rows "
-                f"{df.shape[1]} columns"
-            )
-
-        except Exception as e:
-
-            print(f"ERROR: {file.name}")
-            print(e)
-
-
-
-audit = []
-
-for file in data_dir.rglob("*.xlsx"):
-
-    df = load_excel(file)
-
-    audit.append({
-        "file_name": file.name,
-        "rows": len(df),
-        "columns": len(df.columns)
-    })
-
-    print(
-        f"{file.name}: "
-        f"{len(df)} rows "
-        f"{len(df.columns)} columns"
+def load_source_file(path, header_row):
+    df = pd.read_excel(path, header=header_row)
+    df.columns = (
+        df.columns
+        .str.strip()
+        .str.lower()
+        .str.replace(" ", "_")
     )
+    return df
 
-audit_df = pd.DataFrame(audit)
 
-audit_df.to_csv(
-    "output/load_audit.csv",
-    index=False
-)
+def create_load_audit(output_path="output/load_audit.csv"):
+    audit = []
 
-print("\nAudit file created.")
+    for file_name, (file_path, header_row) in FILES.items():
+        df = load_source_file(file_path, header_row)
+
+        audit.append({
+            "file_name": file_name,
+            "rows": len(df),
+            "columns": len(df.columns)
+        })
+
+        print(
+            f"{file_name}: "
+            f"{len(df)} rows "
+            f"{len(df.columns)} columns"
+        )
+
+    audit_df = pd.DataFrame(audit)
+    audit_df.to_csv(output_path, index=False)
+
+    print("\nAudit file created.")
+
+    return audit_df
+
+
+if __name__ == "__main__":
+    create_load_audit()

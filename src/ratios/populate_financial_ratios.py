@@ -22,6 +22,7 @@ from src.analytics.ratios import (
 
 from src.analytics.cashflow_kpis import (
     free_cash_flow,
+    capital_allocation_pattern,
 )
 
 from src.analytics.cagr import (
@@ -29,6 +30,86 @@ from src.analytics.cagr import (
     pat_cagr,
     eps_cagr,
 )
+
+
+def sign_label(value):
+    return "+" if value >= 0 else "-"
+
+
+def five_year_company_cagr(df, value_column, output_column, cagr_func):
+    results = []
+
+    work = df[["company_id", "year", value_column]].copy()
+    work["year_number"] = pd.to_numeric(
+        work["year"].astype(str).str.extract(r"(\d{4})")[0],
+        errors="coerce"
+    )
+
+    for company_id, group in work.groupby("company_id"):
+        clean = (
+            group.dropna(subset=["year_number", value_column])
+            .sort_values("year_number")
+        )
+
+        if len(clean) < 2:
+            value = None
+        else:
+            end = clean.iloc[-1]
+            starts = clean[
+                clean["year_number"] <= end["year_number"] - 5
+            ]
+            start = starts.iloc[-1] if not starts.empty else clean.iloc[0]
+            years = end["year_number"] - start["year_number"]
+
+            value, _ = cagr_func(
+                start[value_column],
+                end[value_column],
+                years
+            )
+
+        results.append({
+            "company_id": company_id,
+            output_column: value,
+        })
+
+    return pd.DataFrame(results)
+
+
+def add_composite_quality_score(df):
+    score_columns = {
+        "return_on_equity_pct": 1,
+        "free_cash_flow_cr": 1,
+        "revenue_cagr_5yr": 1,
+        "pat_cagr_5yr": 1,
+        "operating_profit_margin_pct": 1,
+        "interest_coverage": 1,
+        "asset_turnover": 1,
+        "eps_cagr_5yr": 1,
+        "debt_to_equity": -1,
+    }
+
+    parts = []
+
+    for column, direction in score_columns.items():
+        values = pd.to_numeric(df[column], errors="coerce")
+        minimum = values.min(skipna=True)
+        maximum = values.max(skipna=True)
+
+        if pd.isna(minimum) or pd.isna(maximum) or minimum == maximum:
+            normalized = pd.Series(0.5, index=df.index)
+        else:
+            normalized = (values - minimum) / (maximum - minimum)
+
+        if direction < 0:
+            normalized = 1 - normalized
+
+        parts.append(normalized.fillna(0))
+
+    df["composite_quality_score"] = (
+        pd.concat(parts, axis=1).mean(axis=1) * 100
+    ).round(2)
+
+    return df
 
 
 conn = sqlite3.connect("db/nifty100.db")
@@ -306,6 +387,36 @@ log.close()
 
 ratio_df = pd.DataFrame(results)
 
+cagr_frames = [
+    five_year_company_cagr(
+        profit,
+        "sales",
+        "revenue_cagr_5yr",
+        revenue_cagr,
+    ),
+    five_year_company_cagr(
+        profit,
+        "net_profit",
+        "pat_cagr_5yr",
+        pat_cagr,
+    ),
+    five_year_company_cagr(
+        profit,
+        "eps",
+        "eps_cagr_5yr",
+        eps_cagr,
+    ),
+]
+
+for cagr_frame in cagr_frames:
+    ratio_df = ratio_df.merge(
+        cagr_frame,
+        on="company_id",
+        how="left",
+    )
+
+ratio_df = add_composite_quality_score(ratio_df)
+
 log.close()
 
 print("ratio_edge_cases.log generated.")
@@ -313,11 +424,44 @@ print("ratio_edge_cases.log generated.")
 print(ratio_df.head())
 print("Rows:", len(ratio_df))
 
-ratio_df[
+capital_allocation_df = merged[
     [
         "company_id",
         "year",
-        "capital_allocation",
+        "operating_activity",
+        "investing_activity",
+        "financing_activity",
+    ]
+].copy()
+capital_allocation_df = capital_allocation_df.drop_duplicates(
+    subset=["company_id", "year"],
+    keep="first",
+)
+capital_allocation_df["cfo_sign"] = capital_allocation_df[
+    "operating_activity"
+].map(sign_label)
+capital_allocation_df["cfi_sign"] = capital_allocation_df[
+    "investing_activity"
+].map(sign_label)
+capital_allocation_df["cff_sign"] = capital_allocation_df[
+    "financing_activity"
+].map(sign_label)
+capital_allocation_df["pattern_label"] = capital_allocation_df.apply(
+    lambda row: capital_allocation_pattern(
+        row["operating_activity"],
+        row["investing_activity"],
+        row["financing_activity"],
+    ),
+    axis=1,
+)
+capital_allocation_df[
+    [
+        "company_id",
+        "year",
+        "cfo_sign",
+        "cfi_sign",
+        "cff_sign",
+        "pattern_label",
     ]
 ].to_csv(
     "output/capital_allocation.csv",

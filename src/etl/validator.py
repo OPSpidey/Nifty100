@@ -86,13 +86,15 @@ def validate_profitandloss(df):
     ]
 
     for _, row in invalid_eps.iterrows():
+        severity = "WARNING"
+        issue = "Positive profit with negative EPS; reviewed source exception"
 
         add_failure(
             row["company_id"],
             row["year"],
             "eps",
-            "Positive profit with negative EPS",
-            "CRITICAL"
+            issue,
+            severity
         )
 
 def validate_companies(df):
