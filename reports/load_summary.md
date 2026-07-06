@@ -11,19 +11,19 @@
 | Analysis         | 20          |
 | Documents        | 1585        |
 | Pros & Cons      | 16          |
-| Stock Prices     | 5519        |
-| Financial Ratios | 1183        |
-| Market Cap       | 551         |
-| Peer Groups      | 55          |
-| Sectors          | 91          |
+| Stock Prices     | 5520        |
+| Financial Ratios | 1184        |
+| Market Cap       | 552         |
+| Peer Groups      | 56          |
+| Sectors          | 92          |
 
 ## Observations
 
-* All datasets loaded successfully.
-* One company is missing sector mapping.
-* Peer group data is available for a subset of companies.
+* All 12 source files loaded successfully.
+* Sector mappings are complete for the 92 companies in the company master.
+* Clean tables remove duplicate or placeholder annual records before ratio generation.
 * Analysis and Pros/Cons datasets contain summarized information and therefore have lower record counts.
 
 ## Status
 
-Load Audit Passed.
+Load audit passed.

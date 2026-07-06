@@ -44,8 +44,7 @@ ORDER BY year DESC, return_on_equity_pct DESC
 LIMIT 10;
 
 -- 10. Companies with high leverage outside Financials
-SELECT
-    fr.company_id,
+SELECT fr.company_id,
     fr.year,
     s.broad_sector,
     fr.debt_to_equity

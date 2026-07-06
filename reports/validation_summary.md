@@ -2,10 +2,11 @@
 
 ## Validation Results
 
-Total validation records: ~95
+Total validation records: 97
 
 ### Tax Percentage Warnings
-67 records
+
+68 records
 
 Reason:
 Tax rate outside expected business range.
@@ -14,7 +15,8 @@ Status:
 Accepted as business-rule exceptions.
 
 ### Dividend Payout Warnings
-24 records
+
+25 records
 
 Reason:
 Dividend payout exceeded 100%.
@@ -23,6 +25,7 @@ Status:
 Accepted as valid business cases.
 
 ### EPS Validation
+
 1 record
 
 Company:
@@ -32,9 +35,10 @@ Issue:
 Positive profit with negative EPS.
 
 Status:
-Flagged for future review.
+Reviewed and retained as a source-data exception.
 
 ### URL Validation
+
 3 records
 
 Company:
@@ -48,6 +52,6 @@ Non-critical metadata issue.
 
 ## Conclusion
 
-No critical ETL failures detected.
+No unresolved CRITICAL ETL failures remain.
 
-Dataset approved for Sprint 2.
+Dataset approved for downstream ratio and screener work.

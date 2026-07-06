@@ -92,7 +92,7 @@ TORNTPHARM,Mar 2022,dividend_payout,Dividend payout exceeds 100%,WARNING
 VEDL,Mar 2023,dividend_payout,Dividend payout exceeds 100%,WARNING
 VEDL,Mar 2024,dividend_payout,Dividend payout exceeds 100%,WARNING
 INDIGO,Mar 2019,dividend_payout,Dividend payout exceeds 100%,WARNING
-TATAPOWER,Mar 2014,eps,Positive profit with negative EPS,CRITICAL
+TATAPOWER,Mar 2014,eps,Positive profit with negative EPS; reviewed source exception,WARNING
 TVS Motor Company Ltd,,website,Invalid URL,WARNING
 TVS Motor Company Ltd,,nse_profile,Invalid URL,WARNING
 TVS Motor Company Ltd,,bse_profile,Invalid URL,WARNING
