@@ -433,6 +433,11 @@ capital_allocation_df = merged[
         "financing_activity",
     ]
 ].copy()
+
+capital_allocation_df = capital_allocation_df[
+    capital_allocation_df["year"] != "TTM"
+].copy()
+
 capital_allocation_df = capital_allocation_df.drop_duplicates(
     subset=["company_id", "year"],
     keep="first",

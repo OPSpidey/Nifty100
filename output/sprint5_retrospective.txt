@@ -1,0 +1,40 @@
+SPRINT 5 RETROSPECTIVE
+======================
+
+Sprint Goal
+-----------
+Complete the Cash Flow Intelligence module, NLP-based Pros/Cons generation, PDF reporting system, and portfolio summary.
+
+Completed
+---------
+• Parsed analysis text into structured metrics.
+• Implemented automatic Pros/Cons generation with confidence scoring.
+• Generated Pros/Cons for all companies.
+• Implemented Cash Flow Intelligence KPIs.
+• Classified CFO quality, CapEx intensity, distress signals, deleveraging, and capital allocation.
+• Generated cashflow_intelligence.xlsx and distress alerts.
+• Generated company tearsheets.
+• Fixed layout issues including text overflow, page breaks, KPI formatting, chart labels, and report consistency.
+• Successfully generated batch tearsheets with automatic skipping of companies having insufficient history.
+• Generated sector reports.
+• Generated portfolio summary report with KPI trend indicators.
+
+Challenges
+----------
+• Missing cash flow data for ATGL.
+• Missing KPI values for some banking companies.
+• ReportLab layout overflow on selected companies.
+• Header overlap on long reports.
+• Handling missing values during batch generation.
+
+Resolutions
+-----------
+• Added graceful handling for missing values.
+• Implemented data validation before PDF generation.
+• Adjusted layouts to avoid overflow.
+• Added automatic skipping for insufficient historical data.
+• Improved chart spacing and formatting.
+
+Outcome
+-------
+Sprint 5 objectives were successfully completed. All reporting modules, NLP outputs, Cash Flow Intelligence reports, and portfolio summaries were generated successfully.

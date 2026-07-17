@@ -1,0 +1,4 @@
+company_id,error
+ATGL,single positional indexer is out-of-bounds
+PNB,unsupported format string passed to NoneType.__format__
+SBIN,unsupported format string passed to NoneType.__format__

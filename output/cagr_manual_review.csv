@@ -1,0 +1,4 @@
+company_id,metric,parsed_value,computed_value,difference_pct
+SBILIFE,Revenue CAGR,17.0,24.231614182367544,7.23
+HDFCBANK,Revenue CAGR,30.0,21.95098428169122,8.05
+INFY,Revenue CAGR,5.0,13.199100930556229,8.2
