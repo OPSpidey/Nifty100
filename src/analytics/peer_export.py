@@ -1,5 +1,5 @@
-from pathlib import Path
 import sys
+from pathlib import Path
 
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill
@@ -8,7 +8,6 @@ from openpyxl.utils import get_column_letter
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from src.analytics.peer import PEER_METRICS, REPORT_METRICS, peer_report_frame
-
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_OUTPUT = PROJECT_ROOT / "output" / "peer_comparison.xlsx"

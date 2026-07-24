@@ -4,7 +4,6 @@ from pathlib import Path
 
 import pandas as pd
 
-
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from src.ratios.cashflow import capital_allocation_pattern

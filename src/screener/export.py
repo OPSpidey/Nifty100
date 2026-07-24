@@ -1,5 +1,5 @@
-from pathlib import Path
 import sys
+from pathlib import Path
 
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Font, PatternFill
@@ -8,7 +8,6 @@ from openpyxl.utils import get_column_letter
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from src.screener.engine import load_config, run_all_presets
-
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_OUTPUT = PROJECT_ROOT / "output" / "screener_output.xlsx"

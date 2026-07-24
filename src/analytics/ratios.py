@@ -21,9 +21,11 @@ def operating_profit_margin(operating_profit, sales, opm_percentage=None):
 
     mismatch = False
 
-    if opm_percentage is not None:
-        if abs(calculated - opm_percentage) > 1:
-            mismatch = True
+    if (
+    opm_percentage is not None
+    and abs(calculated - opm_percentage) > 1
+):
+        mismatch = True
 
     return calculated, mismatch
 
@@ -167,3 +169,44 @@ def asset_turnover(sales, total_assets):
         return None
 
     return sales / total_assets
+
+def cagr_turnaround_flag(previous_cagr, current_cagr):
+    """Check whether CAGR recovered from negative to positive."""
+
+    if previous_cagr is None or current_cagr is None:
+        return False
+
+    return previous_cagr < 0 and current_cagr > 0
+
+def cagr_decline_to_loss(cagr, current_profit):
+    """Check whether growth declined into loss."""
+
+    if cagr is None or current_profit is None:
+        return False
+
+    return cagr > 0 and current_profit < 0
+
+def calculate_cagr(start_value, end_value, years):
+    """Calculate compound annual growth rate."""
+
+    if (
+        start_value is None
+        or end_value is None
+        or years is None
+        or years <= 0
+        or start_value <= 0
+    ):
+        return None
+
+    return ((end_value / start_value) ** (1 / years) - 1) * 100
+
+def cfo_quality_score(cfo, net_profit):
+    """Calculate CFO quality score."""
+
+    if cfo is None or net_profit is None:
+        return None
+
+    if net_profit == 0:
+        return None
+
+    return cfo / net_profit

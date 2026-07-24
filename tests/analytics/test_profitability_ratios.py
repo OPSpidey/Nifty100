@@ -1,17 +1,14 @@
 from src.ratios.ratios import (
-    net_profit_margin,
-    operating_profit_margin,
-    return_on_equity,
-    return_on_capital_employed,
-    return_on_assets,
-    roce_benchmark,
+    asset_turnover,
     debt_to_equity,
     high_leverage_flag,
-    interest_coverage_ratio,
     icr_label,
-    icr_warning_flag,
-    net_debt,
-    asset_turnover,
+    interest_coverage_ratio,
+    net_profit_margin,
+    operating_profit_margin,
+    return_on_assets,
+    return_on_capital_employed,
+    return_on_equity,
 )
 
 
@@ -30,7 +27,7 @@ def test_operating_profit_margin():
 
 
 def test_operating_profit_margin_mismatch():
-    opm, mismatch = operating_profit_margin(25, 100, 20)
+    _, mismatch = operating_profit_margin(25, 100, 20)
     assert mismatch is True
 
 

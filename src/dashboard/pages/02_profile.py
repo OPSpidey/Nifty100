@@ -1,9 +1,10 @@
+import re
 import sqlite3
+
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
-import re
 
 st.set_page_config(
     page_title="Company Profile",
@@ -267,7 +268,7 @@ if selected_company:
         y=company_ratios["return_on_equity_pct"],
         mode="lines+markers",
         name="ROE (%)",
-        line=dict(width=3),
+        line={"width": 3},
         yaxis="y1",
     )
     )
@@ -278,7 +279,7 @@ if selected_company:
         y=company_ratios["roce_pct"],
         mode="lines+markers",
         name="ROCE (%)",
-        line=dict(width=3),
+        line={"width": 3},
         yaxis="y2",
     )
     )
@@ -288,27 +289,28 @@ if selected_company:
     height=550,
     hovermode="x unified",
 
-    xaxis=dict(
-        title="Financial Year"
-    ),
+    xaxis={
+    "title": "Financial Year",
+    },
 
-    yaxis=dict(
-        title="ROE (%)",
-        side="left"
-    ),
+    yaxis={
+    "title": "ROE (%)",
+    "side": "left",
+    },
 
-    yaxis2=dict(
-        title="ROCE (%)",
-        overlaying="y",
-        side="right"
-    ),
+    yaxis2={
+    "title": "ROCE (%)",
+    "overlaying": "y",
+    "side": "right",
+    },
 
-    legend=dict(
-        orientation="h",
-        y=1.08,
-        x=0.5,
-        xanchor="center"
-    )
+    legend={
+    "orientation": "h",
+    "y": 1.08,
+    "x": 0.5,
+    "xanchor": "center",
+    }
+
     )
     st.plotly_chart(fig, use_container_width=True)
 

@@ -11,7 +11,6 @@ from src.screener.engine import (
     load_financial_ratios,
 )
 
-
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 RADAR_DIR = PROJECT_ROOT / "reports" / "radar_charts"
 

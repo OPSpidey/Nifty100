@@ -418,9 +418,12 @@ def _prepare_filter_columns(df):
     df = df.copy()
 
     for column in set(FILTER_COLUMNS.values()):
-        if column in df.columns and column != "interest_coverage_for_filter":
-            if column != "debt_to_equity_declining_yoy":
-                df[column] = pd.to_numeric(df[column], errors="coerce")
+        if (
+    column in df.columns
+    and column != "interest_coverage_for_filter"
+    and column != "debt_to_equity_declining_yoy"
+):
+            df[column] = pd.to_numeric(df[column], errors="coerce")
 
     df["interest_coverage_for_filter"] = pd.to_numeric(
         df["interest_coverage"],

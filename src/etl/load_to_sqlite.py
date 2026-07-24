@@ -1,5 +1,6 @@
-import pandas as pd
 import sqlite3
+
+import pandas as pd
 
 conn = sqlite3.connect("db/nifty100.db")
 

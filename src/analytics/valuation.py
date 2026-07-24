@@ -1,7 +1,7 @@
 import sqlite3
-import pandas as pd
 from pathlib import Path
 
+import pandas as pd
 
 DB_PATH = "db/nifty100.db"
 

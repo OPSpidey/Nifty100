@@ -1,27 +1,26 @@
 import sqlite3
-from pathlib import Path
-
-import pandas as pd
-import matplotlib.pyplot as plt
-
-from reportlab.platypus import Image
-from reportlab.pdfbase.pdfmetrics import stringWidth
-from reportlab.lib.pagesizes import A4
-from reportlab.platypus import Table, TableStyle
-
-from reportlab.lib import colors
-from reportlab.lib.enums import TA_CENTER
-from reportlab.lib.styles import getSampleStyleSheet
-from reportlab.lib.units import inch
-from reportlab.platypus import (
-    SimpleDocTemplate,
-    Paragraph,
-    Spacer,
-    PageBreak,
-)
 import time
 import zipfile
+from pathlib import Path
+
+import matplotlib.pyplot as plt
+import pandas as pd
 from PyPDF2 import PdfReader
+from reportlab.lib import colors
+from reportlab.lib.enums import TA_CENTER
+from reportlab.lib.pagesizes import A4
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib.units import inch
+from reportlab.pdfbase.pdfmetrics import stringWidth
+from reportlab.platypus import (
+    Image,
+    PageBreak,
+    Paragraph,
+    SimpleDocTemplate,
+    Spacer,
+    Table,
+    TableStyle,
+)
 
 DB_PATH = "db/nifty100.db"
 OUTPUT_DIR = Path("output/tearsheets")
@@ -841,7 +840,7 @@ def validate_tearsheets():
                 }
             )
 
-        except Exception as e:
+        except (OSError, ValueError) as e:
 
             report.append(
                 {
@@ -970,7 +969,7 @@ if __name__ == "__main__":
 
             success.append(company)
 
-        except Exception as e:
+        except (OSError, ValueError) as e:
 
             print(f"FAILED : {company}")
 

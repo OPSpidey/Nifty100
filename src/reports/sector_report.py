@@ -2,19 +2,16 @@ import sqlite3
 from pathlib import Path
 
 import pandas as pd
-
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import getSampleStyleSheet
-from reportlab.lib.units import inch
 from reportlab.platypus import (
-    SimpleDocTemplate,
     Paragraph,
+    SimpleDocTemplate,
     Spacer,
     Table,
     TableStyle,
 )
-
 
 DB_PATH = "db/nifty100.db"
 

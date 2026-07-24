@@ -1,0 +1,67 @@
+BLE001 Do not catch blind exception: `Exception`
+   --> src\dashboard\pages\08_reports.py:167:8
+    |
+165 |                     )
+166 |
+167 | except Exception:
+    |        ^^^^^^^^^
+168 |
+169 |                 st.error(
+    |
+
+SIM115 Use a context manager for opening files
+   --> src\ratios\populate_financial_ratios.py:223:7
+    |
+221 | )
+222 |
+223 | log = open("output/ratio_edge_cases.log", "w")
+    |       ^^^^
+224 |
+225 | log.write("DAY 13 - RATIO EDGE CASES\n")
+    |
+
+SIM115 Use a context manager for opening files
+   --> src\ratios\populate_financial_ratios.py:230:7
+    |
+228 | results = []
+229 |
+230 | log = open("output/ratio_edge_cases.log", "w")
+    |       ^^^^
+231 | log.write("DAY 13 - RATIO EDGE CASES\n")
+232 | log.write("=" * 60 + "\n")
+    |
+
+BLE001 Do not catch blind exception: `Exception`
+   --> src\reports\tearsheet.py:843:16
+    |
+841 |             )
+842 |
+843 |         except Exception as e:
+    |                ^^^^^^^^^
+844 |
+845 |             report.append(
+    |
+
+BLE001 Do not catch blind exception: `Exception`
+   --> src\reports\tearsheet.py:972:16
+    |
+970 |             success.append(company)
+971 |
+972 |         except Exception as e:
+    |                ^^^^^^^^^
+973 |
+974 |             print(f"FAILED : {company}")
+    |
+
+RUF059 Unpacked variable `opm` is never used
+  --> tests\analytics\test_profitability_ratios.py:30:5
+   |
+29 | def test_operating_profit_margin_mismatch():
+30 |     opm, mismatch = operating_profit_margin(25, 100, 20)
+   |     ^^^
+31 |     assert mismatch is True
+   |
+help: Prefix it with an underscore or any other dummy variable pattern
+
+Found 6 errors.
+No fixes available (1 hidden fix can be enabled with the `--unsafe-fixes` option).

@@ -1,7 +1,8 @@
 import sqlite3
+
 import pandas as pd
-import streamlit as st
 import plotly.express as px
+import streamlit as st
 
 st.set_page_config(
     page_title="Home",
@@ -157,14 +158,19 @@ fig.update_traces(
 fig.update_layout(
     height=600,
     title_x=0.5,
-    legend=dict(
-        orientation="h",
-        y=-0.15,
-        x=0.5,
-        xanchor="center",
-        yanchor="top"
-    ),
-    margin=dict(t=60, b=80, l=20, r=20)
+    legend={
+    "orientation": "h",
+    "y": -0.15,
+    "x": 0.5,
+    "xanchor": "center",
+    "yanchor": "top",
+},
+    margin={
+    "t": 60,
+    "b": 80,
+    "l": 20,
+    "r": 20,
+}
 )
 
 st.plotly_chart(fig, use_container_width=True)

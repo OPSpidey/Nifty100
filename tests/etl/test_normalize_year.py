@@ -22,7 +22,7 @@ def test_none():
 
 
 import pytest
-from src.etl.normalizer import normalize_year
+
 
 @pytest.mark.parametrize(
     "value,expected",

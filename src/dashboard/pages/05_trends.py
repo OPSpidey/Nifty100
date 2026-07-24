@@ -1,7 +1,8 @@
 import sqlite3
+
 import pandas as pd
-import streamlit as st
 import plotly.graph_objects as go
+import streamlit as st
 
 st.set_page_config(
     page_title="Trend Analysis",
@@ -167,12 +168,13 @@ if selected_metrics:
 
         hovermode="x unified",
 
-        legend=dict(
-        orientation="h",
-        y=1.1,
-        x=0.5,
-        xanchor="center",
-        ),
+        legend={
+        "orientation": "h",
+        "y": 1.1,
+        "x": 0.5,
+        "xanchor": "center",
+        },
+        
         )
 
 

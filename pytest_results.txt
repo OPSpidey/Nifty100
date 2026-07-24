@@ -1,0 +1,87 @@
+
+=================================== ERRORS ====================================
+__________ ERROR collecting tests/performance/test_dashboard_perf.py __________
+venv\Lib\site-packages\urllib3\connection.py:204: in _new_conn
+    sock = connection.create_connection(
+venv\Lib\site-packages\urllib3\util\connection.py:85: in create_connection
+    raise err
+venv\Lib\site-packages\urllib3\util\connection.py:73: in create_connection
+    sock.connect(sa)
+E   ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+venv\Lib\site-packages\urllib3\connectionpool.py:788: in urlopen
+    response = self._make_request(
+venv\Lib\site-packages\urllib3\connectionpool.py:493: in _make_request
+    conn.request(
+venv\Lib\site-packages\urllib3\connection.py:500: in request
+    self.endheaders()
+C:\Program Files\Python314\Lib\http\client.py:1362: in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+C:\Program Files\Python314\Lib\http\client.py:1122: in _send_output
+    self.send(msg)
+C:\Program Files\Python314\Lib\http\client.py:1066: in send
+    self.connect()
+venv\Lib\site-packages\urllib3\connection.py:331: in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+venv\Lib\site-packages\urllib3\connection.py:219: in _new_conn
+    raise NewConnectionError(
+E   urllib3.exceptions.NewConnectionError: HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+venv\Lib\site-packages\requests\adapters.py:696: in send
+    resp = conn.urlopen(
+venv\Lib\site-packages\urllib3\connectionpool.py:842: in urlopen
+    retries = retries.increment(
+venv\Lib\site-packages\urllib3\util\retry.py:543: in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/v1/companies/TCS (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+
+During handling of the above exception, another exception occurred:
+tests\performance\test_dashboard_perf.py:26: in <module>
+    response = requests.get(f"{BASE_URL}/{ticker}")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+venv\Lib\site-packages\requests\api.py:87: in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+venv\Lib\site-packages\requests\api.py:71: in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+venv\Lib\site-packages\requests\sessions.py:651: in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+venv\Lib\site-packages\requests\sessions.py:784: in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+venv\Lib\site-packages\requests\adapters.py:729: in send
+    raise ConnectionError(e, request=request)
+E   requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/v1/companies/TCS (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+------------------------------- Captured stdout -------------------------------
+============================================================
+Dashboard Performance Test
+============================================================
+_______________ ERROR collecting tests/performance/test_load.py _______________
+tests\performance\test_load.py:45: in <module>
+    print(f"Average Time       : {sum(times)/len(times):.3f} sec")
+                                  ^^^^^^^^^^^^^^^^^^^^^
+E   ZeroDivisionError: division by zero
+------------------------------- Captured stdout -------------------------------
+
+==================================================
+Load Test Completed
+==================================================
+Completed Requests : 0
+Total Time         : 2.086 sec
+============================== warnings summary ===============================
+venv\Lib\site-packages\fastapi\testclient.py:1
+  E:\Projects\Bluestock Finetech\Nifty100\venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+ERROR tests/performance/test_dashboard_perf.py - requests.exceptions.Connecti...
+ERROR tests/performance/test_load.py - ZeroDivisionError: division by zero
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!
+1 warning, 2 errors in 5.90s

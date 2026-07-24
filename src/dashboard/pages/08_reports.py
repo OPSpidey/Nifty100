@@ -1,8 +1,8 @@
 import sqlite3
-import pandas as pd
-import streamlit as st
-import requests
 
+import pandas as pd
+import requests
+import streamlit as st
 
 st.set_page_config(
     page_title="Annual Reports",
@@ -164,7 +164,7 @@ try:
                         "❌ Report unavailable"
                     )
 
-except Exception:
+except requests.RequestException:
 
                 st.error(
                     "❌ Report unavailable"

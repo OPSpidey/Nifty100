@@ -3,7 +3,6 @@ from pathlib import Path
 
 import pandas as pd
 
-
 DB_PATH = "db/nifty100.db"
 OUTPUT_DIR = Path("output")
 
