@@ -56,3 +56,30 @@ output/tearsheets/charts/
 # macOS
 .AppleDouble
 .LSOverride
+
+# Virtual Environment
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Test cache
+.pytest_cache/
+
+# Ruff cache
+.ruff_cache/
+
+# MyPy cache
+.mypy_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
