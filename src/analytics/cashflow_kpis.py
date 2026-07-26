@@ -2,6 +2,9 @@ def free_cash_flow(operating_activity, investing_activity):
     """
     Free Cash Flow = CFO + Investing Activity
     """
+    if operating_activity is None or investing_activity is None:
+        return None
+
     return operating_activity + investing_activity
 
 
@@ -9,6 +12,9 @@ def cfo_quality_score(cfo, pat):
     """
     CFO / PAT
     """
+    if pat is None or cfo is None:
+        return None, None
+
     if pat == 0:
         return None, None
 
@@ -28,8 +34,12 @@ def capex_intensity(investing_activity, sales):
     """
     CapEx Intensity
     """
-    if sales == 0:
+    if sales is None or sales == 0:
         return None, None
+
+    if investing_activity is None:
+        return None, None
+
 
     value = abs(investing_activity) / sales * 100
 
@@ -47,7 +57,11 @@ def fcf_conversion_rate(fcf, operating_profit):
     """
     FCF Conversion Rate
     """
-    if operating_profit == 0:
+    if (
+        operating_profit is None
+        or operating_profit == 0
+        or fcf is None
+    ):
         return None
 
     return (fcf / operating_profit) * 100
@@ -56,6 +70,12 @@ def capital_allocation_pattern(cfo, cfi, cff, cfo_pat_ratio=None):
     """
     Capital allocation pattern classifier.
     """
+    if (
+    cfo is None
+    or cfi is None
+    or cff is None
+    ):
+        return "Unknown"
 
     signs = (
         "+" if cfo >= 0 else "-",
@@ -94,7 +114,7 @@ def calculate_cagr(values):
     Returns None if CAGR cannot be computed.
     """
 
-    values = [v for v in values if v is not None]
+    values = [v for v in values if pd.notna(v)]
 
     if len(values) < 2:
         return None
@@ -341,17 +361,16 @@ def main():
     )
 
     # ---------- FCF Conversion ----------
+    results_df["cash_from_operations_cr"] = (
+    results_df["cash_from_operations_cr"].replace(0, pd.NA)
+)
+
     results_df["fcf_conversion_pct"] = (
         results_df["free_cash_flow_cr"]
         / results_df["cash_from_operations_cr"]
         * 100
     )
-
-    # ---------- Placeholder FCF CAGR ----------
-    # (Database does not store FCF CAGR. Using latest FCF value for now.
-    # Can later be replaced with a calculated CAGR from historical FCF.)    
-
-
+   
     results_df.rename(
         columns={
             "broad_sector": "sector",
@@ -405,7 +424,7 @@ def main():
         index=False,
     )
 
-    if __name__ == "__main__":
-        main()
+if __name__ == "__main__":
+    main()
 
         

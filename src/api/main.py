@@ -1,6 +1,4 @@
-import sqlite3
 import time
-from pathlib import Path
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
@@ -16,10 +14,6 @@ from src.api.routers import (
     valuation,
 )
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-
-DB_PATH = PROJECT_ROOT / "db" / "nifty100.db"
-
 START_TIME = time.time()
 
 app = FastAPI(
@@ -27,10 +21,6 @@ app = FastAPI(
     description="Financial Analytics API",
     version="1.0.0",
 )
-
-def get_connection():
-    """get_connection function."""
-    return sqlite3.connect(DB_PATH)
 
 app.add_middleware(
     CORSMiddleware,
@@ -43,17 +33,7 @@ app.add_middleware(
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
 
-    start = time.perf_counter()
-
     response = await call_next(request)
-
-    elapsed = time.perf_counter() - start
-
-    print(
-        f"{request.method} "
-        f"{request.url.path} "
-        f"{elapsed:.4f}s"
-    )
 
     return response
 

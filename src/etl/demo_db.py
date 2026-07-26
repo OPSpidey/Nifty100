@@ -1,19 +1,24 @@
 import sqlite3
 
-conn = sqlite3.connect("db/nifty100.db")
 
-cursor = conn.cursor()
+def main():
+    conn = sqlite3.connect("db/nifty100.db")
 
-cursor.execute("""
-SELECT name
-FROM sqlite_master
-WHERE type='table'
-ORDER BY name
-""")
+    cursor = conn.cursor()
 
-print("TABLES:\n")
+    cursor.execute("""
+    SELECT name
+    FROM sqlite_master
+    WHERE type='table'
+    ORDER BY name
+    """)
 
-for row in cursor.fetchall():
-    print(row[0])
+    print("TABLES:\n")
 
-conn.close()
+    for row in cursor.fetchall():
+        print(row[0])
+
+    conn.close()
+
+if __name__ == "__main__":
+    main()

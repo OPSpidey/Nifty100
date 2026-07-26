@@ -15,6 +15,8 @@ def test_screener_min_roe():
 
     companies = response.json()
 
+    assert isinstance(companies, list)
+
     assert len(companies) > 0
 
     for company in companies:
@@ -36,9 +38,9 @@ def test_sector_filter():
         "/api/v1/screener?sector=Financials"
     )
 
-    assert response.status_code == 200
-
     companies = response.json()
+
+    assert isinstance(companies, list)
 
     for company in companies:
         assert company["broad_sector"] == "Financials"

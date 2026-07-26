@@ -41,6 +41,10 @@ def test_insufficient():
     assert value is None
     assert flag == "INSUFFICIENT"
 
+def test_negative_years():
+    value, flag = calculate_cagr(100, 200, -2)
+    assert value is None
+    assert flag == "INSUFFICIENT"
 
 def test_revenue_cagr():
     value, _ = revenue_cagr(100, 200, 5)

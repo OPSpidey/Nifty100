@@ -9,6 +9,8 @@ from src.screener.engine import (
 
 
 def _base_frame():
+    """Return a minimal dataset for screener engine tests."""
+    
     return pd.DataFrame(
         [
             {

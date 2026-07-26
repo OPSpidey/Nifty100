@@ -35,3 +35,24 @@ dist/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Ruff
+.ruff_cache/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Python cache
+*.pyc
+
+# Generated outputs
+output/tearsheets/charts/
+
+# Temporary files
+*.tmp
+*.bak
+
+# macOS
+.AppleDouble
+.LSOverride

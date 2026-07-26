@@ -1,3 +1,9 @@
+import sqlite3
+from pathlib import Path
+
+import pandas as pd
+
+
 def capital_allocation_label(
     roe,
     debt_to_equity,
@@ -8,6 +14,14 @@ def capital_allocation_label(
     """
     Classify capital allocation strategy.
     """
+
+    if (
+        debt_to_equity is None
+        or free_cash_flow is None
+        or capex is None
+        or dividend_payout is None
+    ):
+        return "Unknown"
 
     if roe is None:
         return "Unknown"
@@ -36,122 +50,136 @@ def capital_allocation_label(
     else:
         return "Neutral"
     
-import sqlite3
-from pathlib import Path
+def main():
+    
+    DB_PATH = "db/nifty100.db"
+    OUTPUT_DIR = Path("output")
 
-import pandas as pd
+    conn = sqlite3.connect(DB_PATH)
 
-DB_PATH = "db/nifty100.db"
-OUTPUT_DIR = Path("output")
+    valid_companies = pd.read_sql(
+        """
+        SELECT id
+        FROM companies
+        """,
+        conn,
+    )["id"]
 
-conn = sqlite3.connect(DB_PATH)
+    conn.close()
 
-valid_companies = pd.read_sql(
-    """
-    SELECT id
-    FROM companies
-    """,
-    conn,
-)["id"]
+    if not (OUTPUT_DIR / "capital_allocation.csv").exists():
+        raise FileNotFoundError("output/capital_allocation.csv not found")
 
-conn.close()
+    capital = pd.read_csv(
+        OUTPUT_DIR / "capital_allocation.csv"
+    )
 
-capital = pd.read_csv(
-    OUTPUT_DIR / "capital_allocation.csv"
-)
+    original_rows = len(capital)
 
-original_rows = len(capital)
+    capital = capital[
+        capital["company_id"].isin(valid_companies)
+    ].copy()
 
-capital = capital[
-    capital["company_id"].isin(valid_companies)
-].copy()
+    capital.to_csv(
+        OUTPUT_DIR / "capital_allocation.csv",
+        index=False,
+    )
 
-capital.to_csv(
-    OUTPUT_DIR / "capital_allocation.csv",
-    index=False,
-)
+    print("Capital Allocation Verification")
+    print("--------------------------------")
+    print(f"Original Rows   : {original_rows}")
+    print(f"Filtered Rows   : {len(capital)}")
+    print(f"Companies       : {capital['company_id'].nunique()}")
+    print(f"Years           : {capital['year'].nunique()}")
 
-print("Capital Allocation Verification")
-print("--------------------------------")
-print(f"Original Rows   : {original_rows}")
-print(f"Filtered Rows   : {len(capital)}")
-print(f"Companies       : {capital['company_id'].nunique()}")
-print(f"Years           : {capital['year'].nunique()}")
+    if capital["company_id"].nunique() == len(valid_companies):
+        print("\n Verification Passed")
+    else:
+        print("\n Verification Failed")
 
-if capital["company_id"].nunique() == len(valid_companies):
-    print("\n Verification Passed")
-else:
-    print("\n Verification Failed")
+    # ---------- Latest Company-wise Distribution ----------
 
-# ---------- Latest Company-wise Distribution ----------
+    required_columns = {
+    "company_id",
+    "year",
+    "pattern_label",
+    }
 
-capital_no_ttm = capital[
-    capital["year"] != "TTM"
-].copy()
+    missing = required_columns - set(capital.columns)
 
-latest_company = (
-    capital_no_ttm
-    .sort_values("year")
-    .groupby("company_id")
-    .tail(1)
-)
+    if missing:
+        raise ValueError(f"Missing columns: {sorted(missing)}")
 
-distribution = (
-    latest_company["pattern_label"]
-    .value_counts()
-    .rename_axis("pattern_label")
-    .reset_index(name="company_count")
-)
+    capital_no_ttm = capital[
+        capital["year"] != "TTM"
+    ].copy()
 
-distribution.to_csv(
-    OUTPUT_DIR / "capital_allocation_distribution.csv",
-    index=False,
-)
+    latest_company = (
+        capital_no_ttm
+        .sort_values("year")
+        .groupby("company_id")
+        .tail(1)
+    )
 
-print("\nLatest records used :", len(latest_company))
-print("Companies covered   :", latest_company["company_id"].nunique())
+    distribution = (
+        latest_company["pattern_label"]
+        .value_counts()
+        .rename_axis("pattern_label")
+        .reset_index(name="company_count")
+    )
 
-print("\nPattern Distribution")
-print(distribution)
+    distribution.to_csv(
+        OUTPUT_DIR / "capital_allocation_distribution.csv",
+        index=False,
+    )
 
-print("\nSaved:")
-print("output/capital_allocation_distribution.csv")
+    print("\nLatest records used :", len(latest_company))
+    print("Companies covered   :", latest_company["company_id"].nunique())
 
-# ---------- Pattern Changes Report ----------
+    print("\nPattern Distribution")
+    print(distribution)
 
-pattern_changes = []
+    print("\nSaved:")
+    print("output/capital_allocation_distribution.csv")
 
-for company_id, group in (
-    capital_no_ttm
-    .sort_values("year")
-    .groupby("company_id")
-):
+    # ---------- Pattern Changes Report ----------
 
-    latest_two = group.tail(2)
+    pattern_changes = []
 
-    if len(latest_two) < 2:
-        continue
+    for company_id, group in (
+        capital_no_ttm
+        .sort_values("year")
+        .groupby("company_id")
+    ):
 
-    previous = latest_two.iloc[0]
-    latest = latest_two.iloc[1]
+        latest_two = group.tail(2)
 
-    if previous["pattern_label"] != latest["pattern_label"]:
+        if len(latest_two) < 2:
+            continue
 
-        pattern_changes.append({
-            "company_id": company_id,
-            "previous_year": previous["year"],
-            "previous_pattern": previous["pattern_label"],
-            "latest_year": latest["year"],
-            "latest_pattern": latest["pattern_label"],
-        })
+        previous = latest_two.iloc[0]
+        latest = latest_two.iloc[1]
 
-pattern_changes_df = pd.DataFrame(pattern_changes)
+        if previous["pattern_label"] != latest["pattern_label"]:
 
-pattern_changes_df.to_csv(
-    OUTPUT_DIR / "pattern_changes.csv",
-    index=False,
-)
+            pattern_changes.append({
+                "company_id": company_id,
+                "previous_year": previous["year"],
+                "previous_pattern": previous["pattern_label"],
+                "latest_year": latest["year"],
+                "latest_pattern": latest["pattern_label"],
+            })
 
-print("\nPattern Changes Found :", len(pattern_changes_df))
-print("Saved:")
-print("output/pattern_changes.csv")
+    pattern_changes_df = pd.DataFrame(pattern_changes)
+
+    pattern_changes_df.to_csv(
+        OUTPUT_DIR / "pattern_changes.csv",
+        index=False,
+    )
+
+    print("\nPattern Changes Found :", len(pattern_changes_df))
+    print("Saved:")
+    print("output/pattern_changes.csv")
+
+if __name__ == "__main__":
+    main()

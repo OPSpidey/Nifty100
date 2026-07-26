@@ -122,11 +122,11 @@ def test_asset_turnover():
 # ---------- CAGR ----------
 
 def test_cagr_turnaround():
-    assert cagr_turnaround_flag(-50, 50)
+    assert cagr_turnaround_flag(-50, 50) is True
 
 
 def test_cagr_decline():
-    assert cagr_decline_to_loss(50, -20)
+    assert cagr_decline_to_loss(50, -20) is True
 
 
 def test_cagr_normal():

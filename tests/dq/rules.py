@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-def validate_dataframe(df: pd.DataFrame):
+def validate_dataframe(df: pd.DataFrame) -> list[dict]:
     issues = []
 
     if "company_id" in df.columns and df["company_id"].isna().any():

@@ -7,9 +7,17 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-st.title("📈 Nifty 100 Analytics Dashboard")
+with st.container():
 
-st.success("Welcome to the Nifty 100 Financial Analytics Dashboard!")
+    st.title("📈 Nifty 100 Analytics Dashboard")
+
+    st.success("Welcome to the Nifty 100 Financial Analytics Dashboard!")
+
+    col1, col2, col3 = st.columns(3)
+
+    col1.metric("Companies", "92")
+    col2.metric("Financial Years", "2012–2024")
+    col3.metric("KPIs", "50+")
 
 st.markdown(
     """
@@ -30,4 +38,10 @@ This dashboard provides comprehensive analytics for Nifty 100 companies.
 
 ⬅️ **Use the sidebar to navigate between pages.**
 """
+)
+
+st.divider()
+
+st.caption(
+    "Nifty 100 Analytics Dashboard"
 )

@@ -16,8 +16,6 @@ START_TIME = time.time()
 def health():
     """health function."""
     
-    print(DB_PATH)
-    print(DB_PATH.exists())
 
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()

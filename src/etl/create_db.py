@@ -1,13 +1,19 @@
 import sqlite3
 
-conn = sqlite3.connect("db/nifty100.db")
 
-with open("db/schema.sql", "r", encoding="utf-8") as f:
-    schema = f.read()
+def main():
+    conn = sqlite3.connect("db/nifty100.db")
 
-conn.executescript(schema)
+    with open("db/schema.sql", "r", encoding="utf-8") as f:
+        schema = f.read()
 
-conn.commit()
-conn.close()
+    conn.executescript(schema)
 
-print("Database created successfully.")
+    conn.commit()
+    conn.close()
+
+    print("Database created successfully.")
+
+
+if __name__ == "__main__":
+    main()

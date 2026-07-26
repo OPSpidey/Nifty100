@@ -43,3 +43,18 @@ def test_reinvestor():
 
 def test_shareholder_returns():
     assert capital_allocation_pattern(100, -50, -20, 1.2) == "Shareholder Returns"
+
+def test_distress_signal():
+    assert capital_allocation_pattern(-100, 50, 20) == "Distress Signal"
+
+
+def test_growth_funded_by_debt():
+    assert capital_allocation_pattern(-100, -50, 20) == "Growth Funded by Debt"
+
+
+def test_cash_accumulator():
+    assert capital_allocation_pattern(100, 50, 20) == "Cash Accumulator"
+
+
+def test_unknown_pattern():
+    assert capital_allocation_pattern(100, 50, -20) == "Liquidating Assets"

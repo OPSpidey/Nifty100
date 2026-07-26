@@ -14,6 +14,9 @@ def operating_profit_margin(operating_profit, sales, opm_percentage=None):
     Returns:
         calculated_opm, mismatch
     """
+    if operating_profit is None:
+        return None, False
+
     if sales == 0 or sales is None:
         return None, False
 
@@ -56,6 +59,14 @@ def return_on_capital_employed(ebit, equity_capital, reserves, borrowings):
     """
     capital_employed = equity_capital + reserves + borrowings
 
+    if (
+    ebit is None
+    or equity_capital is None
+    or reserves is None
+    or borrowings is None
+    ):
+        return None
+
     if capital_employed <= 0:
         return None
 
@@ -71,6 +82,7 @@ def return_on_assets(net_profit, total_assets):
 
     return (net_profit / total_assets) * 100
 
+
 def roce_benchmark(roce, broad_sector):
     """
     ROCE benchmark check.
@@ -83,6 +95,7 @@ def roce_benchmark(roce, broad_sector):
         return "Sector Benchmark"
 
     return roce >= 15
+
 
 def debt_to_equity(borrowings, equity_capital, reserves):
     """
@@ -115,6 +128,7 @@ def high_leverage_flag(debt_to_equity_ratio, broad_sector):
         return False
 
     return debt_to_equity_ratio > 5 and broad_sector != "Financials"
+
 
 def interest_coverage_ratio(operating_profit, other_income, interest):
     """
@@ -158,6 +172,9 @@ def net_debt(borrowings, investments):
     """
     Net Debt
     """
+    if borrowings is None or investments is None:
+        return None
+
     return borrowings - investments
 
 
@@ -165,10 +182,14 @@ def asset_turnover(sales, total_assets):
     """
     Asset Turnover Ratio
     """
-    if total_assets == 0:
+    if sales is None or total_assets is None or total_assets == 0:
+        return None
+
+    if total_assets is None or total_assets == 0:
         return None
 
     return sales / total_assets
+
 
 def cagr_turnaround_flag(previous_cagr, current_cagr):
     """Check whether CAGR recovered from negative to positive."""
@@ -178,6 +199,7 @@ def cagr_turnaround_flag(previous_cagr, current_cagr):
 
     return previous_cagr < 0 and current_cagr > 0
 
+
 def cagr_decline_to_loss(cagr, current_profit):
     """Check whether growth declined into loss."""
 
@@ -185,6 +207,7 @@ def cagr_decline_to_loss(cagr, current_profit):
         return False
 
     return cagr > 0 and current_profit < 0
+
 
 def calculate_cagr(start_value, end_value, years):
     """Calculate compound annual growth rate."""
@@ -199,6 +222,7 @@ def calculate_cagr(start_value, end_value, years):
         return None
 
     return ((end_value / start_value) ** (1 / years) - 1) * 100
+
 
 def cfo_quality_score(cfo, net_profit):
     """Calculate CFO quality score."""

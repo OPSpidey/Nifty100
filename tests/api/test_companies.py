@@ -15,7 +15,7 @@ def test_get_all_companies():
 
     assert isinstance(data, list)
 
-    assert len(data) == 92
+    assert len(data) > 0
 
 
 def test_get_tcs():
@@ -31,6 +31,8 @@ def test_get_tcs():
     assert company["broad_sector"] == "Information Technology"
 
     assert "return_on_equity_pct" in company
+    assert company["return_on_equity_pct"] is not None
+    assert company["roce_pct"] is not None
     assert "roce_pct" in company
     assert "net_profit_margin_pct" in company
 

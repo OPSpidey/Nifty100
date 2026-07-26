@@ -56,16 +56,43 @@ def load_data():
         market_cap
     )
 
+# Valuation flags
 
+def valuation_flag(row):
+
+    if pd.isna(row["pe_ratio"]) or pd.isna(row["5yr_median_PE"]):
+        return "Fair"
+
+    if row["pe_ratio"] > row["5yr_median_PE"] * 1.5:
+        return "Caution"
+
+    elif row["pe_ratio"] < row["5yr_median_PE"] * 0.7:
+        return "Discount"
+
+    else:
+        return "Fair"
 
 if __name__ == "__main__":
 
     companies, sectors, ratios, market_cap = load_data()
 
-
     # Latest market cap year
-    market_cap = (
-        market_cap[
+
+    required_columns = {
+        "company_id",
+        "year",
+        "market_cap_crore",
+        "pe_ratio",
+        "pb_ratio",
+        "ev_ebitda",
+    }
+
+    missing = required_columns - set(market_cap.columns)
+
+    if missing:
+        raise ValueError(f"Missing columns: {sorted(missing)}")
+    
+    market_cap = (market_cap[
             market_cap["year"] == 2024
         ]
     )
@@ -91,6 +118,11 @@ if __name__ == "__main__":
     )
 
 
+    valuation.loc[
+        valuation["market_cap_crore"] == 0,
+        "market_cap_crore"
+    ] = pd.NA
+
     valuation["FCF_yield_pct"] = (
         valuation["free_cash_flow_cr"]
         /
@@ -98,7 +130,6 @@ if __name__ == "__main__":
         *
         100
     )
-
 
     valuation["FCF_yield_pct"] = (
         valuation["FCF_yield_pct"]
@@ -118,138 +149,124 @@ if __name__ == "__main__":
         .head()
     )
 
-# Sector median P/E calculation
+    # Sector median P/E calculation
 
-sector_pe_median = (
-    valuation
-    .groupby("broad_sector")["pe_ratio"]
-    .median()
-    .reset_index()
-)
-
-
-sector_pe_median.columns = [
-    "broad_sector",
-    "5yr_median_PE"
-]
-
-
-valuation = valuation.merge(
-    sector_pe_median,
-    on="broad_sector",
-    how="left"
-)
-
-
-# PE comparison with sector median
-
-valuation["PE_vs_sector_median_pct"] = (
-    (
-        valuation["pe_ratio"]
-        -
-        valuation["5yr_median_PE"]
+    sector_pe_median = (
+        valuation
+        .groupby("broad_sector")["pe_ratio"]
+        .median()
+        .reset_index()
     )
-    /
-    valuation["5yr_median_PE"]
-    *
-    100
-)
 
 
-# Valuation flags
-
-def valuation_flag(row):
-
-    if pd.isna(row["pe_ratio"]) or pd.isna(row["5yr_median_PE"]):
-        return "Fair"
-
-    if row["pe_ratio"] > row["5yr_median_PE"] * 1.5:
-        return "Caution"
-
-    elif row["pe_ratio"] < row["5yr_median_PE"] * 0.7:
-        return "Discount"
-
-    else:
-        return "Fair"
+    sector_pe_median.columns = [
+        "broad_sector",
+        "5yr_median_PE"
+    ]
 
 
+    valuation = valuation.merge(
+        sector_pe_median,
+        on="broad_sector",
+        how="left"
+    )
 
-valuation["flag"] = valuation.apply(
-    valuation_flag,
-    axis=1
-)
+
+    # PE comparison with sector median
+
+    valuation.loc[
+        valuation["5yr_median_PE"] == 0,
+        "5yr_median_PE"
+    ] = pd.NA
+
+    valuation["PE_vs_sector_median_pct"] = (
+        (
+            valuation["pe_ratio"]
+            -
+            valuation["5yr_median_PE"]
+        )
+        /
+        valuation["5yr_median_PE"]
+        *
+        100
+    )
+
+    valuation["flag"] = valuation.apply(
+        valuation_flag,
+        axis=1
+    )
 
 
-print(
-    valuation[
+    print(
+        valuation[
+            [
+                "company_id",
+                "broad_sector",
+                "pe_ratio",
+                "5yr_median_PE",
+                "PE_vs_sector_median_pct",
+                "flag"
+            ]
+        ]
+        .head()
+    )
+
+    # Rename columns for final output
+
+    valuation_output = valuation[
         [
             "company_id",
+            "company_name",
             "broad_sector",
             "pe_ratio",
+            "pb_ratio",
+            "ev_ebitda",
+            "FCF_yield_pct",
             "5yr_median_PE",
             "PE_vs_sector_median_pct",
             "flag"
         ]
-    ]
-    .head()
-)
+    ].copy()
 
-# Rename columns for final output
 
-valuation_output = valuation[
-    [
+    valuation_output.columns = [
         "company_id",
         "company_name",
-        "broad_sector",
-        "pe_ratio",
-        "pb_ratio",
-        "ev_ebitda",
+        "sector",
+        "P/E",
+        "P/B",
+        "EV/EBITDA",
         "FCF_yield_pct",
         "5yr_median_PE",
         "PE_vs_sector_median_pct",
         "flag"
     ]
-].copy()
 
 
-valuation_output.columns = [
-    "company_id",
-    "company_name",
-    "sector",
-    "P/E",
-    "P/B",
-    "EV/EBITDA",
-    "FCF_yield_pct",
-    "5yr_median_PE",
-    "PE_vs_sector_median_pct",
-    "flag"
-]
+    valuation_output = valuation_output.round(2)
 
 
-valuation_output = valuation_output.round(2)
+    # Save complete valuation summary
 
-
-# Save complete valuation summary
-
-valuation_output.to_excel(
-    OUTPUT_DIR / "valuation_summary.xlsx",
-    index=False
-)
-
-
-# Save only flagged companies
-
-flags = valuation_output[
-    valuation_output["flag"].isin(
-        [
-            "Caution",
-            "Discount"
-        ]
+    valuation_output.to_excel(
+        OUTPUT_DIR / "valuation_summary.xlsx",
+        index=False
     )
-]
 
 
-flags.to_csv(
-    OUTPUT_DIR / "valuation_flags.csv",
-    index=False
-)
+    # Save only flagged companies
+
+    flags = valuation_output[
+        valuation_output["flag"].isin(
+            [
+                "Caution",
+                "Discount"
+            ]
+        )
+    ]
+
+
+    flags.to_csv(
+        OUTPUT_DIR / "valuation_flags.csv",
+        index=False
+    )

@@ -1,80 +1,64 @@
-# Nifty100 Analytics Platform
+# Nifty100 Financial Analytics Platform
+
+![Python](https://img.shields.io/badge/Python-3.14-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.140-green)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.60-red)
+![SQLite](https://img.shields.io/badge/Database-SQLite-blue)
+![Pytest](https://img.shields.io/badge/Tests-201%20Passed-success)
+![Ruff](https://img.shields.io/badge/Ruff-Clean-success)
 
 ## Overview
 
-Nifty100 Analytics Platform is an end-to-end financial analytics system for analyzing Nifty100 companies using fundamental analysis, financial ratios, valuation metrics, cash flow analysis, peer comparison, and stock screening.
+Nifty100 Analytics Platform is an end-to-end financial analytics system that analyzes Nifty100 companies using financial statements, valuation metrics, cash flow analysis, peer comparison, and stock screening.
 
-The platform integrates an ETL pipeline, SQLite data warehouse, analytics engine, FastAPI REST API, and Streamlit dashboard to provide investment insights through interactive visualizations and automated financial analysis.
+The platform integrates an ETL pipeline, SQLite database, analytics engine, FastAPI REST API, and Streamlit dashboard to provide interactive financial insights.
 
 ---
 
-## Key Features
+## Features
 
-- Automated ETL pipeline for financial data ingestion and validation
-- Financial ratio engine with 20+ key performance indicators
-- Profitability, leverage, liquidity, efficiency, and cash flow analysis
-- Revenue, PAT, and EPS CAGR calculations
-- Composite Quality Score generation
-- Capital allocation pattern analysis
-- Multi-factor stock screener with predefined investment filters
-- Peer comparison and sector benchmarking
-- Company valuation analysis
-- Interactive Streamlit dashboard
+- Financial data ETL pipeline
+- SQLite data warehouse
+- 20+ financial KPIs and ratio engine
+- Revenue, PAT, and EPS CAGR analysis
+- Composite Quality Score
+- Cash Flow & Capital Allocation analysis
+- Multi-factor Stock Screener
+- Peer & Sector Analysis
+- Company Valuation
 - FastAPI REST API
-- PDF company tearsheet generation
-- Data quality validation and automated testing
+- Interactive Streamlit Dashboard
+- Automated Reports
+- 201 Automated Tests
 
 ---
 
-## Technology Stack
+## Tech Stack
 
-### Programming Language
-
-- Python
-
-### Backend
-
-- FastAPI
-- SQLite
-
-### Analytics
-
-- Pandas
-- NumPy
-
-### Visualization
-
-- Streamlit
-- Plotly
-
-### Testing & Code Quality
-
-- Pytest
-- Ruff
-- Black
+| Category | Technologies |
+|-----------|--------------|
+| Language | Python |
+| Backend | FastAPI |
+| Dashboard | Streamlit |
+| Database | SQLite |
+| Analytics | Pandas, NumPy |
+| Visualization | Plotly, Matplotlib |
+| Machine Learning | Scikit-learn |
+| Testing | Pytest |
+| Code Quality | Ruff, Black |
 
 ---
 
-## Project Architecture
+## Project Structure
 
-```
-Nifty100
-│
+```text
+Nifty100/
 ├── data/
-│   ├── raw/
-│   └── supporting/
-│
 ├── db/
-│   └── nifty100.db
-│
 ├── docs/
-│
 ├── output/
-│
 ├── reports/
-│
 ├── scripts/
-│
 ├── src/
 │   ├── analytics/
 │   ├── api/
@@ -85,9 +69,8 @@ Nifty100
 │   ├── ratios/
 │   ├── reports/
 │   └── screener/
-│
 ├── tests/
-│
+├── requirements.txt
 └── README.md
 ```
 
@@ -95,87 +78,72 @@ Nifty100
 
 ## Dashboard Modules
 
-- Home Dashboard
+- Home
 - Company Profile
 - Stock Screener
-- Peer Comparison
+- Peer Analysis
 - Trend Analysis
 - Sector Analysis
 - Capital Allocation
-- Reports & Tearsheet Viewer
+- Reports
+
+---
+
+## API Endpoints
+
+| Endpoint | Description |
+|----------|-------------|
+| `/api/v1/health` | Health Check |
+| `/api/v1/companies` | Company Information |
+| `/api/v1/screener` | Stock Screener |
+| `/api/v1/sectors` | Sector Analysis |
+| `/api/v1/peers` | Peer Comparison |
+| `/api/v1/valuation` | Company Valuation |
+| `/api/v1/portfolio` | Portfolio Analytics |
+| `/api/v1/documents` | Company Documents |
 
 ---
 
 ## Installation
 
-### Clone the repository
-
 ```bash
 git clone <repository-url>
 cd Nifty100
-```
 
-### Create a virtual environment
-
-```bash
 python -m venv venv
-```
 
-### Activate the environment
-
-Windows
-
-```bash
+# Windows
 venv\Scripts\activate
-```
 
-Linux/macOS
-
-```bash
+# Linux/macOS
 source venv/bin/activate
-```
 
-### Install dependencies
-
-```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ---
 
-## Running the Project
+## Run the Application
 
-### Run the ETL Pipeline
-
-```bash
-python src/etl/load_to_sqlite.py
-```
-
-### Generate Financial Ratios
-
-```bash
-python src/ratios/populate_financial_ratios.py
-```
-
-### Start the FastAPI Server
+### FastAPI
 
 ```bash
 uvicorn src.api.main:app --reload
 ```
 
-API Documentation
+Swagger Documentation:
 
 ```
 http://127.0.0.1:8000/docs
 ```
 
-### Launch the Dashboard
+### Streamlit Dashboard
 
 ```bash
 streamlit run src/dashboard/app.py
 ```
 
-Dashboard
+Dashboard:
 
 ```
 http://localhost:8501
@@ -185,68 +153,46 @@ http://localhost:8501
 
 ## Testing
 
-Run the complete test suite
+Run all tests
 
 ```bash
-python -m pytest tests/
+python -m pytest
 ```
 
-Run code quality checks
+Run Ruff
 
 ```bash
-python -m ruff check src/ tests/
+python -m ruff check .
 ```
 
-Format the project
+Compile Project
 
 ```bash
-black src/ tests/
+python -m compileall src tests
 ```
 
 ---
 
-## Project Outputs
+## Outputs
 
-The project generates the following outputs:
+The platform generates:
 
-- Financial ratio database
-- Company PDF tearsheets
-- Stock screener reports
-- Peer comparison reports
-- Sector analysis reports
-- Valuation summaries
-- Cash flow intelligence reports
-- Capital allocation reports
-- Performance reports
-- Validation reports
+- Financial Ratio Database
+- Stock Screener Reports
+- Peer Comparison Reports
+- Capital Allocation Reports
+- Valuation Reports
+- Company PDF Tearsheets
+- Validation Reports
 
 ---
 
-## Documentation
+## Future Improvements
 
-Project documentation is available in the `docs/` directory and includes:
-
-- Project Report
-- Analyst Guide
-- OpenAPI Specification
-- Postman Collection
-
----
-
-## Project Status
-
-Completed as part of an Agile sprint-based development workflow, covering:
-
-- Data Engineering
-- Financial Analytics
-- API Development
-- Dashboard Development
-- Testing and Validation
-- Performance Optimization
-- Documentation
+- Docker Support
+- CI/CD Pipeline
+- Cloud Deployment
+- User Authentication
+- Real-time Market Data Integration
 
 ---
-
-## License
-
-This project is intended for educational and research purposes.

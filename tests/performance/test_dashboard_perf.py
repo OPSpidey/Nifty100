@@ -1,5 +1,6 @@
 import time
 
+import pytest
 import requests
 
 TICKERS = [
@@ -13,33 +14,40 @@ TICKERS = [
 BASE_URL = "http://127.0.0.1:8000/api/v1/companies"
 
 
-times = []
+def test_dashboard_performance():
 
-print("=" * 60)
-print("Dashboard Performance Test")
-print("=" * 60)
+    times = []
 
-for ticker in TICKERS:
+    print("=" * 60)
+    print("Dashboard Performance Test")
+    print("=" * 60)
 
-    start = time.perf_counter()
+    for ticker in TICKERS:
 
-    response = requests.get(f"{BASE_URL}/{ticker}")
+        start = time.perf_counter()
 
-    end = time.perf_counter()
+        try:
+            response = requests.get(
+                f"{BASE_URL}/{ticker}",
+                timeout=10,
+            )
+        except requests.RequestException as exc:
+            pytest.fail(f"Request failed: {exc}")
 
-    assert response.status_code == 200
+        end = time.perf_counter()
 
-    elapsed = end - start
+        assert response.status_code == 200
 
-    times.append(elapsed)
+        elapsed = end - start
+        times.append(elapsed)
 
-    print(f"{ticker:<12} {elapsed:.3f} sec")
+        print(f"{ticker:<12} {elapsed:.3f} sec")
 
-    assert elapsed < 3
+        assert elapsed < 3
 
-print("=" * 60)
-print(f"Average : {sum(times)/len(times):.3f} sec")
-print(f"Fastest : {min(times):.3f} sec")
-print(f"Slowest : {max(times):.3f} sec")
-print("PASS")
-print("=" * 60)
+    print("=" * 60)
+    print(f"Average : {sum(times) / len(times):.3f} sec")
+    print(f"Fastest : {min(times):.3f} sec")
+    print(f"Slowest : {max(times):.3f} sec")
+    print("PASS")
+    print("=" * 60)

@@ -1,16 +1,21 @@
 import pandas as pd
 
-prices = pd.read_excel(
-    "data/supporting/stock_prices.xlsx"
-)
 
-companies = (
-    prices["company_id"]
-    .drop_duplicates()
-    .sample(5, random_state=42)
-)
+def main():
+    prices = pd.read_excel(
+        "data/supporting/stock_prices.xlsx"
+    )
 
-print("5 Random Companies:\n")
+    companies = (
+        prices["company_id"]
+        .drop_duplicates()
+        .sample(5, random_state=42)
+    )
 
-for company in companies:
-    print(company)
+    print("5 Random Companies:\n")
+
+    for company in companies:
+        print(company)
+
+if __name__ == "__main__":
+    main()

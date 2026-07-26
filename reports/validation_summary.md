@@ -14,6 +14,18 @@ Tax rate outside expected business range.
 Status:
 Accepted as business-rule exceptions.
 
+| Validation | Count | Status |
+|------------|------:|--------|
+| Tax warnings | 68 | Accepted |
+| Dividend warnings | 25 | Accepted |
+| EPS exceptions | 1 | Reviewed |
+| URL issues | 3 | Non-critical |
+| Critical failures | 0 | Passed |
+
+### Tax Percentage Warnings
+
+68 records
+
 ### Dividend Payout Warnings
 
 25 records
@@ -49,6 +61,27 @@ Invalid URL format.
 
 Status:
 Non-critical metadata issue.
+
+### URL Validation
+
+3 records
+
+Company:
+TVS Motor Company Ltd
+
+Issue:
+Invalid URL format.
+
+Status:
+Non-critical metadata issue.
+
+## Validated Data Sources
+
+- companies
+- profitandloss
+- balancesheet
+- cashflow
+- sectors
 
 ## Conclusion
 

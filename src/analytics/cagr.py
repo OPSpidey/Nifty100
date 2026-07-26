@@ -5,6 +5,16 @@ def calculate_cagr(start_value, end_value, years):
         (cagr, flag)
     """
 
+    if (
+        start_value is None
+        or end_value is None
+        or years is None
+    ):
+        return None, "INSUFFICIENT"
+
+    if years <= 0:
+        return None, "INSUFFICIENT"
+
     if years <= 0:
         return None, "INSUFFICIENT"
 
@@ -23,6 +33,8 @@ def calculate_cagr(start_value, end_value, years):
     cagr = (((end_value / start_value) ** (1 / years)) - 1) * 100
 
     return cagr, None
+
+
 
 def revenue_cagr(start_sales, end_sales, years):
     return calculate_cagr(start_sales, end_sales, years)

@@ -1,27 +1,6 @@
-from src.etl.normalizer import normalize_year
-
-
-def test_dec_2012():
-    assert normalize_year("Dec 2012") == 2012
-
-
-def test_mar_2015():
-    assert normalize_year("Mar 2015") == 2015
-
-
-def test_plain_year():
-    assert normalize_year("2018") == 2018
-
-
-def test_spaces():
-    assert normalize_year(" 2020 ") == 2020
-
-
-def test_none():
-    assert normalize_year(None) is None
-
-
 import pytest
+
+from src.etl.normalizer import normalize_year
 
 
 @pytest.mark.parametrize(

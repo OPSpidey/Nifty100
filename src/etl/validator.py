@@ -86,6 +86,7 @@ def validate_profitandloss(df):
     ]
 
     for _, row in invalid_eps.iterrows():
+
         severity = "WARNING"
         issue = "Positive profit with negative EPS; reviewed source exception"
 
@@ -97,6 +98,7 @@ def validate_profitandloss(df):
             severity
         )
 
+
 def validate_companies(df):
 
     url_columns = [
@@ -106,6 +108,9 @@ def validate_companies(df):
     ]
 
     for col in url_columns:
+
+        if col not in df.columns:
+            continue
 
         invalid = df[
             ~df[col]
@@ -127,6 +132,8 @@ def validate_companies(df):
 
 
 def main():
+
+    failures.clear()
 
     pnl = pd.read_excel(
         "data/raw/profitandloss.xlsx",

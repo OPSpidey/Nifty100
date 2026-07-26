@@ -17,7 +17,7 @@ def test_dq002():
 
 
 def test_dq003():
-    check(pd.DataFrame({"sales":[-1]}), "DQ003")
+    check(pd.DataFrame({"sales": [-1]}), "DQ003")
 
 
 def test_dq004():
@@ -69,3 +69,22 @@ def test_dq014():
     )
 
     check(df, "DQ014")
+
+def test_valid_dataframe():
+    df = pd.DataFrame({
+        "company_id": ["ABB"],
+        "year": [2024],
+        "sales": [100],
+        "net_profit": [20],
+        "equity": [50],
+        "borrowings": [10],
+        "interest": [5],
+        "cashflow": [15],
+        "roe": [20],
+        "roce": [18],
+        "pe_ratio": [25],
+        "market_cap": [1000],
+        "dividend_yield": [2],
+    })
+
+    assert validate_dataframe(df) == []

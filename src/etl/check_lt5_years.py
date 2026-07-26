@@ -1,29 +1,35 @@
 import pandas as pd
 
-prices = pd.read_excel(
-    "data/supporting/stock_prices.xlsx"
-)
 
-prices["date"] = pd.to_datetime(
-    prices["date"]
-)
+def main():
+    
+    prices = pd.read_excel(
+        "data/supporting/stock_prices.xlsx"
+    )
 
-coverage = (
-    prices.groupby("company_id")["date"]
-    .apply(lambda x: x.dt.year.nunique())
-    .reset_index()
-)
+    prices["date"] = pd.to_datetime(
+        prices["date"]
+    )
 
-coverage.columns = [
-    "company_id",
-    "years_covered"
-]
+    coverage = (
+        prices.groupby("company_id")["date"]
+        .apply(lambda x: x.dt.year.nunique())
+        .reset_index()
+    )
 
-lt5 = coverage[
-    coverage["years_covered"] < 5
-]
+    coverage.columns = [
+        "company_id",
+        "years_covered"
+    ]
 
-print("\nCompanies with <5 years coverage:\n")
-print(lt5)
+    lt5 = coverage[
+        coverage["years_covered"] < 5
+    ]
 
-print("\nCount:", len(lt5))
+    print("\nCompanies with <5 years coverage:\n")
+    print(lt5)
+
+    print("\nCount:", len(lt5))
+
+if __name__ == "__main__":
+    main()    

@@ -28,6 +28,8 @@ def test_it_sector():
 
     companies = response.json()
 
+    assert isinstance(companies, list)
+
     assert len(companies) > 0
 
     for company in companies:

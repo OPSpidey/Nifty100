@@ -1,11 +1,10 @@
-from reportlab.platypus import (
-    SimpleDocTemplate,
-    Paragraph,
-    Spacer,
-    PageBreak,
-)
 from reportlab.lib.styles import getSampleStyleSheet
-
+from reportlab.platypus import (
+    PageBreak,
+    Paragraph,
+    SimpleDocTemplate,
+    Spacer,
+)
 
 OUTPUT = "docs/analyst_guide.pdf"
 

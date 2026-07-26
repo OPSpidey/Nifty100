@@ -18,24 +18,8 @@ FILES = {
 
 
 def load_excel(path):
-    """
-    Reads Bluestock Excel files.
-
-    Row 1 = metadata
-    Row 2 = headers
-    Row 3+ = data
-    """
-
-    df = pd.read_excel(path, header=1)
-
-    df.columns = (
-        df.columns
-        .str.strip()
-        .str.lower()
-        .str.replace(" ", "_")
-    )
-
-    return df
+    """Load Bluestock raw Excel files using header row 1."""
+    return load_source_file(path, 1)
 
 
 def load_source_file(path, header_row):

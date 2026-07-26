@@ -2,8 +2,6 @@ import sqlite3
 
 import pandas as pd
 
-conn = sqlite3.connect("db/nifty100.db")
-
 files = {
     "companies": ("data/raw/companies.xlsx", 1),
     "profitandloss": ("data/raw/profitandloss.xlsx", 1),
@@ -19,27 +17,35 @@ files = {
     "stock_prices": ("data/supporting/stock_prices.xlsx", 0),
 }
 
-for table, (file_path, header_row) in files.items():
 
-    print(f"Trying {table}...")
+def main():
+    conn = sqlite3.connect("db/nifty100.db")
 
-    try:
-        df = pd.read_excel(file_path, header=header_row)
+    for table, (file_path, header_row) in files.items():
 
-        print(df.dtypes)
+        print(f"Trying {table}...")
 
-        df.to_sql(
-            table,
-            conn,
-            if_exists="replace",
-            index=False
-        )
+        try:
+            df = pd.read_excel(file_path, header=header_row)
 
-        print(f"SUCCESS: {table}")
+            print(f"{table}: {len(df)} rows loaded")
 
-    except Exception as e:
-        print(f"FAILED: {table}")
-        print("ERROR:", e)
-        raise
+            df.to_sql(
+                table,
+                conn,
+                if_exists="replace",
+                index=False,
+            )
 
-conn.close()
+            print(f"SUCCESS: {table}")
+
+        except Exception as e:
+            print(f"FAILED: {table}")
+            print("ERROR:", e)
+            raise
+
+    conn.close()
+
+
+if __name__ == "__main__":
+    main()

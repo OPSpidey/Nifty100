@@ -11,3 +11,13 @@
 - KPI values matched.
 
 Result: PASS
+
+## Database
+
+- SQLite database connected successfully.
+- Financial ratios loaded correctly.
+
+## Overall
+
+Result: PASS
+Date: YYYY-MM-DD

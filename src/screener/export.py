@@ -63,9 +63,9 @@ def _passes(value, filter_name, threshold):
         return False
 
     if filter_name.endswith("_min"):
-        return value > threshold
+        return value >= threshold
     if filter_name.endswith("_max"):
-        return value < threshold
+        return value <= threshold
     if filter_name.endswith("_eq"):
         return value == threshold
 

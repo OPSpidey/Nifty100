@@ -15,7 +15,7 @@ def test_health_endpoint():
 
     assert data["status"] == "ok"
 
-    assert "db_row_counts" in data
+    assert isinstance(data["db_row_counts"], dict)
 
     expected_tables = [
         "analysis",
@@ -32,7 +32,8 @@ def test_health_endpoint():
 
     for table in expected_tables:
         assert table in data["db_row_counts"]
+        assert data["db_row_counts"][table] >= 0
 
-    assert "uptime_seconds" in data
+    assert isinstance(data["uptime_seconds"], (int, float))
 
-    assert "version" in data
+    assert isinstance(data["version"], str)

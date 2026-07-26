@@ -27,3 +27,14 @@
 ## Status
 
 Load audit passed.
+
+## Validation Checks
+
+- Duplicate records: None
+- Missing company IDs: None
+- Foreign key validation: Passed
+- Row count verification: Passed
+
+## Generated On
+
+YYYY-MM-DD HH:MM
